@@ -1,0 +1,175 @@
+.client{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client img{
+    height: 30px;
+    background: var(--tertiary);
+}
+#back{
+    transform: rotate(180deg)
+}
+.testifiers-container{
+    overflow: hidden;
+    position: relative;
+    max-width: 901px;
+    margin: 0 auto;
+}
+.testifiers{
+    display: flex;
+    width: 300px;
+}
+
+
+.testifier-card{
+    background: var(--dark);
+    min-width: 300px;
+    max-width:300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.testifier-head{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rating img{
+    height:16px;
+}
+
+
+.quote-icon{
+    height: 25px;
+    filter:invert(1)
+}
+.quote{
+   max-width:90%;
+   margin: 10px auto;
+   /* border: 1px dashed var(--tertiary); */
+   padding: 10px;
+   border-radius: 10px;
+}
+
+/* button of testifiers */
+.testifier-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.testifier-details>div{
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.testifier-details img{
+    height: 50px;
+    border-radius: 50%;
+}
+.testifier-details h3{
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.testifier-details h4{
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--tertiary);
+}
+
+
+
+/* partners */
+
+.partner-container{
+    width: 80vw;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: right;
+}
+.partners-box{
+    width: 60%;
+    display: flex;
+ 
+}
+.partners-logo{
+     background: var(--dark);
+     margin: 10px;
+     min-width: 200px;
+     border-radius: 5px;
+}
+.partners-logo img{
+    padding: 10px;
+    height: 50px;
+    display:block;
+    max-width: 180px;
+    margin: 0 auto;
+    filter: brightness(0) invert(1)
+}
+.partners-logo:hover > img{
+    filter:none
+}
+
+.partners-logo:hover{
+    background: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+    .testifiers-container{
+        overflow: hidden;
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .testifiers{
+        display: flex;
+        width: 280px;
+    }
+    
+    /* testifiers head rating sides */
+    .testifier-card{
+        background: var(--dark);
+        height: 220px;
+        min-width: 200px;
+        max-width:220px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 1px;
+
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .testifier-head{
+        .quote-icon{
+            height: 16px;
+        }
+        .rating img{
+            height: 12px;
+        }
+    }
+
+    .testifier-details{
+        img{
+            height: 30px;
+        }
+        h3{
+            font-size: 11px;
+        }
+        h4{
+            font-size: 10px;
+        }
+    }
+}

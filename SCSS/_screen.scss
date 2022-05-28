@@ -1,0 +1,49 @@
+#small-screen{
+    display: none;
+}
+
+@media #{$small-screen} {
+    #small-screen{
+        display:block;
+    }
+
+    #large-info{
+        display: none;
+    }
+    .large-skills, .bio-large{
+        @extend #large-info ;
+    }
+
+
+
+    .summary-items{
+        margin-top: 100px;
+    
+        h3{
+            font-size:20px;
+        }
+    
+        h1{
+            font-size: 32px;
+        }
+        #role{
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        }
+
+   .summary-profile{
+    img{
+        height: 300px;
+    }
+
+    .card{
+        height: 65%;
+    }
+    }
+}
+
+@media #{$large-screen}{
+    
+}

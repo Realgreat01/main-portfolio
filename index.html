@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./old-css/original-main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/test.css"> -->
+    <title>Samson Ikuomenisan</title>
+</head>
+<body>
+    <main>
+        <nav id="nav">
+            <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+            <div class="nav-desktop">
+                <ul class="nav-flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <button>Download CV</button>
+           <div id="mode">
+                <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
+                <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">
+           </div>
+           <div class="menu-bar">
+               <img src="./images/icon-quotes.svg" alt="">
+           </div>
+           <div class="nav-mobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        
+        <section class="" id="summary">
+            <div class="summary-items" id="">
+                <div class="bio-1">
+                    <h3>Hello <span id="i-am"> I'm</span></h3>
+                    <h1>Samson <span class="" id="name-span">Ikuomenisan</span></h1>
+                    <h3 id="role">FullStack Web Developer & Business Developer</h3>
+                </div>
+                <div id="info-lead" class="bio-large">
+                    <h2 id="info">Brief Info</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam in, totam sunt, ipsa quia tempore voluptates culpa iure distinctio ipsam odit ullam nisi sed earum itaque, repudiandae saepe illum odio impedit provident libero. Molestiae praesentium explicabo, perspiciatis dignissimos nam modi nesciunt eligendi maiores, labore, laborum fugit quos facilis voluptas.  <button id="read-more"><a href="#">Read More ↗</a></button> </p>
+                </div>
+                
+                
+                <div class="socials">
+                    <img src="./images/icons/twitter.svg" alt="twitter">
+                    <img src="./images/icons/facebook.svg" alt="facebook">
+                    <img src="./images/icons/instagram.svg" alt="linkedin">
+                    <img src="./images/icons/github.svg" alt="github">
+                </div>
+
+                <div class="skills large-skills">
+                    <div>
+                         <h4>Front-End Tools</h4>
+                         <div class="skill-tools">
+                             <img src="./images/skills/html.svg" alt="HTML">
+                             <img src="./images/skills/css.svg" alt="CSS">
+                             <img src="./images/skills/javascript.svg" alt="JavaScript">
+                             <img src="./images/skills/tailwindcss.svg" alt="TailWind CSS">
+                             <img src="./images/skills/sass.svg" alt="Sass">
+                             <img src="./images/skills/vue.svg" alt="Vue">
+                         </div>
+                     </div>
+                     
+                     <div>
+                         <h4>Back-End Tools</h4>
+                         <div class="skill-tools">
+                             <img src="./images/skills/nodejs-3.svg" alt="NodejS" id="node">
+                             <img src="./images/skills/npm.svg" alt="npm" id="npm">
+                             <img src="./images/skills/mongodb.svg" alt="MongoDb">
+                             <img src="./images/skills/firebase.svg" alt="Firebase">
+                         </div>
+                     </div>
+ 
+                     <div>
+                         <h4>Design Tools</h4>
+                         <div class="skill-tools">
+                             <img src="./images/skills/figma.svg" alt="Figma">
+                             <img src="./images/skills/illustrator.svg" alt="illustrator">
+                             <img src="./images/skills/wordpress.svg" alt="wordpress">
+                             <img src="./images/skills/indesign.svg" alt="indesign">
+                             <img src="./images/skills/adobe-xd.svg" alt="adobeXD">
+                          </div>
+                     </div>
+                 </div>
+ 
+                 <div class="summary-info" id="large-info">
+                     <div class="summary-details" id="">
+                         <h4>Projects</h4>
+                         <p id="projects">0</p>
+                     </div>
+                     <div class="summary-details" id="">
+                         <h4>Clients</h4>
+                         <p id="clients">0</p>
+                     </div>
+                     <div class="summary-details" id="">
+                         <h4>Experience</h4>
+                         <p id="experience">0</p>
+                     </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Professional picture -->
+            <div class="summary-profile">
+                <div class="card"></div>
+                <img src="./images/profile.png" alt="">
+            </div>
+
+        </section>
+
+
+        <section class="" id="small-screen">
+
+            <div id="info-lead">
+                <h2 id="info">Brief Info</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam in, totam sunt, ipsa quia tempore voluptates culpa iure distinctio ipsam odit ullam nisi sed earum itaque, repudiandae saepe illum odio impedit provident libero. Molestiae praesentium explicabo, perspiciatis dignissimos nam modi nesciunt eligendi maiores, labore, laborum fugit quos facilis voluptas.  <button id="read-more"><a href="#">Read More ↗</a></button> </p>
+            </div>
+            <div class="skills">
+                <div>
+                     <h4>Front End Skills</h4>
+                     <div class="skill-tools">
+                         <img src="./images/skills/html.svg" alt="HTML">
+                         <img src="./images/skills/css.svg" alt="CSS">
+                         <img src="./images/skills/javascript.svg" alt="JavaScript">
+                         <img src="./images/skills/tailwindcss.svg" alt="TailWind CSS">
+                         <img src="./images/skills/sass.svg" alt="Sass">
+                         <img src="./images/skills/vue.svg" alt="Vue">
+                     </div>
+                 </div>
+                 
+                 <div>
+                     <h4>BackEnd Tools</h4>
+                     <div class="skill-tools">
+                         <img src="./images/skills/nodejs-3.svg" alt="NodejS">
+                         <img src="./images/skills/npm.svg" alt="npm">
+                         <img src="./images/skills/mongodb.svg" alt="MongoDb">
+                         <img src="./images/skills/firebase.svg" alt="Firebase">
+                     </div>
+                 </div>
+
+                 <div>
+                     <h4>Design Tools</h4>
+                     <div class="skill-tools">
+                         <img src="./images/skills/figma.svg" alt="Figma">
+                         <img src="./images/skills/illustrator.svg" alt="illustrator">
+                         <img src="./images/skills/wordpress.svg" alt="wordpress">
+                         <img src="./images/skills/indesign.svg" alt="indesign">
+                         <img src="./images/skills/adobe-xd.svg" alt="adobeXD">
+                      </div>
+                 </div>
+             </div>
+
+             <div class="summary-info">
+                 <div class="summary-details" id="">
+                     <h4>Projects</h4>
+                     <p id="projects">0</p>
+                 </div>
+                 <div class="summary-details" id="">
+                     <h4>Clients</h4>
+                     <p id="clients">0</p>
+                 </div>
+                 <div class="summary-details" id="">
+                     <h4>Experience</h4>
+                     <p id="experience">0</p>
+                 </div>
+        </section>
+
+
+        <section class="services">
+            <h2>Services</h2>
+                <h3>What I do</h3>
+                <div class="services-box" id="">
+                    <div class="" id="">
+                        <img src="./images/services/web.svg" alt=""></img>
+                        <h4>Web Development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                    <div class="" id="">
+                        <img src="./images/services/graphics.svg" alt=""></img>
+                        <h4>Graphics Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                    <div class="" id="">
+                        <img src="./images/services/business.svg" alt=""></img>
+                        <h4>Business Development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                    <div class="" id="">
+                        <img src="./images/services/publishing.svg" alt=""></img>
+                        <h4>E-Publishing</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                    <div class="" id="">
+                        <img src="./images/services/branding.svg" alt=""></img>
+                        <h4>Branding and Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                    <div class="" id="">
+                        <img src="./images/services/academic.svg" alt=""></img>
+                        <h4>Academic Services</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+                    </div>
+                </div>
+        </section> 
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <h3>Recent Projects</h3>
+            <div class="project-details" id="">
+
+                <div class="project-items">
+                        <div class="project-data">
+                            <h3>Verix Technologies</h3>
+                            <h4>Aug, 2022</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque earum magnam!</p>
+                        </div>
+                        <div class="project-info">
+                            <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                            <img src="./images/projects/new.jpg" alt="">
+                        </div>
+                </div>
+
+                <div class="project-items">
+                        <div class="project-data">
+                            <h3>Stoma Magazine</h3>
+                            <h4>Dec 2021</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum totam repellendus porro.</p>
+                        </div>
+                        <div class="project-info">
+                            <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                            <img src="./images/projects/new.jpg" alt="">
+                        </div>
+                </div>
+                
+                <div class="project-items">
+                        <div class="project-data">
+                            <h3>FrontEnd Mentor Challenges</h3>
+                            <h4>March, 2022</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores neque aspernatur error!</p>
+                        </div>
+                        <div class="project-info">
+                            <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                            <img src="./images/projects/new.jpg" alt="">
+                        </div>
+                </div>
+                
+                <div class="project-items">
+                        <div class="project-data">
+                            <h3>Tip Calculator</h3>
+                            <h4>Jan 2022</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem adipisci nihil.</p>
+                        </div>
+                        <div class="project-info">
+                            <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                            <img src="./images/projects/new.jpg" alt="">
+                        </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <section class="">
+            <h2>Education and Experience</h2>
+           <div class="education-box">
+
+            <div>
+                <h2>Experience</h2>
+                <div class="education">
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Complete Web Development Masterclass</h2>
+                            <h4>Udemy (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+
+                   
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Entrepreneurship Development from Idea into Action</h2>
+                            <h4>Kings College via Udemy (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Become a Software Developer</h2>
+                            <h4>Linkedin Learning (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+                   
+  
+                </div>
+            </div>
+                
+            <div>
+                <h2>Experience</h2>
+                <div class="education">
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Complete Web Development Masterclass</h2>
+                            <h4>Udemy (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+
+                   
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Complete Web Development Masterclass</h2>
+                            <h4>Udemy (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+
+                    <div>
+                       <div class="dots">
+                       </div>
+                        <div class="education-item">
+                            <h2>Complete Web Development Masterclass</h2>
+                            <h4>Udemy (Sept. 2021)</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                       </div>
+                   </div>
+
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <section class="testimonial">
+            <h2>Testmonials</h2>
+            <div class="client">
+                <h1>What my clients say</h1>
+                <div>
+                    <img src="./images/icons/next.svg" alt="" id="back">
+                    <img src="./images/icons/next.svg" alt="" id="next">
+                </div>
+            </div>
+            
+            <div class="testifiers-container" id="testifier-container">
+            <div class="testifiers">
+                
+                <!-- testifier 7 clone-->
+                <div class="testifier-card" id="lastClone">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Joe Biden ( Last Clone)</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testifier-card">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Samon Ajala -1</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testifier 2 -->
+                <div class="testifier-card">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Benjamin Ayanade -2</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testifier 3 -->
+                <div class="testifier-card">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Solomon King -3</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testifier 4 -->
+                <div class="testifier-card">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Oliver Jeffery -4</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testifier 5 -->
+                <div class="testifier-card">
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Yousuf Mohammed -5</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- testifier 1 clone-->
+                <div class="testifier-card" id="firstClone" >
+                <div class="testifier-head">
+                    <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                    <div class="rating">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                        <img src="./images/star.svg" alt="">
+                    </div>
+                </div>
+
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+
+                    <div class="testifier-details">
+                        <img src="./images/man.svg" alt="">
+                        <div>
+                            <h3>Imrah Yue - (first Clone)</h4>
+                            <h4>Head of Operations, Microsoft Inc.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <End of testsitfiers  -->
+            </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <h2>Partners</h2>
+            <h3>Selected Parters</h3>
+            <div class="partner-container">
+                <div class="partners-box">
+                    <div class="partners-logo"><img src="./images/companies/at&t.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/amazon.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/dell.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/google.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/intel.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/netflix.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/microsoft.svg" alt=""></div>
+                    <div class="partners-logo"><img src="./images/companies/oracle.svg" alt=""></div>
+                    <div class="partners-logo" id="lastPartner"><img src="./images/companies/verizon.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-details">
+                <div><img src="./images/contacts/map.svg" alt="address"></div>
+                <div><img src="./images/contacts/email-main.svg" alt="email"></div>
+                <div><img src="./images/contacts/phone.svg" alt="phone"></div>
+                <div><img src="./images/contacts/checked.svg" alt="available"></div>
+            </div>
+               <form action="" method="post" class="contact-info">
+
+                    <div><input type="text" name="" id="subject" placeholder="Enter Subject" required></div>
+ 
+                    <div id="inputs">
+                        <input type="text" name="" id="" placeholder="Your first name" required>
+                        <input type="text" name="" id="" placeholder=" Your last name" required>
+                        <input type="text" name="" id="" placeholder="Enter your email" required>
+                        <input type="text" name="" id="" placeholder=" Enter your phone" required>
+                    </div>
+
+                    <div><textarea name="" id="" placeholder="Enter your message"></textarea></div>
+                    <button id="message">Send Message <span><img src="./images/contacts/send.svg" alt="Send Message"></span></button>
+               </form>
+ 
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="mode.js"></script>
+    <script src="sliders.js"></script>
+    <script src="partner.js"></script>
+</body>
+</html>

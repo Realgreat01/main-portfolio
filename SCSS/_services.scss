@@ -1,0 +1,123 @@
+section>h2{
+    min-width: 300px;
+    max-width: 500px;
+    border-bottom: 2px solid var(--secondary);
+}
+.services h3{
+    font-size: 2rem;
+}
+.services-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.services p{
+    opacity: 0.5
+}
+.services-box>div{
+    background: var(--dark);
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    min-width: 240px;
+    height: 300px;
+}
+.services-box img{
+    height: 50px;
+    backdrop-filter: invert(1);
+    background: var(--secondary);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project-details{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+.project-items{
+    background: var(--dark);
+    padding: 10px;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 10px;
+    justify-self: stretch;
+    color:#fff;
+}
+.project-items img{
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 5px auto;
+    background: clip;
+}
+.project-data{
+    padding: 10px;
+}
+.project-data h4{
+    color: var(--secondary)
+}
+.project-data p{
+    max-width: 80%;
+    opacity:0.5;
+}
+.project-info{
+    position: relative;
+}
+.project-info a{
+    position: absolute;
+    right: 10px;
+}
+.project-info a img{
+    height: 40px;
+}
+
+
+
+
+@media only screen and  (max-width : 600px) {
+    .services-box{
+        grid-template-columns: 1fr  1fr ; 
+    }
+    .services-box>div{
+        background: var(--dark);
+        margin: 5px auto;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 96%;
+        min-width: 100px;
+        height: 300px;
+    }
+    .services-box p{
+        font-size: 0.9rem;
+    }
+
+
+    .project-items{
+        background: var(--dark);
+        padding: 5px;
+        border-radius: 5px;
+        display:flex;
+        width: 300px;
+        flex-direction: column-reverse;
+        margin: 5px 0;
+        justify-self: stretch;
+    }
+    
+    .project-details{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    
+}

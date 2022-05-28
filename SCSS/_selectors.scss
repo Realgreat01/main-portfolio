@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}  
+
+body{
+    background:var(--background);
+    color:var(--primary);
+}
+
+main{
+    width: 100vw;
+    margin: 0;
+}
+
+section{
+    margin: $center;
+    width: 90%;
+    height: fit-content;
+    padding-bottom: $p-large;
+    border-bottom: 1px solid #3a3939a4;
+}
+
+
+// HEADINGS
+h1{
+    font : {
+        size: $x-large;
+        family: 'League Gothic';
+        weight: $semi-bold;
+    }
+}

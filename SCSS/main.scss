@@ -1,0 +1,55 @@
+:root{
+    --primary: #fff ;
+    --secondary: #002fff;
+    --tertiary: #ff0077;
+    --dark: #202022;
+    --background: #000000;
+}
+
+//  Variables
+// 1.  for font-size
+            $small : 12px;
+            $medium : 16px;
+            $large : 20px;
+            $x-large : 24px;
+
+// 2. for font-weight
+            $thin: 300;
+            $normal: 400;
+            $semi-bold: 600;
+            $bold: 800;
+
+
+// 3. for widths
+            $full: 100vw;
+            $half: 50vw;
+            $third : 33.33vw;
+            $qtr : 25vw;
+            $tenth: 10vw;
+
+// 4. for margin and padding
+            $center: 0 auto;
+            $p-small: 4px;
+            $p-medium: 8px;
+            $p-large: 12px;
+
+
+//  5. for screens 
+            $small-screen :only screen and (max-width: 600px);
+            $medium-screen :only screen and (max-width: 900px);
+            $large-screen :only screen and (min-width: 1200px);
+
+
+// Mixins
+
+
+
+// partials
+@import "./selectors";
+@import "./nav";
+@import "./home";
+@import "./services";
+@import "./education";
+@import "./testimonial";
+@import "./contact";
+@import "./screen"
