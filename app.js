@@ -117,4 +117,5 @@ const hideMenu =()=>{
 
 menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
+mobileNav.addEventListener("mouseout", ()=>  mobileNav.style.height="0")
 
