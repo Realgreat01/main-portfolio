@@ -105,7 +105,7 @@ const darkMode = ()=>{
 
 const showMenu =()=>{
   if(mobileNav.style.height="0"){
-    mobileNav.style.height="200px";
+    mobileNav.style.height="300px";
   }
   menuIcon.style.visibility="hidden";
   cancelIcon.style.visibility="visible";
@@ -121,4 +121,5 @@ menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
 
 mobileNav.addEventListener("mouseleave", hideMenu);
+body.addEventListener("dblclick", hideMenu);
 
