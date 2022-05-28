@@ -94,6 +94,9 @@ nav{
     overflow-y: hidden;
     transition: 1s;
 
+// &:{
+//     height:0px;
+// }
     li{
         background: var(--tertiary);
         color: #fff;

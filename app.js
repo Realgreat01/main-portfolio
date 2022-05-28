@@ -104,11 +104,13 @@ const darkMode = ()=>{
 // });
 
 const showMenu =()=>{
-  mobileNav.style.height="200px";
+  if(mobileNav.style.height="0"){
+    mobileNav.style.height="200px";
+  }
   menuIcon.style.visibility="hidden";
   cancelIcon.style.visibility="visible";
-
 }
+
 const hideMenu =()=>{
   mobileNav.style.height="0";
   menuIcon.style.visibility="visible";
@@ -117,5 +119,6 @@ const hideMenu =()=>{
 
 menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
-mobileNav.addEventListener("mouseout", ()=>  mobileNav.style.height="0")
+
+mobileNav.addEventListener("mouseleave", hideMenu);
 
