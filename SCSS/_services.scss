@@ -84,14 +84,14 @@ section>h2{
 
 @media only screen and  (max-width : 600px) {
     .services-box{
-        grid-template-columns: 1fr  1fr ; 
+        grid-template-columns: 1fr; 
     }
     .services-box>div{
         background: var(--dark);
         margin: 5px auto;
         padding: 10px;
         border-radius: 10px;
-        max-width: 96%;
+        max-width: 300px;
         min-width: 100px;
         height: 300px;
     }
@@ -105,9 +105,9 @@ section>h2{
         padding: 5px;
         border-radius: 5px;
         display:flex;
-        width: 300px;
+        width: 90%;
         flex-direction: column-reverse;
-        margin: 5px 0;
+        margin: 5px auto;
         justify-self: stretch;
     }
     

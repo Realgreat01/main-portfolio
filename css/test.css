@@ -1,3 +1,133 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  z-index: 30;
+  width: 100vw;
+}
+
+nav .nav-flex {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 0 10px;
+  color: var(--primary);
+  text-transform: uppercase;
+  width: 10vw;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+nav li:hover {
+  color: #fff;
+  background: var(--secondary);
+}
+
+nav li a {
+  color: var(--primary);
+}
+
+nav li a:hover {
+  color: #fff;
+}
+
+#download-btn {
+  background: var(--secondary);
+  padding: 14px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+#download-btn a {
+  color: #fff;
+}
+
+.menu-bar {
+  display: none;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  padding: 10px;
+}
+
+.menu-bar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.nav-mobile {
+  display: none;
+  width: 200px;
+  height: 0px;
+  position: absolute;
+  right: -10px;
+  z-index: 10;
+  top: 25px;
+  color: #fff;
+  overflow-y: hidden;
+  transition: 1s;
+}
+
+.nav-mobile li {
+  background: var(--tertiary);
+  color: #fff;
+  margin: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.nav-mobile li:hover {
+  background: #000;
+}
+
+.nav-mobile li a {
+  color: #fff;
+}
+
+#mode {
+  background: green;
+  position: relative;
+  display: flex;
+  height: 50px;
+}
+
+#mode img {
+  position: absolute;
+  height: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+#dark, #cancel-icon {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile, .menu-bar {
+    display: block;
+  }
+  #download-btn {
+    padding: 10px;
+  }
+}
+
 #summary {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -12,7 +142,7 @@
   max-width: 70%;
 }
 
-.summary-items h1 {
+.summary-items h1, .summary-items #name-span {
   font-size: 4rem;
   margin-top: 0;
 }
@@ -198,8 +328,7 @@
   .nav-desktop, .bio-1, #large-info, .large-skills {
     display: none;
   }
-  .menu-bar, #f
-small-screens {
+  .menu-bar, #f small-screens {
     display: block;
   }
   #summary {

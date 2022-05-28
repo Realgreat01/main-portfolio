@@ -1,3 +1,4 @@
+@import "./variables";
 
 #name-span{
     @extend h1;
@@ -11,7 +12,9 @@
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+    z-index: 30;
+    // transition: 0.5s;
     width:$full;
     .nav-flex{
     display:flex; 
@@ -46,20 +49,70 @@ nav{
 
     // NAV BAR BUTTON (Download CV)
 
-    button{
-        background: var(--secondary);
-        padding: 1rem;
-        border: none;
-        border-radius: 1.5rem;
-        font-weight: 700;
-        color: white;
+
+}
+
+#download-btn{
+    background: var(--secondary);
+    padding: 14px;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+    color: white;
+
+    a{
+        color: #fff;
     }
 }
 
-
-.nav-mobile, .menu-bar{
+ .menu-bar{
     display:none;
+    position: relative;
+    height:30px;
+    width: 30px;
+    background: #fff;
+    padding: 10px;
+
+    img{
+        position: absolute ;
+        top:0;
+        left:0;
+        height:30px;
+        width: 30px;
+    }
 };
+
+.nav-mobile{
+    display:none;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    right: -10px;
+    z-index: 10;
+    top: 25px;
+    color:#fff;
+    overflow-y: hidden;
+    transition: 1s;
+
+    li{
+        background: var(--tertiary);
+        color: #fff;
+        margin: 10px;
+        text-align: right;
+        padding: 10px;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-radius: 4px;
+
+        &:hover{
+            background: #000;
+        }
+        a{
+            color:#fff;
+        }
+    }
+}
 
 // DARK AND LIGHT MODES
 #mode{
@@ -80,8 +133,20 @@ nav{
     visibility:hidden;
 }
 
+#cancel-icon{
+    @extend #dark ;
+}
+
 @media #{$small-screen}{
     .nav-desktop{
         display: none;
+    }
+    .nav-mobile, .menu-bar{
+        display:block;
+    };
+
+    #download-btn{
+        padding:10px;
+        // border-radius: 10px;
     }
 }

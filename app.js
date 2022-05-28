@@ -7,6 +7,9 @@ let light = document.getElementById("light");
 let body = document.querySelector("body");
 let images = document.querySelectorAll("img");
 let navbar = document.getElementById("nav");
+let menuIcon = document.getElementById("menu-icon");
+let cancelIcon = document.getElementById("cancel-icon");
+let mobileNav = document.querySelector(".nav-mobile");
 
 
 // Universal declaration for for Loops
@@ -89,12 +92,29 @@ const darkMode = ()=>{
 //   let scrollval = 0;
 //       window.addEventListener('scroll', () => {
 //   if(scrollval > window.scrollY) {
-//     navbar.style.position="static";
+//     navbar.style.position="static"; 
+//     navbar.style.background="none";
    
 //   } else {
 //     navbar.style.position="fixed";
+//     navbar.style.background="red";
 //     navbar.style.transition="1s";
 //   }
 //   scrollval = window.scrollY;
 // });
+
+const showMenu =()=>{
+  mobileNav.style.height="200px";
+  menuIcon.style.visibility="hidden";
+  cancelIcon.style.visibility="visible";
+
+}
+const hideMenu =()=>{
+  mobileNav.style.height="0";
+  menuIcon.style.visibility="visible";
+  cancelIcon.style.visibility="hidden";
+}
+
+menuIcon.addEventListener("click", showMenu)
+cancelIcon.addEventListener("click", hideMenu)
 

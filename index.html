@@ -23,23 +23,25 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <button>Download CV</button>
+            <button id="download-btn"><a href="#">Download CV</a></button>
            <div id="mode">
                 <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
                 <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">
            </div>
            <div class="menu-bar">
-               <img src="./images/icon-quotes.svg" alt="">
+               <img src="./images/icons/cancel.svg" alt="" id="cancel-icon">
+               <img src="./images/icons/menu-2.svg" alt="" id="menu-icon">
            </div>
-           <div class="nav-mobile">
-            <ul>
+        </nav>
+
+        <div class="mobile">
+            <ul class="nav-mobile">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        </nav>
         
         <section class="" id="summary">
             <div class="summary-items" id="">
@@ -125,9 +127,9 @@
 
 
         <section class="" id="small-screen">
-
+            <h2 id="info-lead">Brief Info</h2>
             <div id="info-lead">
-                <h2 id="info">Brief Info</h2>
+                <!-- <h2 id="info">Brief Info</h2> -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam in, totam sunt, ipsa quia tempore voluptates culpa iure distinctio ipsam odit ullam nisi sed earum itaque, repudiandae saepe illum odio impedit provident libero. Molestiae praesentium explicabo, perspiciatis dignissimos nam modi nesciunt eligendi maiores, labore, laborum fugit quos facilis voluptas.  <button id="read-more"><a href="#">Read More ↗</a></button> </p>
             </div>
             <div class="skills">
@@ -557,7 +559,9 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact" >     
             <div class="contact-details">
                 <div><img src="./images/contacts/map.svg" alt="address"></div>
                 <div><img src="./images/contacts/email-main.svg" alt="email"></div>
@@ -579,6 +583,7 @@
                     <button id="message">Send Message <span><img src="./images/contacts/send.svg" alt="Send Message"></span></button>
                </form>
  
+            </div>
             </div>
         </section>
     </main>

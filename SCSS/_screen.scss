@@ -15,6 +15,9 @@
     }
 
 
+    #summary{
+        grid-template-columns: 1fr 1fr;
+    }
 
     .summary-items{
         margin-top: 100px;
@@ -24,18 +27,22 @@
         }
     
         h1{
-            font-size: 32px;
+            font-size: 24px;
         }
         #role{
-            font-size: 14px;
+            font-size: 11px;
             margin-bottom: 40px;
+            width: 80%;
         }
 
         }
 
    .summary-profile{
     img{
-        height: 300px;
+        height: 280px;
+        width: 100%;
+        display: block;
+
     }
 
     .card{

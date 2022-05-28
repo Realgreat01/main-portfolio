@@ -23,6 +23,7 @@
             family: serif;
             
         }
+      
         // #name-span{
         //     // display:block;
         //     font-size: 3rem;
@@ -85,8 +86,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
 
+    @media #{$small-screen}{
+        width: 100%;
+        margin:0;
+    }
+
     &>div{
-        background: var(--dark);
+        background: var(--dark); 
         margin-right: 5px;
         min-width: 100px;
         height: 200px;
@@ -95,12 +101,15 @@
         justify-content: start;
         align-items: center;
         padding: 10px;
-        height:210px;
+        min-height:210px;
         /* max-width: 200px; */
         border-radius: 5px;
         margin-top: 50px;
         align-self: stretch;
         justify-self: stretch;
+        @media #{$small-screen}{
+            height: 250px;
+        }
 
         h4{
             color: #fff;
@@ -148,6 +157,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 80%;
+
+        @media #{$small-screen}{
+            width: 100%;
+            margin:0;
+        }
         
         h4{
             color: #fff;
