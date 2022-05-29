@@ -10,6 +10,7 @@ let navbar = document.getElementById("nav");
 let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
 let mobileNav = document.querySelector(".nav-mobile");
+let main = document.querySelector("#main")
 
 
 // Universal declaration for for Loops
@@ -109,6 +110,7 @@ const showMenu =()=>{
   }
   menuIcon.style.visibility="hidden";
   cancelIcon.style.visibility="visible";
+  main.addEventListener("click", hideMenu);
 }
 
 const hideMenu =()=>{
@@ -121,5 +123,4 @@ menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
 
 mobileNav.addEventListener("mouseleave", hideMenu);
-body.addEventListener("dblclick", hideMenu);
 
