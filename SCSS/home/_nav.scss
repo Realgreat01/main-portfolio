@@ -87,7 +87,7 @@ nav{
     width: 50vw;
     height: 0px;
     position: absolute;
-    right: -10px;
+    right: 0;
     z-index: 10;
     top: 25px;
     color:#fff;
@@ -113,6 +113,7 @@ nav{
         }
         a{
             color:#fff;
+            width: 50vw;
         }
     }
 }

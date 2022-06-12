@@ -110,7 +110,7 @@ nav li a:hover {
   width: 50vw;
   height: 0px;
   position: absolute;
-  right: -10px;
+  right: 0;
   z-index: 10;
   top: 25px;
   color: #fff;
@@ -136,6 +136,7 @@ nav li a:hover {
 
 .nav-mobile li a {
   color: #fff;
+  width: 50vw;
 }
 
 #mode {
@@ -937,4 +938,8 @@ section > h2 {
   .summary-profile .card {
     height: 65%;
   }
+}
+
+.project-data img {
+  height: 100px;
 }

@@ -45,11 +45,14 @@
 
 
 // partials
-@import "./selectors";
-@import "./nav";
-@import "./home";
-@import "./services";
-@import "./education";
-@import "./testimonial";
-@import "./contact";
-@import "./screen"
+@import "./home/selectors";
+@import "./home/nav";
+@import "./home/home";
+@import "./home/services";
+@import "./home/education";
+@import "./home/testimonial";
+@import "./home/contact";
+@import "./home/screen";
+
+
+@import "./projects/projects";

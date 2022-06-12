@@ -1,0 +1,48 @@
+{
+    "FrontEnd" : [
+        {
+            "name" : "Tip calculator",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "November, 2021",
+            "src" : "tip-calculator.jpg"
+        },
+
+        {
+            "name" : "Fylo Landing Page",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "November, 2021",
+            "src" : "fylo.jpg"
+        },
+
+        {
+            "name" : "Calculator",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "November, 2021",
+            "src" : "calculator.jpg"
+        },
+
+        {
+            "name" : "Todo App",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "November, 2022",
+            "src" : "book.jpg"
+        }
+
+    ],
+
+
+
+    "Designs" : [
+        {
+            "name" : "Stoma Magazine",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "November, 2021",
+            "src" : "stoma.jpg"
+        }
+    ]
+}
