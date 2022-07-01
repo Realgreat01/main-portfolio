@@ -12,7 +12,7 @@
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     z-index: 30;
     // transition: 0.5s;
     width:$full;
@@ -54,11 +54,12 @@ nav{
 
 #download-btn{
     background: var(--secondary);
-    padding: 14px;
+    padding: 8px 10px;
     border: none;
     border-radius: 1rem;
     font-weight: 700;
     color: white;
+    font-size: 12px;
 
     a{
         color: #fff;
@@ -141,7 +142,7 @@ nav{
     @extend #dark ;
 }
 
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 900px){
     .nav-desktop{
         display: none;
     }
@@ -149,8 +150,8 @@ nav{
         display:block;
     };
 
-    #download-btn{
-        padding:10px;
-        // border-radius: 10px;
-    }
+    // #download-btn{
+    //     // padding:10px;
+    //     // border-radius: 10px;
+    // }
 }

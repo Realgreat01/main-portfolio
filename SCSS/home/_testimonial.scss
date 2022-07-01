@@ -14,14 +14,15 @@
 .testifiers-container{
     // overflow: hidden;
     position: relative;
-    // max-width: 901px;
+    max-width: 901px;
     margin: 0 auto;
-    display: flex;
-    // width: 300px;
+   
 
 }
-// .testifiers{
-// }
+.testifiers{
+    display: flex;
+    width: 300px;
+}
 
 
 .testifier-card{

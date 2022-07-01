@@ -32,21 +32,23 @@
             border: 7px solid transparent;
             border-top-color: var(--secondary);
             position:absolute;
-            top:15px;
+            top:16px;
             left: 50%;
-            z-index:1;
+            z-index:0;
 
             
         }
         #skill-name{
             height: 16px;
-            padding: 4px;
             display:flex;
             align-items: center;
             color:#fff;
             border-radius: 3px 0 0 3px;
-            background: var(--secondary);;
+            background: var(--secondary);
+            margin: 0;
+            position: absolute;
         }
+        
         #skill-level{
             display:block;
             position: absolute;
@@ -54,6 +56,13 @@
             font-weight:700;
             right:0;
             color: rgb(0, 0, 0);
+        }
+        #skill-title{
+            @extend #skill-level;
+            left:0;
+            background: none;
+            color:#fff;
+            font-weight: 500;
         }
     } 
 }

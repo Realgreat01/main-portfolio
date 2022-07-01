@@ -52,16 +52,17 @@ section>h2{
     color:#fff;
     color: var(--tertiary);
     box-shadow: 1px 1px 3px var(--box);
+    overflow:hidden;
 
    
 }
 .project-items img{
-    height: 100%;
+    height: 98%;
     max-width: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 5px auto;
-    background: clip;
+    object-fit: cover;
 }
 .project-data{
     padding: 10px;
@@ -76,8 +77,10 @@ section>h2{
 .project-info{
     position: relative;
     #left{
-        left:10px;
-        top: 80%;
+        right:10px;
+        top: 85%;
+        background: #fff;
+        color: var(--secondary)
     }
     #left-img{
         transform: rotate(315deg)
@@ -89,17 +92,21 @@ section>h2{
 .project-info a{
     position: absolute;
     display:flex;
-    background: #ffffff;
+    background: none;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
-    height: 32px;
+    padding: 10px;
+    height: 20px;
     top: 20px;
-    border-radius: 5px;
-    // flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    width:fit-content;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
 .project-info a img{
-    height: 30px;
+    height: 22.5px;
     margin-left: 10px;
 }
 
@@ -145,7 +152,7 @@ section>h2{
     
     .project-info{
         #left{
-        // left:10px;
+        left:10px;
         top: 20px;
     }
 }

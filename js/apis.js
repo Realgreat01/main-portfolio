@@ -53,7 +53,10 @@ const skills = async()=>{
         frontend.forEach(inner=>{
             inner.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%">${item.skill}</p> <span id="skill-level">${item.level}%</span></div>
+            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+                <span id="skill-title">${item.skill}</span>
+                <span id="skill-level">${item.level}%</span>
+            </div>
             </div>
             `
         });
@@ -63,7 +66,10 @@ const skills = async()=>{
         backend.forEach(inner=>{
             inner.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%">${item.skill}</p> <span id="skill-level">${item.level}%</span></div>
+            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+                <span id="skill-title">${item.skill}</span>
+                <span id="skill-level">${item.level}%</span>
+            </div>
             </div>
             `
         })
@@ -73,7 +79,10 @@ const skills = async()=>{
         design.forEach(inner=>{
             inner.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%">${item.skill}</p> <span id="skill-level">${item.level}%</span></div>
+            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+                <span id="skill-title">${item.skill}</span>
+                <span id="skill-level">${item.level}%</span>
+            </div>
             </div>
             `
         })
@@ -116,8 +125,8 @@ const project =async ()=>{
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque earum magnam!</p>
                 </div>
                 <div class="project-info">
-                    <a href=""><img src="./images/icon-arrow.svg" alt="link">Live Website</a>
-                    <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                    <a href="" id="left">Live Website<img src="./images/icon-arrow.svg" alt="link"></a>
+                    <a href="" id="right">Code On Github<img src="./images/icon-arrow.svg" alt="link"></a>
                     <img src="./images/projects/new.jpg" alt="">
                 </div>
         </div> `
@@ -132,8 +141,7 @@ const project =async ()=>{
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque earum magnam!</p>
                 </div>
                 <div class="project-info">
-                    <a href=""><img src="./images/icon-arrow.svg" alt="link">Live Website</a>
-                    <a href=""><img src="./images/icon-arrow.svg" alt="link"></a>
+                    <a href="" id="right">Instagram<img src="./images/icon-arrow.svg" alt="link"></a>
                     <img src="./images/projects/new.jpg" alt="">
                 </div>
         </div> `
@@ -233,7 +241,7 @@ const testimonials = async ()=>{
     const data = await response.json();
     const {Testimonials} = data;
 
-    const cards = document.getElementById("testifier-container");
+    const cards = document.getElementById("testifiers");
     
     Testimonials.forEach(item=>{
         cards.innerHTML +=`

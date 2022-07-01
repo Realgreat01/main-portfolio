@@ -1,20 +1,21 @@
 @import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
 *{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;;
 }  
 
 body{
-    background:var(--background);
+    background:repeating-linear-gradient(140deg, #fff, #dcfbfc);
     color:var(--primary);
 }
 
 main{
     width: 100vw;
-    margin: 0;
+    margin: 20px 0;
 }
 
 section{

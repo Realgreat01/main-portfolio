@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 :root {
   --primary: rgb(0, 0, 0) ;
   --secondary: #ff0077;
@@ -11,17 +12,17 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
 body {
-  background: var(--background);
+  background: repeating-linear-gradient(140deg, #fff, #dcfbfc);
   color: var(--primary);
 }
 
 main {
   width: 100vw;
-  margin: 0;
+  margin: 20px 0;
 }
 
 section {
@@ -42,7 +43,7 @@ h1, #name-span {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: start;
+  align-items: center;
   z-index: 30;
   width: 100vw;
 }
@@ -78,11 +79,12 @@ nav li a:hover {
 
 #download-btn {
   background: var(--secondary);
-  padding: 14px;
+  padding: 8px 10px;
   border: none;
   border-radius: 1rem;
   font-weight: 700;
   color: white;
+  font-size: 12px;
 }
 
 #download-btn a {
@@ -158,15 +160,12 @@ nav li a:hover {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 900px) {
   .nav-desktop {
     display: none;
   }
   .nav-mobile, .menu-bar {
     display: block;
-  }
-  #download-btn {
-    padding: 10px;
   }
 }
 
@@ -431,15 +430,16 @@ section > h2 {
   color: #fff;
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
+  overflow: hidden;
 }
 
 .project-items img {
-  height: 100%;
+  height: 98%;
   max-width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 5px auto;
-  background: clip;
+  object-fit: cover;
 }
 
 .project-data {
@@ -460,8 +460,10 @@ section > h2 {
 }
 
 .project-info #left {
-  left: 10px;
-  top: 80%;
+  right: 10px;
+  top: 85%;
+  background: #fff;
+  color: var(--secondary);
 }
 
 .project-info #left-img {
@@ -475,17 +477,22 @@ section > h2 {
 .project-info a {
   position: absolute;
   display: flex;
-  background: #ffffff;
+  background: none;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  height: 32px;
+  padding: 10px;
+  height: 20px;
   top: 20px;
-  border-radius: 5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  width: fit-content;
+  color: white;
+  font-weight: 900;
 }
 
 .project-info a img {
-  height: 30px;
+  height: 22.5px;
   margin-left: 10px;
 }
 
@@ -523,6 +530,7 @@ section > h2 {
     max-width: 100%;
   }
   .project-info #left {
+    left: 10px;
     top: 20px;
   }
 }
@@ -630,8 +638,13 @@ section > h2 {
 
 .testifiers-container {
   position: relative;
+  max-width: 901px;
   margin: 0 auto;
+}
+
+.testifiers {
   display: flex;
+  width: 300px;
 }
 
 .testifier-card {
@@ -788,6 +801,8 @@ section > h2 {
   margin: 0 auto;
   width: fit-content;
   color: var(--tertiary);
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 1px 1px 3px var(--box);
 }
 
@@ -797,7 +812,7 @@ section > h2 {
   gap: 5px;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 0px 3px var(--box);
+  box-shadow: 0px 0px 1px var(--box);
 }
 
 .contact-details > div {
@@ -807,12 +822,13 @@ section > h2 {
 }
 
 .contact-details img {
-  height: 30px;
+  height: 40px;
   display: block;
   width: 50px;
   margin: 20% auto;
-  padding: 5px;
-  background: red;
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--dark);
   box-shadow: 1px 1px 3px var(--box);
 }
 
@@ -893,13 +909,20 @@ section > h2 {
   width: 50%;
   padding: 10px;
   margin: 20px auto;
-  color: #fff;
+  color: var(--primary);
   background: var(--background);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 3px var(--box);
   border: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-info button:hover {
+  background: var(--box);
+  color: var(--dark);
 }
 
 .contact-info ::placeholder {
@@ -909,12 +932,8 @@ section > h2 {
 
 .contact-info button img {
   height: 20px;
-  filter: invert(1);
-  margin-left: 10px;
-}
-
-#message {
-  color: var(--primary);
+  margin-left: 20px;
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
@@ -927,6 +946,12 @@ section > h2 {
     min-width: 200px;
     max-width: 350px;
     padding: 10px;
+  }
+  .contact-info button {
+    font-size: 14px;
+  }
+  .contact-info button img {
+    height: 16px;
   }
   .contact-details {
     flex-direction: row;
@@ -945,15 +970,19 @@ section > h2 {
   display: none;
 }
 
-#small-screen {
-  display: block;
-}
-
-#large-info {
-  display: none;
+@media only screen and (max-width: 700px) {
+  #small-screen {
+    display: block;
+  }
+  #large-info {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
+  .large-skills, .bio-large {
+    display: none;
+  }
   #summary {
     grid-template-columns: 1fr 1fr;
   }
@@ -1015,28 +1044,36 @@ section > h2 {
   border: 7px solid transparent;
   border-top-color: var(--secondary);
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: 50%;
-  z-index: 1;
+  z-index: 0;
 }
 
 #progress-container #progress #skill-name {
   height: 16px;
-  padding: 4px;
   display: flex;
   align-items: center;
   color: #fff;
   border-radius: 3px 0 0 3px;
   background: var(--secondary);
+  margin: 0;
+  position: absolute;
 }
 
-#progress-container #progress #skill-level {
+#progress-container #progress #skill-level, #progress-container #progress #skill-title {
   display: block;
   position: absolute;
   padding: 4px;
   font-weight: 700;
   right: 0;
   color: black;
+}
+
+#progress-container #progress #skill-title {
+  left: 0;
+  background: none;
+  color: #fff;
+  font-weight: 500;
 }
 
 .project-data img {
