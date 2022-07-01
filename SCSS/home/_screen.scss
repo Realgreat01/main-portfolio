@@ -2,17 +2,18 @@
     display: none;
 }
 
-@media #{$small-screen} {
     #small-screen{
         display:block;
     }
 
     #large-info{
         display: none;
-    }
-    .large-skills, .bio-large{
-        @extend #large-info ;
-    }
+}
+
+@media #{$small-screen} {
+    // .large-skills, .bio-large{
+    //  #large-info ;
+    // }
 
 
     #summary{

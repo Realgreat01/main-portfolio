@@ -1,0 +1,51 @@
+{
+    "VolunteeringExperience" : [
+        {
+            "Organization" : "United Nations Sustainable Development Solutions Network - Youth",
+            "Program" : "SDG Students Program",
+            "Role" : "Pioneer Campus Coordinator",
+            "Duration" : "2020 - Present",
+            "Certificate" : ""
+        },
+
+        {
+            "Organization" : "United Nations Education and Cultural Organization",
+            "Program" : "SDG4Youth Network",
+            "Role" : "Network Member",
+            "Duration" : "November 2021 - Present",
+            "Certificate" : ""
+        },
+
+        {
+            "Organization" : "StoweLink Inc",
+            "Program" : "365 Days NCDs Awareness Campaign",
+            "Role" : "Campaign Participant",
+            "Duration" : "January - December 2020",
+            "Certificate" : "/ncds.jpg"
+        },
+
+        {
+            "Organization" : "Global Entreprenuers and Leaders Academy",
+            "Program" : "Volunteering",
+            "Role" :"Asst. Leader Moderators Committee",
+            "Duration" : "January - December 2020",
+            "Certificate" : "/gela.jpg"
+        }
+    ],
+
+    "WorkExperience" : [
+        {
+            "Company" : "FlutterWave",
+            "Role" : "Barter Student Ambassador",
+            "Duration" : "January 2021 - June 2021",
+            "Certificate" : "barter.jpg"
+        },
+
+        {
+            "Company" : "myStash Technologies",
+            "Role" : "Student Ambassador",
+            "Duration" : "August 2021 - Present",
+            "Certificate" : "/mystash.jpg"
+        }
+    ]
+}

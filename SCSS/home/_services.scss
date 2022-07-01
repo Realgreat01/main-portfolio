@@ -11,7 +11,6 @@ section>h2{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    color: #fff;
 }
 .services p{
     opacity: 0.5
@@ -24,6 +23,8 @@ section>h2{
     max-width: 80%;
     min-width: 240px;
     height: 300px;
+    color: var(--tertiary);
+    box-shadow: 1px 1px 3px var(--box);
 }
 .services-box img{
     height: 50px;
@@ -49,6 +50,10 @@ section>h2{
     margin: 10px;
     justify-self: stretch;
     color:#fff;
+    color: var(--tertiary);
+    box-shadow: 1px 1px 3px var(--box);
+
+   
 }
 .project-items img{
     height: 100%;
@@ -70,13 +75,32 @@ section>h2{
 }
 .project-info{
     position: relative;
+    #left{
+        left:10px;
+        top: 80%;
+    }
+    #left-img{
+        transform: rotate(315deg)
+    }
+    #right{
+        right:10px;
+    }
 }
 .project-info a{
     position: absolute;
-    right: 10px;
+    display:flex;
+    background: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 32px;
+    top: 20px;
+    border-radius: 5px;
+    // flex-direction: column;
 }
 .project-info a img{
-    height: 40px;
+    height: 30px;
+    margin-left: 10px;
 }
 
 
@@ -119,5 +143,10 @@ section>h2{
         max-width: 100%;
     }
     
-    
+    .project-info{
+        #left{
+        // left:10px;
+        top: 20px;
+    }
+}
 }

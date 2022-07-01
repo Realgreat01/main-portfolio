@@ -1,0 +1,96 @@
+{
+    "FrontEnd" : [
+        {
+            "skill": "HTML", 
+            "level" : 98,
+            "icon" : "html.svg"
+        },
+        {
+            "skill": "CSS", 
+            "level" : 88,
+            "icon" : "css.svg"
+        },
+        {
+            "skill": "Javascript", 
+            "level" : 86,
+            "icon" : "javascript.svg"
+        },
+        {
+            "skill": "TailWind", 
+            "level" : 70,
+            "icon" : "tailwindcss.svg"
+        },
+        {
+            "skill": "Vue", 
+            "level" : 60,
+            "icon" : "vue.svg"
+        },
+        {
+            "skill": "Sass", 
+            "level" : 80,
+            "icon" : "sass.svg"
+        }
+
+    ],
+
+    "BackEnd" : [
+        {
+            "skill": "Node JS", 
+            "level" : 60,
+            "icon" : "nodejs-3.svg"
+        },
+        {
+            "skill": "Mongo Db", 
+            "level" : 20,
+            "icon" : "mongodb.svg"
+        },
+        {
+            "skill": "Firebase", 
+            "level" : 40,
+            "icon" : "firebase.svg"
+        },
+        {
+            "skill": "Python", 
+            "level" : 5,
+            "icon" : "python.svg"
+        },
+        {
+            "skill": "PHP", 
+            "level" : 2,
+            "icon" : "php.svg"
+        },
+        {
+            "skill": "C #", 
+            "level" : 0,
+            "icon" : "c-sharp.svg"
+        }
+    ],
+
+    "Design" : [
+        {
+            "skill": "Figma", 
+            "level" : 52,
+            "icon" : "figma.svg"
+        },
+        {
+            "skill": "Illustrator", 
+            "level" : 88,
+            "icon" : "illustrator.svg"
+        },
+        {
+            "skill": "Word Press", 
+            "level" : 88,
+            "icon" : "wordpress.svg"
+        },
+        {
+            "skill": "Indesign", 
+            "level" : 88,
+            "icon" : "indesign.svg"
+        },
+        {
+            "skill": "Adobe XD", 
+            "level" : 88,
+            "icon" : "adobe-xd.svg"
+        }
+    ]
+}

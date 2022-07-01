@@ -3,32 +3,36 @@
         {
             "name" : "Tip calculator",
             "website" : "www.github.com/tip",
+            "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
-            "date" : "November, 2021",
+            "date" : "May, 2022",
             "src" : "tip-calculator.jpg"
         },
 
         {
             "name" : "Fylo Landing Page",
             "website" : "www.github.com/tip",
+            "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
-            "date" : "November, 2021",
+            "date" : "May, 2021",
             "src" : "fylo.jpg"
         },
 
         {
             "name" : "Calculator",
             "website" : "www.github.com/tip",
+            "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
-            "date" : "November, 2021",
+            "date" : "April, 2021",
             "src" : "calculator.jpg"
         },
 
         {
-            "name" : "Todo App",
+            "name" : "Job Filter App",
             "website" : "www.github.com/tip",
+            "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
-            "date" : "November, 2022",
+            "date" : "June, 2022",
             "src" : "book.jpg"
         }
 

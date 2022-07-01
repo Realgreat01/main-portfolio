@@ -1,0 +1,39 @@
+{
+    "Testimonials" : [
+        {
+            "name" : "Anita Mwagiru",
+            "position" : "Project Lead, SDG Student Program",
+            "photo" : "./anita.png",
+            "rating" : 5,
+            "comment" : "Lorem 10"
+        },
+        {
+            "name" : "Anita Mwagiru",
+            "position" : "Project Lead, SDG Student Program",
+            "photo" : "./anita.png",
+            "rating" : 5,
+            "comment" : "Lorem 10"
+        },
+        {
+            "name" : "Anita Mwagiru",
+            "position" : "Project Lead, SDG Student Program",
+            "photo" : "./anita.png",
+            "rating" : 5,
+            "comment" : "Lorem 10"
+        },
+        {
+            "name" : "Anita Mwagiru",
+            "position" : "Project Lead, SDG Student Program",
+            "photo" : "./anita.png",
+            "rating" : 5,
+            "comment" : "Lorem 10"
+        },
+        {
+            "name" : "Anita Mwagiru",
+            "position" : "Project Lead, SDG Student Program",
+            "photo" : "./anita.png",
+            "rating" : 5,
+            "comment" : "Lorem 10"
+        }
+    ]
+}

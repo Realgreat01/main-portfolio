@@ -107,12 +107,15 @@
         margin-top: 50px;
         align-self: stretch;
         justify-self: stretch;
+        color: var(--tertiary);
+        box-shadow: 1px 1px 3px var(--box);
+
         @media #{$small-screen}{
             height: 250px;
         }
 
         h4{
-            color: #fff;
+            color: var(--secondary);
         }
     }
     .skill-tools{
@@ -138,16 +141,16 @@
             width: 35px;
         }
 
-        img{
-            width: 25px;
-            height: 25px;
-            display: block;
-            margin: 10px;
+        // img{
+        //     width: 25px;
+        //     height: 25px;
+        //     display: block;
+        //     margin: 10px;
 
-            &:hover{
-                transform: scale(1.2)
-            }
-        }
+        //     &:hover{
+        //         transform: scale(1.2)
+        //     }
+        // }
 
     }
 
@@ -164,8 +167,8 @@
         }
         
         h4{
-            color: #fff;
-            margin-bottom: 0;
+            margin-bottom: 10px;
+            color: var(--secondary);
         }
 
         &>div{
@@ -183,6 +186,8 @@
             align-self: stretch;
             justify-self: stretch;
             height: 100px;
+            color: var(--tertiary);
+            box-shadow: 1px 1px 3px var(--box);
         }
         p{  
             color: var(--secondary);

@@ -5,10 +5,10 @@
 }
 
 //NAVIGATION BAR
- #nav{
-    // position: fixed;
-    // background: red;
- }
+//  #nav{
+//     // position: fixed;
+//     // background: red;
+//  }
 nav{
     display: flex;
     justify-content: space-around;
@@ -141,7 +141,7 @@ nav{
     @extend #dark ;
 }
 
-@media #{$small-screen}{
+@media only screen and (max-width: 1600px){
     .nav-desktop{
         display: none;
     }

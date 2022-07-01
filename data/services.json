@@ -1,0 +1,34 @@
+{
+    "Services" : [
+        {
+            "title" : "Web Development",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        },
+        {
+            "title" : "UI/UX Design",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        },
+        {
+            "title" : "Graphics Design",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        },
+        {
+            "title" : "e-Publishing",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        },
+        {
+            "title" : "Community Development",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        },
+        {
+            "title" : "Business Development",
+            "icon" : "web.svg",
+            "description" : "lorem 23"
+        }
+    ]
+}

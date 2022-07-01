@@ -1,26 +1,26 @@
 .education{
     border-left: 3px solid var(--secondary);
+    
 
     /* position: relative; */
 }
 
 .education-box{
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
 }
 
 .education>div{
     display: flex;
     align-items: center;
-
 }
 
 .dots::before{
-    content: " ";
+    content: "";
     height: 10px;
     width: 10px;
-    /* border:2px solid var(--secondary); */
-    background: var(--tertiary);
+    border:1px solid var(--secondary);
+    background: var(--secondary);
     display: block;
     border-radius: 50%;
     margin-top:-10%;
@@ -28,23 +28,27 @@
 }
 
 .dots{
-    background: var(--dark);
+    background: var(--tertiary);
     width: 50px; 
     height: 3px;
     display:flex;
     position: relative;
-    right: 5px;
+    right: 7.5px;
+    z-index: 0;
 }
 
 .education-item{
     background: var(--dark);
     min-width: 300px;
     max-width: 350px;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
     color:#fff;
+    color: var(--tertiary);
+    box-shadow: 1px 1px 3px var(--box);
+    z-index:2;
 }
 .education h2{
     font-size: 1.2rem;

@@ -5,21 +5,23 @@
 }
 .client img{
     height: 30px;
-    background: var(--tertiary);
+    background: none;
+    border: 1px solid #fff;
 }
 #back{
     transform: rotate(180deg)
 }
 .testifiers-container{
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
-    max-width: 901px;
+    // max-width: 901px;
     margin: 0 auto;
-}
-.testifiers{
     display: flex;
-    width: 300px;
+    // width: 300px;
+
 }
+// .testifiers{
+// }
 
 
 .testifier-card{
@@ -29,6 +31,8 @@
     padding: 10px;
     border-radius: 10px;
     margin-right: 50px;
+    color: var(--tertiary);
+    box-shadow: 1px 1px 3px var(--box);
 }
 
 .testifier-head{
@@ -103,9 +107,11 @@
 }
 .partners-logo{
      background: var(--dark);
-     margin: 10px;
+     margin: 100px 10px;
      min-width: 200px;
      border-radius: 5px;
+    color: var(--tertiary);
+    box-shadow: 1px 1px 3px var(--box);
 }
 .partners-logo img{
     padding: 10px;
@@ -113,14 +119,13 @@
     display:block;
     max-width: 180px;
     margin: 0 auto;
-    filter: brightness(0) invert(1)
 }
 .partners-logo:hover > img{
-    filter:none
+    filter: brightness(0) invert(1);
 }
 
 .partners-logo:hover{
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 @media screen and (max-width: 600px) {

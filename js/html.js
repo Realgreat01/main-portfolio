@@ -1,9 +1,4 @@
 let mainNav = document.getElementById("main-nav");
-
-
-
-
-
 mainNav.innerHTML = `
 <nav id="nav">
     <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
@@ -34,3 +29,5 @@ mainNav.innerHTML = `
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </div>`
+
+console.log(window.innerWidth)

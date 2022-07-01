@@ -37,6 +37,7 @@ const darkMode = ()=>{
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
     body.style.setProperty('--tertiary', '#ff0077');
+    body.style.setProperty('--dark', '#f9f9fc');
     body.style.setProperty('--background', '#fff');
   
     // images.forEach((image)=>{
@@ -66,16 +67,17 @@ const darkMode = ()=>{
     body.style.setProperty('--primary', '#fff');
     body.style.setProperty('--secondary', '#2929f8');
     body.style.setProperty('--tertiary', '#ff0077');
-    body.style.setProperty('--background', '#050000')
-  
-      //  images.forEach((image)=>{
+    body.style.setProperty('--dark', '#2d2d30');
+    body.style.setProperty('--background', '#050000');
+    
+    //  images.forEach((image)=>{
       // image.style.filter = "grayscale(100%)";
-
-    //   image.addEventListener("mouseover", ()=>{
-    //     image.style.filter="none"
-    //   });
-    //   image.addEventListener("mouseout", ()=>{
-    //     image.style.filter="grayscale(100%)"
+      
+      //   image.addEventListener("mouseover", ()=>{
+        //     image.style.filter="none"
+        //   });
+        //   image.addEventListener("mouseout", ()=>{
+          //     image.style.filter="grayscale(100%)"
     //   });
 
     // });
@@ -97,14 +99,14 @@ const darkMode = ()=>{
 //     navbar.style.background="none";
    
 //   } else {
-//     navbar.style.position="fixed";
-//     navbar.style.background="red";
-//     navbar.style.transition="1s";
-//   }
-//   scrollval = window.scrollY;
-// });
-
-const showMenu =()=>{
+  //     navbar.style.position="fixed";
+  //     navbar.style.background="red";
+  //     navbar.style.transition="1s";
+  //   }
+  //   scrollval = window.scrollY;
+  // });
+  
+  const showMenu =()=>{
   if(mobileNav.style.height="0"){
     mobileNav.style.height="300px";
   }

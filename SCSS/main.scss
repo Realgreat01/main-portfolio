@@ -1,9 +1,10 @@
 :root{
-    --primary: #fff ;
-    --secondary: #002fff;
-    --tertiary: #ff0077;
-    --dark: #202022;
-    --background: #000000;
+    --primary: rgb(0, 0, 0) ;
+    --secondary: #ff0077;
+    --tertiary: #0126f7;
+    --dark: #fff;
+    --background: #ffffff;
+    --box: #0481f5;
 }
 
 //  Variables
@@ -53,6 +54,6 @@
 @import "./home/testimonial";
 @import "./home/contact";
 @import "./home/screen";
-
+@import "./home/skills_icons";
 
 @import "./projects/projects";
