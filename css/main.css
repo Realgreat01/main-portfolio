@@ -2,7 +2,7 @@
 :root {
   --primary: #000 ;
   --secondary: #ff0077;
-  --tertiary: #0126f7;
+  --tertiary: #006eff;
   --dark: #fff;
   --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479), #dcfbfc8a);
   --box: #6bb5fa;
@@ -50,7 +50,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   z-index: 30;
-  height: 40px;
+  height: 50px;
   width: 100vw;
   margin: -10px -20px;
 }

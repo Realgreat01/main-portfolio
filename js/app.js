@@ -36,7 +36,7 @@ clearInterval(projectAdd, 3000)
 const darkMode = ()=>{
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
-    body.style.setProperty('--tertiary', '#0126f7');
+    body.style.setProperty('--tertiary', '#006eff');
     body.style.setProperty('--dark', '#fff');
     body.style.setProperty('--background', 'linear-gradient(140deg, #fff, #dcfbfc)');
     body.style.setProperty('--box', '#6bb5fa');
