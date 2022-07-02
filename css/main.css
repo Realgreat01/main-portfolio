@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 :root {
-  --primary: rgb(0, 0, 0) ;
+  --primary: #000 ;
   --secondary: #ff0077;
   --tertiary: #0126f7;
   --dark: #fff;
-  --background: #ffffff;
-  --box: #0481f5;
+  --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479), #dcfbfc8a);
+  --box: #6bb5fa;
+  --nav: #b9f4f5;
 }
 
 * {
@@ -16,12 +17,16 @@
 }
 
 body {
-  background: repeating-linear-gradient(140deg, #fff, #dcfbfc);
+  background: var(--background);
   color: var(--primary);
 }
 
 main {
   width: 100vw;
+  margin: 0;
+}
+
+#main {
   margin: 20px 0;
 }
 
@@ -45,11 +50,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   z-index: 30;
+  height: 40px;
   width: 100vw;
+  margin: -10px -20px;
 }
 
 nav .nav-flex {
   display: flex;
+  position: relative;
 }
 
 nav li {
@@ -61,7 +69,8 @@ nav li {
   padding: 5px;
   text-align: center;
   border-radius: 5px;
-  transition: 1s;
+  transition: 0.5s;
+  font-size: 18px;
 }
 
 nav li:hover {
@@ -69,12 +78,12 @@ nav li:hover {
   background: var(--secondary);
 }
 
-nav li a {
-  color: var(--primary);
+nav li:hover a {
+  color: #fff;
 }
 
-nav li a:hover {
-  color: #fff;
+nav li a {
+  color: var(--primary);
 }
 
 #download-btn {
@@ -89,6 +98,11 @@ nav li a:hover {
 
 #download-btn a {
   color: #fff;
+}
+
+.logo img {
+  height: 30px;
+  width: 30px;
 }
 
 .menu-bar {
@@ -112,7 +126,7 @@ nav li a:hover {
   display: none;
   width: 50vw;
   height: 0px;
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 10;
   top: 25px;
@@ -122,7 +136,7 @@ nav li a:hover {
 }
 
 .nav-mobile li {
-  background: var(--tertiary);
+  background: var(--secondary);
   color: #fff;
   margin: 10px;
   text-align: right;
@@ -143,20 +157,31 @@ nav li a:hover {
 }
 
 #mode {
-  background: green;
   position: relative;
   display: flex;
-  height: 50px;
+  height: fit-content;
+  z-index: 20;
+  height: 25px;
+  background: #000;
 }
 
 #mode img {
   position: absolute;
-  height: 50%;
+  height: 100%;
   display: block;
   cursor: pointer;
+  top: 0;
 }
 
-#dark, #cancel-icon {
+#light {
+  visibility: hidden;
+}
+
+#dark {
+  visibility: visible;
+}
+
+#cancel-icon {
   visibility: hidden;
 }
 
@@ -210,16 +235,18 @@ nav li a:hover {
 
 #info-lead p {
   width: 80%;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-#info-lead #read-more {
+#info-lead .read-more {
   background: var(--secondary);
   border: none;
   border-radius: 4px;
-}
-
-#info-lead #read-more a {
   color: #fff;
+  padding: 4px;
+  margin: 0 3px;
+  display: inline-block;
 }
 
 .socials img {
@@ -609,14 +636,12 @@ section > h2 {
     margin: 0 auto;
   }
   .education-item {
-    background: var(--dark);
     min-width: 200px;
     max-width: 80%;
     padding: 20px;
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
-    color: #fff;
   }
 }
 

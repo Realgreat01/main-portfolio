@@ -14,10 +14,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     z-index: 30;
+    height: 40px;
     // transition: 0.5s;
     width:$full;
+    margin: -10px -20px; 
     .nav-flex{
-    display:flex; 
+    display:flex;
+    position: relative;
  }
 
 //  NAV BAR LIST ITEMS
@@ -30,19 +33,19 @@ nav{
         padding: 5px;
         text-align: center;
         border-radius: 5px;
-        transition:1s;
-
+        transition:0.5s;
+        font-size: 18px;
         &:hover{
             color: #fff;
             background: var(--secondary);
+            a{
+                color: #fff
+            }
         }
 
        a{
             color: var(--primary);
-        
-            &:hover{
-                color: #fff
-        }}
+        }
 
     }
     // END OF LIST ITEMS
@@ -66,6 +69,10 @@ nav{
     }
 }
 
+.logo img{
+    height: 30px;
+    width: 30px;
+}
  .menu-bar{
     display:none;
     position: relative;
@@ -87,7 +94,7 @@ nav{
     display:none;
     width: 50vw;
     height: 0px;
-    position: absolute;
+    position: fixed;
     right: 0;
     z-index: 10;
     top: 25px;
@@ -99,7 +106,7 @@ nav{
 //     height:0px;
 // }
     li{
-        background: var(--tertiary);
+        background: var(--secondary);
         color: #fff;
         margin: 10px;
         text-align: right;
@@ -121,25 +128,30 @@ nav{
 
 // DARK AND LIGHT MODES
 #mode{
-    background:green;
     position: relative;
     display:flex;
-    height:50px; 
-    
+    height: fit-content;
+    z-index:20;
+    height: 25px;
+    background: #000;
     img{
     position:absolute;
-    height: 50%;
+    height: 100%;
     display:block;
     cursor: pointer;
+    top:0;
   }
 }
 
-#dark{
+#light{
     visibility:hidden;
+}
+#dark{
+    visibility:visible;
 }
 
 #cancel-icon{
-    @extend #dark ;
+    visibility: hidden;
 }
 
 @media only screen and (max-width: 900px){

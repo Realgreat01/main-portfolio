@@ -9,15 +9,18 @@
 }  
 
 body{
-    background:repeating-linear-gradient(140deg, #fff, #dcfbfc);
+    // background:repeating-linear-gradient(140deg, #fff, #dcfbfc);
+    background: var(--background);
     color:var(--primary);
 }
 
 main{
     width: 100vw;
+    margin: 0;
+}
+#main{
     margin: 20px 0;
 }
-
 section{
     margin: $center;
     width: 90%;

@@ -1,10 +1,17 @@
 :root{
-    --primary: rgb(0, 0, 0) ;
+    // --primary: #fff ;
+    // --secondary: #fa2388;
+    // --tertiary: #7afa03;
+    // --dark: #1a0129;
+    // --background: linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f);;
+    // --box: #52606d;
+    --primary: #000 ;
     --secondary: #ff0077;
     --tertiary: #0126f7;
     --dark: #fff;
-    --background: #ffffff;
-    --box: #0481f5;
+    --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479), #dcfbfc8a);
+    --box: #6bb5fa;
+    --nav: #b9f4f5;
 }
 
 //  Variables

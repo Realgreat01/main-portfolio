@@ -53,15 +53,20 @@
 
     p{
         width: 80%;
+        // border: 1px solid var(--box);
+        padding: 15px;
+        border-radius: 10px;
     }
 
-    #read-more{
+    .read-more{
         background: var(--secondary);
         border:none;
         border-radius: 4px;
-   a{
         color: #fff;
-    }}
+        padding: 4px;
+        margin: 0 3px;
+        display:inline-block;
+    }
 }
 
 
