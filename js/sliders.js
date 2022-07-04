@@ -1,5 +1,5 @@
-
-let slider = document.querySelector(".testifiers");
+setTimeout(()=>{
+ let slider = document.querySelector(".testifiers");
 let container = document.querySelector("#testifier-container");
 let cards = document.querySelectorAll(".testifier-card");
 let prevBtn = document.getElementById("back");
@@ -7,6 +7,7 @@ let nextBtn = document.getElementById("next");
 
 // console.log(slider, cards, prevBtn, nextBtn);
 
+console.log(cards)
 let counter = 1;
 let size= cards[0].clientWidth;
 
@@ -45,4 +46,4 @@ slider.addEventListener("transitionend", transition);
 nextBtn.addEventListener("click", nextFunction)
 prevBtn.addEventListener("click", backFunction);
 
-setInterval(nextFunction,3000)
+}, 1000)

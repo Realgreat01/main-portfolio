@@ -1,5 +1,6 @@
 let partnerBox = document.querySelector(".partners-box");
 let logo = document.querySelectorAll(".partners-logo");
+let container = document.querySelector(".partner-container");
 
 
 
@@ -18,11 +19,11 @@ const partnerSlider =()=>{
     // console.log(logo[count])
 }
 
-const transitionEnd = ()=>{
+const transitionEnd = ()=>{ 
     if(logo[count].id === 'lastPartner'){
         partnerBox.style.transition = "none";
         count = logo.length-count;
-        partnerBox.style.transform= "translateX(" + (-size * count)+ "px)";
+        partnerBox.style.transform= "translateX(" + (-partner * count)+ "px)";
         // console.log(count)
     }
 

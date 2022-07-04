@@ -6,7 +6,7 @@
             "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
             "date" : "May, 2022",
-            "src" : "tip-calculator.jpg"
+            "src" : "tip-calculator.png"
         },
 
         {
@@ -15,16 +15,16 @@
             "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
             "date" : "May, 2021",
-            "src" : "fylo.jpg"
+            "src" : "fylo.gif"
         },
 
         {
-            "name" : "Calculator",
+            "name" : "E-Commmerce Website",
             "website" : "www.github.com/tip",
             "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
             "date" : "April, 2021",
-            "src" : "calculator.jpg"
+            "src" : "e-commerce.png"
         },
 
         {
@@ -33,7 +33,7 @@
             "github" : "www.reealgrest.com/github.io",
             "description" : "This is a project I am so much interested in",
             "date" : "June, 2022",
-            "src" : "book.jpg"
+            "src" : "job-filter.png"
         }
 
     ],

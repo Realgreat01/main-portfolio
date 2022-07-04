@@ -16,8 +16,7 @@ nav{
     z-index: 30;
     height: 50px;
     // transition: 0.5s;
-    width:$full;
-    margin: -10px -20px; 
+    width:100vw; 
     .nav-flex{
     display:flex;
     position: relative;
@@ -92,25 +91,26 @@ nav{
 
 .nav-mobile{
     display:none;
-    width: 50vw;
+    width: 100vw;
     height: 0px;
     position: fixed;
-    right: 0;
+    right: 2px;
     z-index: 10;
     top: 25px;
     color:#fff;
     overflow-y: hidden;
     transition: 1s;
+    background: #000;
+    display:flex;
 
-// &:{
-//     height:0px;
-// }
+
     li{
         background: var(--secondary);
         color: #fff;
-        margin: 10px;
+        margin: 10px 0;
         text-align: right;
         padding: 10px;
+        // max-width: 50vw;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: 500;
@@ -162,8 +162,7 @@ nav{
         display:block;
     };
 
-    // #download-btn{
-    //     // padding:10px;
-    //     // border-radius: 10px;
-    // }
+    .nav-mobile{
+    margin: 0; 
+    }
 }

@@ -1,42 +1,3 @@
-const projectData = document.getElementById("project-data");
-const designData = document.getElementById("design-data");
-
-const getData = async () =>{
-    const  response = await fetch("./data/projects.json");
-    const data = await response.json();
-    const {FrontEnd, Designs } = data;
-  
-
-    // Creating Project Page DOM
-    FrontEnd.forEach(project=>{
-        projectData.innerHTML += `
-        <div class="project-data">
-        <div>
-        <h1> ${project.name} </h1>  
-        <p> ${project.website} </p>  
-        <h4> ${project.date} </h4>
-        </div>
-        <img src="./images/projects/${project.src}">
-        </div>
-        `
-    })
-    
-    // Creating Design Page DOM
-    Designs.forEach(design=>{
-        designData.innerHTML +=
-        `
-        <div class="design-data">
-            <div>
-                <h1> ${design.name} </h1>
-            </div>
-        </div>
-    `;
-})
-}
-
-getData()
-
-
 const skills = async()=>{
     const response = await fetch("./data/skills.json");
     const data = await response.json();
@@ -127,7 +88,7 @@ const project =async ()=>{
                 <div class="project-info">
                     <a href="" id="left">Live Website<img src="./images/icon-arrow.svg" alt="link"></a>
                     <a href="" id="right">Code On Github<img src="./images/icon-arrow.svg" alt="link"></a>
-                    <img src="./images/projects/new.jpg" alt="">
+                    <img src="./images/projects/${frontend.src} " alt="">
                 </div>
         </div> `
     });
@@ -246,16 +207,16 @@ const testimonials = async ()=>{
     Testimonials.forEach(item=>{
         cards.innerHTML +=`
     <div class="testifier-card">
-    <div class="testifier-head">
-        <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
-        <div class="rating">
-            <img src="./images/star.svg" alt="">
-            <img src="./images/star.svg" alt="">
-            <img src="./images/star.svg" alt="">
-            <img src="./images/star.svg" alt="">
-            <img src="./images/star.svg" alt="">
+        <div class="testifier-head">
+                <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
+                <div class="rating">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                    <img src="./images/star.svg" alt="">
+                </div>
         </div>
-    </div>
 
         <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
 
@@ -269,6 +230,7 @@ const testimonials = async ()=>{
     </div>
     `
     })
+    
 }
 
 testimonials()

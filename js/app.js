@@ -97,7 +97,7 @@ const darkMode = ()=>{
   
   const showMenu =()=>{
   if(mobileNav.style.height="0"){
-    mobileNav.style.height="300px";
+    mobileNav.style.height="100%";
   }
   menuIcon.style.visibility="hidden";
   cancelIcon.style.visibility="visible";
