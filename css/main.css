@@ -16,6 +16,13 @@
   font-family: 'League Spartan', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'League Spartan', sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--primary);
@@ -57,7 +64,7 @@ h1, #name-span {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 30;
   height: 50px;
@@ -115,41 +122,50 @@ nav li a {
 }
 
 .menu-bar {
-  display: none;
+  display: flex;
   position: relative;
   height: 30px;
   width: 30px;
-  background: #fff;
-  padding: 10px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 7px;
 }
 
 .menu-bar img {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+}
+
+.mobile {
+  position: absolute;
+  justify-content: left;
+  background: red;
 }
 
 .nav-mobile {
-  display: none;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
   width: 100vw;
   height: 0px;
   position: fixed;
-  right: 2px;
+  right: 0;
   z-index: 10;
   top: 25px;
   color: #fff;
   overflow-y: hidden;
   transition: 1s;
-  background: #000;
-  display: flex;
+  background: rgba(252, 252, 252, 0);
 }
 
 .nav-mobile li {
   background: var(--secondary);
   color: #fff;
-  margin: 10px 0;
+  width: 200px;
+  margin: 10px;
   text-align: right;
   padding: 10px;
   font-size: 0.7rem;
@@ -200,11 +216,11 @@ nav li a {
   .nav-desktop {
     display: none;
   }
-  .nav-mobile, .menu-bar {
-    display: block;
+  .menu-bar {
+    display: flex;
   }
   .nav-mobile {
-    margin: 0;
+    display: flex;
   }
 }
 
@@ -663,12 +679,12 @@ section > h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 
 .client img {
   height: 30px;
   background: none;
-  border: 1px solid #fff;
 }
 
 #back {

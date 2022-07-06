@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
 }
 .client img{
     height: 30px;
     background: none;
-    border: 1px solid #fff;
 }
 #back{
     transform: rotate(180deg)

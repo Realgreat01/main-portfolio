@@ -10,7 +10,7 @@ mainNav.innerHTML = `
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <button id="download-btn"><a href="https://drive.google.com/file/d/1IIM8d8r_jGrfSMGVOPqktD-AEObEOu2-/view?usp=sharing" target ="_blank" download>Download CV</a></button>
+    <button id="download-btn"><a href="../documents/Samson Ikuomenisan CV.pdf" target ="_blank" download>Download CV</a></button>
    <div id="mode">
         <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
         <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">

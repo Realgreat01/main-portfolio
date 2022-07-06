@@ -11,12 +11,12 @@
 //  }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 30;
     height: 50px;
     // transition: 0.5s;
-    width:100vw; 
+    width:100vw;
     .nav-flex{
     display:flex;
     position: relative;
@@ -73,44 +73,53 @@ nav{
     width: 30px;
 }
  .menu-bar{
-    display:none;
+    display:flex;
     position: relative;
     height:30px;
     width: 30px;
-    background: #fff;
-    padding: 10px;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 7px;
 
     img{
-        position: absolute ;
-        top:0;
-        left:0;
-        height:30px;
-        width: 30px;
+        position: absolute;
+        height:25px;
+        width: 25px;
     }
 };
 
+.mobile{
+    position: absolute;
+    justify-content: left;
+    background: red;
+}
 .nav-mobile{
-    display:none;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
     width: 100vw;
     height: 0px;
     position: fixed;
-    right: 2px;
+    right: 0;
     z-index: 10;
     top: 25px;
     color:#fff;
     overflow-y: hidden;
     transition: 1s;
-    background: #000;
-    display:flex;
+    background: rgba(252, 252, 252, 0);
 
-
+// &:{
+//     height:0px;
+// }
     li{
         background: var(--secondary);
         color: #fff;
-        margin: 10px 0;
+        width: 200px;
+        margin: 10px;
         text-align: right;
         padding: 10px;
-        // max-width: 50vw;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: 500;
@@ -158,11 +167,15 @@ nav{
     .nav-desktop{
         display: none;
     }
-    .nav-mobile, .menu-bar{
-        display:block;
+    .menu-bar{
+        display:flex;
     };
-
     .nav-mobile{
-    margin: 0; 
+        display:flex;
     }
+
+    // #download-btn{
+    //     // padding:10px;
+    //     // border-radius: 10px;
+    // }
 }
