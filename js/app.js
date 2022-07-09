@@ -76,7 +76,7 @@ const darkMode = ()=>{
   let scrollval = 900;
   window.addEventListener('scroll', () => {
     if(scrollval >  window.scrollY) {
-      navbar.style.position="static"; 
+      navbar.style.position=""; 
       navbar.style.background="none";
       console.log("scroll up")
       
@@ -89,7 +89,7 @@ const darkMode = ()=>{
       navbar.style.position="fixed";
           navbar.style.background="var(--nav)";
           navbar.style.transition="1s";
-          navbar.style.top="10px";
+          // navbar.style.top="10px";
 
         }
     scrollval=window.scrollY;

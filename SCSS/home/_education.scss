@@ -1,13 +1,17 @@
 .education{
     border-left: 3px solid var(--secondary);
+    max-width: 90vw;
     
-
+    margin: 0 auto;
     /* position: relative; */
 }
 
 .education-box{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    margin: 0 auto;
+
 }
 
 .education>div{
@@ -19,8 +23,8 @@
     content: "";
     height: 10px;
     width: 10px;
-    border:1px solid var(--secondary);
-    background: var(--secondary);
+    border:1px solid var(--dark);
+    background: var(--tertiary);
     display: block;
     border-radius: 50%;
     margin-top:-10%;
@@ -28,8 +32,8 @@
 }
 
 .dots{
-    background: var(--tertiary);
-    width: 50px; 
+    background: var(--secondary);
+    min-width: 50px; 
     height: 3px;
     display:flex;
     position: relative;
@@ -40,7 +44,7 @@
 .education-item{
     background: var(--dark);
     min-width: 300px;
-    max-width: 350px;
+    max-width: 320px;
     padding: 10px 20px;
     margin: 10px;
     margin-left: -10px;
@@ -72,15 +76,20 @@
     .education-box{
         display:grid;
         grid-template-columns: 1fr;
+        width: 96vw;
         margin:0 auto;
     }
 
     .education-item{
-        min-width: 200px;
-        max-width: 80%;
+        min-width: 180px;
+        max-width: 300px;
         padding: 20px;
         margin: 10px;
         margin-left: -10px;
         border-radius: 10px;
+    }
+    .dots{
+        background: var(--secondary);
+        min-width: 40px;
     }
 }

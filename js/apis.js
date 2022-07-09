@@ -103,7 +103,7 @@ const project =async ()=>{
                 </div>
                 <div class="project-info">
                     <a href="" id="right">Instagram<img src="./images/icon-arrow.svg" alt="link"></a>
-                    <img src="./images/projects/new.jpg" alt="">
+                    <img src="./images/projects/fylo.gif" alt="">
                 </div>
         </div> `
     })

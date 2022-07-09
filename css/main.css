@@ -26,20 +26,17 @@
 body {
   background: var(--background);
   color: var(--primary);
-}
-
-main {
-  max-width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
 #main {
-  width: 100vw;
-  overflow-x: hidden;
+  width: 94vw;
+  margin: 0 auto;
 }
 
 section {
   margin: 0 auto;
-  width: 90%;
   min-height: 300px;
   max-height: fit-content;
   padding-bottom: 12px;
@@ -50,12 +47,6 @@ section > h2 {
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  section {
-    width: 98%;
-  }
-}
-
 h1, #name-span {
   font-size: 24px;
   font-family: 'League Gothic';
@@ -64,7 +55,7 @@ h1, #name-span {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 30;
   height: 50px;
@@ -142,23 +133,19 @@ nav li a {
 .mobile {
   position: absolute;
   justify-content: left;
-  background: red;
 }
 
 .nav-mobile {
   flex-direction: column;
-  justify-content: right;
-  align-items: end;
-  width: 100vw;
   height: 0px;
   position: fixed;
-  right: 0;
+  right: 2px;
+  margin: 0 auto;
   z-index: 10;
   top: 25px;
   color: #fff;
   overflow-y: hidden;
   transition: 1s;
-  background: rgba(252, 252, 252, 0);
 }
 
 .nav-mobile li {
@@ -213,6 +200,9 @@ nav li a {
 }
 
 @media only screen and (max-width: 900px) {
+  nav {
+    width: 94vw;
+  }
   .nav-desktop {
     display: none;
   }
@@ -227,6 +217,8 @@ nav li a {
 #summary {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  width: 90vw;
+  justify-content: center;
 }
 
 .summary-items {
@@ -263,10 +255,14 @@ nav li a {
   margin-bottom: 0;
 }
 
-#info-lead p {
-  width: 80%;
-  padding: 15px;
+#info-lead #large-info {
   border-radius: 10px;
+  width: 80%;
+}
+
+#info-lead #small-info {
+  border-radius: 10px;
+  width: 98%;
 }
 
 #info-lead .read-more {
@@ -299,15 +295,16 @@ nav li a {
 
 @media (max-width: 600px) {
   .skills {
-    width: 100%;
+    width: 90vw;
     margin: 0;
+    margin: 0 auto;
   }
 }
 
 .skills > div {
   background: var(--dark);
   margin-right: 5px;
-  min-width: 100px;
+  min-width: 110px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -339,7 +336,7 @@ nav li a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  max-width: 150px;
+  max-width: 10px;
   margin: 0 auto;
 }
 
@@ -366,8 +363,9 @@ nav li a {
 
 @media (max-width: 600px) {
   .summary-info {
-    width: 100%;
+    width: 90vw;
     margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -380,7 +378,7 @@ nav li a {
   margin-right: 5px;
   background: var(--dark);
   margin-right: 5px;
-  min-width: 100px;
+  min-width: 110px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -396,7 +394,7 @@ nav li a {
 }
 
 .summary-info p {
-  color: var(--secondary);
+  color: var(--tertiary);
   margin-top: 0;
   font-size: 32px;
   font-weight: 300;
@@ -422,14 +420,15 @@ nav li a {
 .summary-profile img {
   display: block;
   height: 700px;
+  width: 100%;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
 }
 
 section > h2 {
-  min-width: 300px;
-  max-width: 500px;
+  width: 50vw;
+  padding-bottom: 4px;
   border-bottom: 2px solid var(--secondary);
 }
 
@@ -594,12 +593,16 @@ section > h2 {
 
 .education {
   border-left: 3px solid var(--secondary);
+  max-width: 90vw;
+  margin: 0 auto;
   /* position: relative; */
 }
 
 .education-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .education > div {
@@ -611,8 +614,8 @@ section > h2 {
   content: "";
   height: 10px;
   width: 10px;
-  border: 1px solid var(--secondary);
-  background: var(--secondary);
+  border: 1px solid var(--dark);
+  background: var(--tertiary);
   display: block;
   border-radius: 50%;
   margin-top: -10%;
@@ -620,8 +623,8 @@ section > h2 {
 }
 
 .dots {
-  background: var(--tertiary);
-  width: 50px;
+  background: var(--secondary);
+  min-width: 50px;
   height: 3px;
   display: flex;
   position: relative;
@@ -632,7 +635,7 @@ section > h2 {
 .education-item {
   background: var(--dark);
   min-width: 300px;
-  max-width: 350px;
+  max-width: 320px;
   padding: 10px 20px;
   margin: 10px;
   margin-left: -10px;
@@ -663,15 +666,20 @@ section > h2 {
   .education-box {
     display: grid;
     grid-template-columns: 1fr;
+    width: 96vw;
     margin: 0 auto;
   }
   .education-item {
-    min-width: 200px;
-    max-width: 80%;
+    min-width: 180px;
+    max-width: 300px;
     padding: 20px;
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
+  }
+  .dots {
+    background: var(--secondary);
+    min-width: 40px;
   }
 }
 
@@ -679,7 +687,7 @@ section > h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  max-width: 90vw;
 }
 
 .client img {
@@ -687,13 +695,20 @@ section > h2 {
   background: none;
 }
 
+@media (max-width: 600px) {
+  .client img {
+    display: none;
+  }
+}
+
 #back {
   transform: rotate(180deg);
 }
 
 .testifiers-container {
+  overflow: hidden;
   position: relative;
-  max-width: 901px;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -812,19 +827,18 @@ section > h2 {
   .testifiers-container {
     overflow: hidden;
     position: relative;
-    max-width: 400px;
     margin: 0 auto;
   }
   .testifiers {
     display: flex;
-    width: 280px;
+    max-width: 280px;
   }
   /* testifiers head rating sides */
   .testifier-card {
     background: var(--dark);
     height: 220px;
-    min-width: 200px;
-    max-width: 220px;
+    min-width: 55vw;
+    max-width: 230px;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
@@ -858,6 +872,7 @@ section > h2 {
   color: var(--tertiary);
   border-radius: 10px;
   overflow: hidden;
+  background: var(--dark);
   box-shadow: 1px 1px 3px var(--box);
 }
 
@@ -883,7 +898,6 @@ section > h2 {
   margin: 20% auto;
   padding: 10px;
   border-radius: 3px;
-  background: var(--dark);
   box-shadow: 1px 1px 3px var(--box);
 }
 
@@ -995,6 +1009,7 @@ section > h2 {
   .contact {
     flex-direction: column-reverse;
     gap: 10px;
+    width: 94%;
   }
   .contact-info {
     background: var(--dark);
@@ -1074,23 +1089,23 @@ section > h2 {
 }
 
 #progress-container:hover > #progress {
-  visibility: visible;
+  display: block;
 }
 
 #progress-container #progress {
   background: #3eff04;
-  width: 100px;
+  width: 80px;
   height: 16px;
   border-radius: 4px;
   position: absolute;
   top: -30px;
-  right: -90%;
+  right: -100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 10px;
   margin-right: 5px;
-  visibility: hidden;
+  display: none;
   z-index: 2;
 }
 
