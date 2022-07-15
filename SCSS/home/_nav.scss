@@ -189,17 +189,11 @@ nav{
     transition: 3s;
     opacity:1;
 }
-#preload-box{
-    background: black no-repeat center;
-    height: 100vh;
-    width:100%;
-    position: fixed;
-    z-index:1;
-    transition: 1s;
-    opacity:0;
-}
-
 main{
     opacity: 0;
     transition: "opacity" 5s;
+}
+body{
+    overflow-y: hidden;
+    height: 100vh;
 }
