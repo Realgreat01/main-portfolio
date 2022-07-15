@@ -73,6 +73,7 @@ const darkMode = ()=>{
     setInterval(projectAdd, 50);
   }
 
+
   let scrollval = 900;
   window.addEventListener('scroll', () => {
     if(scrollval >  window.scrollY) {
@@ -133,4 +134,28 @@ let valueBtn = true;
       })
     }
 
-
+    window.addEventListener("DOMContentLoaded", ()=>{
+        const currentTheme= localStorage.getItem("theme");
+  
+        if(currentTheme=="light"){
+            lightMode();
+        }else{
+            darkMode();
+        }
+        // setTimeout(()=> {
+        //     loader.style.display="none";
+        //     main.style.animationName="load"}, 1000)
+    })
+    const mode = document.getElementById("mode")
+    mode.addEventListener("click",()=>{
+      const getItemFromLocalStorage = localStorage.getItem("theme");
+      let currentTheme = getItemFromLocalStorage;
+      console.log(getItemFromLocalStorage);
+      if(currentTheme=="dark"){
+          lightMode();
+          localStorage.setItem("theme", "light");
+      }else{
+          darkMode();
+          localStorage.setItem("theme", "dark");
+      }
+    })

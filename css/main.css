@@ -113,7 +113,7 @@ nav li a {
 }
 
 .menu-bar {
-  display: flex;
+  display: none;
   position: relative;
   height: 30px;
   width: 30px;
@@ -173,10 +173,10 @@ nav li a {
 #mode {
   position: relative;
   display: flex;
-  height: fit-content;
   z-index: 20;
   height: 25px;
-  background: #000;
+  background: none;
+  width: 40px;
 }
 
 #mode img {
@@ -212,6 +212,32 @@ nav li a {
   .nav-mobile {
     display: flex;
   }
+}
+
+#preloader {
+  background: black no-repeat center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: 3s;
+  opacity: 1;
+}
+
+#preload-box {
+  background: black no-repeat center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+}
+
+main {
+  opacity: 0;
+  transition: "opacity" 5s;
 }
 
 #summary {

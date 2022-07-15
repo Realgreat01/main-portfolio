@@ -30,4 +30,27 @@ mainNav.innerHTML = `
     </ul>
 </div>`
 
-console.log(window.innerWidth)
+// remove Preloader 
+
+const mainTag = document.querySelectorAll("main");
+const preloader = document.getElementById("preloader");
+const preloaderBox = document.getElementById("preload-box");
+setTimeout(()=>{
+
+    preloader.style.animation="removePreloader";
+    preloader.style.visibility="hidden";
+    preloader.style.opacity="0";
+
+    preloaderBox.style.opacity="0.3";
+    preloaderBox.style.visibility="hidden";
+}, 2000)
+setTimeout(()=>{
+
+    mainTag.forEach(items=>{
+        items.style.opacity="1";
+    });
+}, 1000)
+
+console.log(mainTag)
+
+
