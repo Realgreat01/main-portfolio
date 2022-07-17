@@ -53,12 +53,13 @@ const darkMode = ()=>{
     setInterval(projectAdd, 50);
   }
 
+  // function for LightMode
   const lightMode = ()=>{;
     body.style.setProperty('--primary', '#fff');
     body.style.setProperty('--secondary', '#fa2388');
     body.style.setProperty('--tertiary', '#7afa03');
     body.style.setProperty('--dark', '#1a0129');
-    body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f)');
+    body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122, #07010f)');
     body.style.setProperty('--box', '#52606d');
     body.style.setProperty('--nav', '#2b024d');
  
