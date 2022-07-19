@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90vw;
+    max-width: 90%;
 }
 .client img{
     height: 30px;
@@ -18,10 +18,8 @@
 .testifiers-container{
     overflow: hidden;
     position: relative;
-    max-width: 90vw;
+    max-width: 90%;
     margin: 0 auto;
-   
-
 }
 .testifiers{
     display: flex;
@@ -100,7 +98,7 @@
 /* partners */
 
 .partner-container{
-    width: 80vw;
+    width: 80%;
     display: flex;
     overflow-x: hidden;
     justify-content: right;
@@ -149,7 +147,7 @@
     .testifier-card{
         background: var(--dark);
         height: 220px;
-        min-width: 55vw;
+        min-width: 55%;
         max-width:230px;
         padding: 10px;
         border-radius: 10px;

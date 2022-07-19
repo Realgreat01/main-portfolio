@@ -83,7 +83,7 @@ const project =async ()=>{
                 <div class="project-data">
                     <h3>${frontend.name}</h3>
                     <h4>${frontend.date}</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque earum magnam!</p>
+                    <p>${frontend.description}</p>
                 </div>
                 <div class="project-info">
                     <a href="" id="left">Live Website<img src="./images/icon-arrow.svg" alt="link"></a>
@@ -233,4 +233,5 @@ const testimonials = async ()=>{
     
 }
 
-testimonials()
+testimonials();
+

@@ -1,6 +1,6 @@
 .education{
     border-left: 3px solid var(--secondary);
-    max-width: 90vw;
+    max-width: 90%;
     
     margin: 0 auto;
     /* position: relative; */
@@ -9,7 +9,7 @@
 .education-box{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width: 60vw;
+    width: 60%;
     margin: 0 auto;
 
 }
@@ -76,7 +76,7 @@
     .education-box{
         display:grid;
         grid-template-columns: 1fr;
-        width: 96vw;
+        width: 100%;
         margin:0 auto;
     }
 

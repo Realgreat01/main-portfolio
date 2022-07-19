@@ -16,16 +16,13 @@ body{
     margin:0;
 }
 
-// main{
-//     width: 100vw;
-// }
+
 #main{
-    width: 94vw;
+    width: 100%;
     margin:0 auto;
 }
 section{
     margin: 0 auto;
-    // width: 98vw;
     min-height: 300px;
     max-height: fit-content;
     padding-bottom: $p-large;

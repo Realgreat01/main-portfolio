@@ -10,7 +10,7 @@ mainNav.innerHTML = `
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <button id="download-btn"><a href="../documents/Samson-Ikuomenisan-CV.pdf" target ="_blank" download>Download CV</a></button>
+    <button id="download-btn"><a href="https://drive.google.com/file/d/1HUyXDxHg3W66O-zqcml1y0C8kxvvMui9/view?usp=sharing" target ="_blank" download>Download CV</a></button>
    <div id="mode">
         <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
         <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">
@@ -35,15 +35,12 @@ mainNav.innerHTML = `
 const mainTag = document.querySelectorAll("main");
 const preloader = document.getElementById("preloader");
 setTimeout(()=>{
-    preloader.style.visibility="hidden";
-    preloader.style.opacity="0";
-}, 2000)
-setTimeout(()=>{
-
-    mainTag.forEach(items=>{
-        items.style.opacity="1";
-    });
-}, 2000);
+        preloader.style.visibility="hidden";
+        preloader.style.opacity="0";
+        mainTag.forEach(items=>{
+            items.style.opacity="1";
+        });
+    }, 2000)
 
   setTimeout(()=>{
     document.body.style.overflowY="visible"

@@ -2,7 +2,7 @@
 #summary{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    width: 90vw;
+    width: 90%;
     justify-content: center;
 }
 
@@ -97,7 +97,7 @@
     
 
     @media #{$small-screen}{
-        width: 90vw;
+        width: 90%;
         margin:0;
         margin: 0 auto;
     }
@@ -174,7 +174,7 @@
         width: 80%;
 
         @media #{$small-screen}{
-            width: 90vw;
+            width: 90%;
             margin:0;
             margin: 0 auto;
         }
