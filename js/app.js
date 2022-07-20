@@ -75,26 +75,26 @@ const darkMode = ()=>{
   }
 
 
-  // // animate on scroll event
-  // let scrollval = 900;
-  // window.addEventListener('scroll', () => {
-  //   if(scrollval >  window.scrollY) { 
-  //     navbar.style.position="static"; 
-  //     navbar.style.background="none";
-  //     console.log("scroll up")
+  // animate on scroll event
+  let scrollval = 900;
+  window.addEventListener('scroll', () => {
+    if(scrollval >  window.scrollY) { 
+      navbar.style.position="static"; 
+      navbar.style.background="none";
+      console.log("scroll up")
       
-  //   }else if(window.scrollY<=600){
-  //     console.log("scroll top")
-  //     navbar.style.background="none";
+    }else if(window.scrollY<=600){
+      console.log("scroll top")
+      navbar.style.background="none";
       
-  //   } else {
-  //     console.log("scroll bottom")
-  //         navbar.style.position="fixed";
-  //         navbar.style.background="var(--nav)";
-  //         navbar.style.transition="1s";
-  //       }
-  //   scrollval=window.scrollY;
-  // });
+    } else {
+      console.log("scroll bottom")
+          navbar.style.position="fixed";
+          navbar.style.background="var(--nav)";
+          navbar.style.transition="1s";
+        }
+    scrollval=window.scrollY;
+  });
   
   // Toggle Show Menu
   const showMenu =()=>{

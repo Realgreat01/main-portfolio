@@ -136,18 +136,16 @@
         position: relative;
         margin: 0 auto;
         padding-left: 10px;
-        scrollbar-width: none;
-        scrollbar-shadow-color: yello;
-        scrollbar-gutter: yello;
-        scrollbar-track-color: yellow;
     }
     
     .testifiers{
         max-width: 600px;
-        overflow-x: auto;
+        overflow-x: scroll;
         scroll-snap-type: x mandatory;
-        // background: red;
         display: flex;
+        &::-webkit-scrollbar{
+            display: none
+        }
     }
     
     /* testifiers head rating sides */

@@ -237,7 +237,6 @@ nav li a {
 #summary {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  width: 90%;
   justify-content: center;
 }
 
@@ -316,7 +315,6 @@ nav li a {
 @media (max-width: 600px) {
   .skills {
     width: 90%;
-    margin: 0;
     margin: 0 auto;
   }
 }
@@ -848,16 +846,15 @@ section > h2 {
     position: relative;
     margin: 0 auto;
     padding-left: 10px;
-    scrollbar-width: none;
-    scrollbar-shadow-color: yello;
-    scrollbar-gutter: yello;
-    scrollbar-track-color: yellow;
   }
   .testifiers {
     max-width: 600px;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
+  }
+  .testifiers::-webkit-scrollbar {
+    display: none;
   }
   /* testifiers head rating sides */
   .testifier-card {
