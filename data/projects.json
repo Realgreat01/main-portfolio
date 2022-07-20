@@ -31,7 +31,7 @@
             "name" : "Job Filter App",
             "website" : "www.github.com/tip",
             "github" : "www.reealgrest.com/github.io",
-            "description" : "Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies.       A challenge by Front End Mentor",
+            "description" : "Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by Front End Mentor",
             "date" : "June, 2022",
             "src" : "job-filter.png"
         }

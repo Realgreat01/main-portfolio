@@ -28,10 +28,17 @@ body {
   color: var(--primary);
   padding: 0;
   margin: 0;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+main {
+  opacity: 0;
+  transition: "opacity" 5s;
 }
 
 #main {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -59,6 +66,7 @@ nav {
   align-items: center;
   z-index: 30;
   height: 50px;
+  top: 0;
   width: 100%;
 }
 
@@ -125,14 +133,14 @@ nav li a {
   background: white;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  border-radius: 7px;
+  padding: 15px;
+  border-radius: 3px;
 }
 
 .menu-bar img {
   position: absolute;
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
 }
 
 .mobile {
@@ -205,9 +213,6 @@ nav li a {
 }
 
 @media only screen and (max-width: 900px) {
-  nav {
-    width: 94%;
-  }
   .nav-desktop {
     display: none;
   }
@@ -226,17 +231,7 @@ nav li a {
   width: 100%;
   position: fixed;
   z-index: 999;
-  transition: 3s;
   opacity: 1;
-}
-
-main {
-  opacity: 0;
-  transition: "opacity" 5s;
-}
-
-body {
-  overflow-y: hidden;
 }
 
 #summary {
@@ -850,24 +845,33 @@ section > h2 {
 
 @media screen and (max-width: 600px) {
   .testifiers-container {
-    overflow: hidden;
     position: relative;
     margin: 0 auto;
+    padding-left: 10px;
+    scrollbar-width: none;
+    scrollbar-shadow-color: yello;
+    scrollbar-gutter: yello;
+    scrollbar-track-color: yellow;
   }
   .testifiers {
+    max-width: 600px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     display: flex;
-    max-width: 280px;
   }
   /* testifiers head rating sides */
   .testifier-card {
+    scroll-snap-align: center;
     background: var(--dark);
     height: 220px;
-    min-width: 55%;
-    max-width: 230px;
+    min-width: 80%;
+    max-width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
-    margin-left: 1px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .testifier-card p {
     font-size: 12px;
@@ -1034,12 +1038,12 @@ section > h2 {
   .contact {
     flex-direction: column-reverse;
     gap: 10px;
-    width: 94%;
+    width: 100%;
   }
   .contact-info {
     background: var(--dark);
-    min-width: 200px;
-    max-width: 350px;
+    min-width: 90%;
+    max-width: 100%;
     padding: 10px;
   }
   .contact-info button {

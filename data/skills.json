@@ -74,22 +74,22 @@
         },
         {
             "skill": "Illustrator", 
-            "level" : 88,
+            "level" : 44,
             "icon" : "illustrator.svg"
         },
         {
             "skill": "Word Press", 
-            "level" : 88,
+            "level" : 51,
             "icon" : "wordpress.svg"
         },
         {
             "skill": "Indesign", 
-            "level" : 88,
+            "level" : 64,
             "icon" : "indesign.svg"
         },
         {
             "skill": "Adobe XD", 
-            "level" : 88,
+            "level" : 62,
             "icon" : "adobe-xd.svg"
         }
     ]

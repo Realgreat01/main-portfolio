@@ -150,13 +150,13 @@
     .contact{
         flex-direction: column-reverse;
         gap: 10px;
-        width:94%;
+        width:100%;
     }
     
     .contact-info{
         background: var(--dark);
-        min-width: 200px;
-        max-width: 350px;
+        min-width: 90%;
+        max-width: 100%;
         padding: 10px;
 
         button{

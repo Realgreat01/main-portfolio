@@ -59,7 +59,7 @@ const darkMode = ()=>{
     body.style.setProperty('--secondary', '#fa2388');
     body.style.setProperty('--tertiary', '#7afa03');
     body.style.setProperty('--dark', '#1a0129');
-    body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122, #07010f)');
+    body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f)');
     body.style.setProperty('--box', '#52606d');
     body.style.setProperty('--nav', '#2b024d');
  
@@ -75,30 +75,30 @@ const darkMode = ()=>{
   }
 
 
-  let scrollval = 900;
-  window.addEventListener('scroll', () => {
-    if(scrollval >  window.scrollY) {
-      navbar.style.position=""; 
-      navbar.style.background="none";
-      console.log("scroll up")
+  // // animate on scroll event
+  // let scrollval = 900;
+  // window.addEventListener('scroll', () => {
+  //   if(scrollval >  window.scrollY) { 
+  //     navbar.style.position="static"; 
+  //     navbar.style.background="none";
+  //     console.log("scroll up")
       
-    }else if(window.scrollY<=600){
-      console.log("scroll top")
-      navbar.style.background="none";
+  //   }else if(window.scrollY<=600){
+  //     console.log("scroll top")
+  //     navbar.style.background="none";
       
-    } else {
-      console.log("scroll bottom")
-      navbar.style.position="fixed";
-          navbar.style.background="var(--nav)";
-          navbar.style.transition="1s";
-          // navbar.style.top="10px";
-
-        }
-    scrollval=window.scrollY;
-  });
+  //   } else {
+  //     console.log("scroll bottom")
+  //         navbar.style.position="fixed";
+  //         navbar.style.background="var(--nav)";
+  //         navbar.style.transition="1s";
+  //       }
+  //   scrollval=window.scrollY;
+  // });
   
+  // Toggle Show Menu
   const showMenu =()=>{
-  if(mobileNav.style.height="0"){
+    if(mobileNav.style.height="0"){
     mobileNav.style.height="100%";
   }
   menuIcon.style.visibility="hidden";
@@ -106,6 +106,7 @@ const darkMode = ()=>{
   main.addEventListener("click", hideMenu);
 }
 
+// Toggle Hide Menu
 const hideMenu =()=>{
   mobileNav.style.height="0";
   menuIcon.style.visibility="visible";
@@ -116,6 +117,9 @@ cancelIcon.addEventListener("click", hideMenu)
 
 mobileNav.addEventListener("mouseleave", hideMenu);
 
+
+
+// Updating Bio
 const readMore = document.querySelectorAll(".read-more");
 const briefInfo = document.querySelectorAll(".brief-info");
 
@@ -135,6 +139,7 @@ let valueBtn = true;
       })
     }
 
+    // Updating Theme from Local Storage
     window.addEventListener("DOMContentLoaded", ()=>{
         const currentTheme= localStorage.getItem("theme");
   

@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'League Spartan', sans-serif;;
+    font-family: 'League Spartan', sans-serif;
 }  
 
 body{
@@ -14,11 +14,17 @@ body{
     color:var(--primary);
     padding: 0;
     margin:0;
+    width: 100%;
+    overflow-y: hidden;
 }
 
+main{
+    opacity: 0;
+    transition: "opacity" 5s;
+} 
 
 #main{
-    width: 100%;
+    width: 90%;
     margin:0 auto;
 }
 section{

@@ -133,26 +133,36 @@
 
 @media screen and (max-width: 600px) {
     .testifiers-container{
-        overflow: hidden;
         position: relative;
         margin: 0 auto;
+        padding-left: 10px;
+        scrollbar-width: none;
+        scrollbar-shadow-color: yello;
+        scrollbar-gutter: yello;
+        scrollbar-track-color: yellow;
     }
-
+    
     .testifiers{
+        max-width: 600px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        // background: red;
         display: flex;
-        max-width: 280px;
     }
     
     /* testifiers head rating sides */
     .testifier-card{
+        scroll-snap-align: center;
         background: var(--dark);
         height: 220px;
-        min-width: 55%;
-        max-width:230px;
+        min-width: 80%;
+        max-width:100%;
         padding: 10px;
         border-radius: 10px;
         margin-right: 10px;
-        margin-left: 1px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         p{
             font-size: 12px;
