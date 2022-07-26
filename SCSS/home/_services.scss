@@ -46,7 +46,7 @@ section>h2{
     padding: 10px;
     border-radius: 10px;
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr;
     margin: 10px;
     justify-self: stretch;
     color:#fff;
@@ -57,12 +57,11 @@ section>h2{
    
 }
 .project-items img{
-    height: 98%;
-    max-width: 100%;
+    height: 400px;
+    width: 70%;
+    border: 1px solid var(--box);
     overflow: hidden;
     border-radius: 8px;
-    margin: 5px auto;
-    object-fit: cover;
 }
 .project-data{
     padding: 10px;
@@ -132,12 +131,9 @@ section>h2{
 
 
     .project-items{
-        background: var(--dark);
         padding: 5px;
         border-radius: 5px;
-        display:flex;
         width: 90%;
-        flex-direction: column-reverse;
         margin: 5px auto;
         justify-self: stretch;
     }

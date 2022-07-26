@@ -147,11 +147,8 @@ let valueBtn = true;
             lightMode();
         }else{
             darkMode();
-        }
-        // setTimeout(()=> {
-        //     loader.style.display="none";
-        //     main.style.animationName="load"}, 1000)
-    })
+        }})
+        
     const mode = document.getElementById("mode")
     mode.addEventListener("click",()=>{
       const getItemFromLocalStorage = localStorage.getItem("theme");

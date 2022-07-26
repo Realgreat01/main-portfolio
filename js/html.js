@@ -34,17 +34,32 @@ mainNav.innerHTML = `
 
 const mainTag = document.querySelectorAll("main");
 const preloader = document.getElementById("preloader");
-setTimeout(()=>{
+const getLoadersData = sessionStorage.getItem("loaders");
+console.log(getLoadersData)
+    if(getLoadersData=="loaded"){
+        preloader.style.display="none";
         preloader.style.visibility="hidden";
-        preloader.style.opacity="0";
         mainTag.forEach(items=>{
             items.style.opacity="1";
         });
+        sessionStorage.setItem("loaders", "loaded")
+    };
+
+
+setTimeout(()=>{
+    preloader.style.visibility="hidden";
+    preloader.style.transition="2s";
+    preloader.style.opacity="0";
+    sessionStorage.setItem("loaders", "loaded")
+        mainTag.forEach(items=>{
+            items.style.opacity="1";
+        });
+        // sessionStorage.setItem("loaders", "loaded")
     }, 2000)
 
   setTimeout(()=>{
     document.body.style.overflowY="visible"
-  },5000 )
+  },2000 )
 
 
 

@@ -498,7 +498,7 @@ section > h2 {
   padding: 10px;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   margin: 10px;
   justify-self: stretch;
   color: #fff;
@@ -508,12 +508,11 @@ section > h2 {
 }
 
 .project-items img {
-  height: 98%;
-  max-width: 100%;
+  height: 400px;
+  width: 70%;
+  border: 1px solid var(--box);
   overflow: hidden;
   border-radius: 8px;
-  margin: 5px auto;
-  object-fit: cover;
 }
 
 .project-data {
@@ -587,12 +586,9 @@ section > h2 {
     font-size: 0.9rem;
   }
   .project-items {
-    background: var(--dark);
     padding: 5px;
     border-radius: 5px;
-    display: flex;
     width: 90%;
-    flex-direction: column-reverse;
     margin: 5px auto;
     justify-self: stretch;
   }
@@ -846,23 +842,22 @@ section > h2 {
     position: relative;
     margin: 0 auto;
     padding-left: 10px;
+    scrollbar-width: none;
+    scrollbar-shadow-color: yello;
+    scrollbar-gutter: yello;
+    scrollbar-track-color: yellow;
   }
   .testifiers {
     max-width: 600px;
-    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    background: red;
     display: flex;
-  }
-  .testifiers::-webkit-scrollbar {
-    display: none;
   }
   /* testifiers head rating sides */
   .testifier-card {
     scroll-snap-align: center;
     background: var(--dark);
     height: 220px;
-    min-width: 80%;
-    max-width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;

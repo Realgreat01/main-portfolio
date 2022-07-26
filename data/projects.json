@@ -46,7 +46,14 @@
             "website" : "www.github.com/tip",
             "description" : "This is a project I am so much interested in",
             "date" : "November, 2021",
-            "src" : "stoma.jpg"
+            "src" : "stoma.png"
+        },
+        {
+            "name" : "Bibeaute Makeup",
+            "website" : "www.github.com/tip",
+            "description" : "This is a project I am so much interested in",
+            "date" : "June, 2022",
+            "src" : "bimakup.jpg"
         }
     ]
 }
