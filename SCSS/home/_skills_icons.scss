@@ -12,7 +12,7 @@
     }
 
     #progress{
-        background: rgb(62, 255, 4);
+        background: rgb(245, 4, 137);
         width: 80px;
         height: 16px;
         border-radius: 4px;
@@ -44,7 +44,7 @@
             align-items: center;
             color:#fff;
             border-radius: 3px 0 0 3px;
-            background: var(--secondary);
+            background: rgb(4, 187, 87);
             margin: 0;
             position: absolute;
         }
@@ -54,8 +54,9 @@
             position: absolute;
             padding: 4px;
             font-weight:700;
+            font-size: 9px;
             right:0;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
         }
         #skill-title{
             @extend #skill-level;

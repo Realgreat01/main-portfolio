@@ -707,6 +707,7 @@ section > h2 {
 .client img {
   height: 30px;
   background: none;
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -722,13 +723,10 @@ section > h2 {
 .testifiers-container {
   overflow: hidden;
   position: relative;
-  max-width: 90%;
+  width: 100%;
   margin: 0 auto;
-}
-
-.testifiers {
   display: flex;
-  width: 300px;
+  scroll-snap-type: x mandatory;
 }
 
 .testifier-card {
@@ -737,9 +735,18 @@ section > h2 {
   max-width: 300px;
   padding: 10px;
   border-radius: 10px;
+  margin: 20px 0;
   margin-right: 50px;
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
+  scroll-snap-align: center;
+}
+
+.testifier-card:hover {
+  background: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.05);
+  position: relative;
 }
 
 .testifier-head {
@@ -847,23 +854,15 @@ section > h2 {
     scrollbar-gutter: yello;
     scrollbar-track-color: yellow;
   }
-  .testifiers {
-    max-width: 600px;
-    scroll-snap-type: x mandatory;
-    background: red;
-    display: flex;
-  }
   /* testifiers head rating sides */
   .testifier-card {
-    scroll-snap-align: center;
     background: var(--dark);
     height: 220px;
+    min-width: 250px;
+    max-width: 250px;
     padding: 10px;
     border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
   }
   .testifier-card p {
     font-size: 12px;
@@ -1114,7 +1113,7 @@ section > h2 {
 }
 
 #progress-container #progress {
-  background: #3eff04;
+  background: #f50489;
   width: 80px;
   height: 16px;
   border-radius: 4px;
@@ -1146,7 +1145,7 @@ section > h2 {
   align-items: center;
   color: #fff;
   border-radius: 3px 0 0 3px;
-  background: var(--secondary);
+  background: #04bb57;
   margin: 0;
   position: absolute;
 }
@@ -1156,8 +1155,9 @@ section > h2 {
   position: absolute;
   padding: 4px;
   font-weight: 700;
+  font-size: 9px;
   right: 0;
-  color: black;
+  color: white;
 }
 
 #progress-container #progress #skill-title {

@@ -207,10 +207,10 @@ const testimonials = async ()=>{
     const data = await response.json();
     const {Testimonials} = data;
 
-    const cards = document.getElementById("testifiers");
+    const testifiersContainer = document.getElementById("testifier-container");
     
     Testimonials.forEach(item=>{
-        cards.innerHTML +=`
+        testifiersContainer.innerHTML +=`
     <div class="testifier-card">
         <div class="testifier-head">
                 <img src="./images/icon-quotes.svg" alt="" class="quote-icon">

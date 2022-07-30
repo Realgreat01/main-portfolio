@@ -7,6 +7,7 @@
 .client img{
     height: 30px;
     background: none;
+    display:none;
 
     @media (max-width: 600px){
         display:none;
@@ -18,14 +19,11 @@
 .testifiers-container{
     overflow: hidden;
     position: relative;
-    max-width: 90%;
+    width: 100%;
     margin: 0 auto;
-}
-.testifiers{
     display: flex;
-    width: 300px;
+    scroll-snap-type: x mandatory;
 }
-
 
 .testifier-card{
     background: var(--dark);
@@ -33,9 +31,17 @@
     max-width:300px;
     padding: 10px;
     border-radius: 10px;
+    margin: 20px 0;
     margin-right: 50px; 
     color: var(--tertiary);
-    box-shadow: 1px 1px 3px var(--box);
+    box-shadow: 1px 1px 3px var(--box); 
+    scroll-snap-align: center;
+    &:hover{
+        background: var(--secondary);
+        color: var(--primary);
+        transform: scale(1.05);
+        position: relative;
+    }
 }
 
 .testifier-head{
@@ -142,24 +148,16 @@
         scrollbar-track-color: yellow;
     }
     
-    .testifiers{
-        max-width: 600px;
-        scroll-snap-type: x mandatory;
-        background: red;
-        display: flex;
-    }
     
     /* testifiers head rating sides */
     .testifier-card{
-        scroll-snap-align: center;
         background: var(--dark);
         height: 220px;
+        min-width: 250px;
+        max-width:250px;
         padding: 10px;
         border-radius: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px;
 
         p{
             font-size: 12px;
