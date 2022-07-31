@@ -18,9 +18,12 @@
     display: flex;
     align-items: center;
 }
-
+*{
+    counter-reset: experiencecounter;
+}
 .dots::before{
-    content: "";
+    content: "(experiencecounter)";
+    counter-increment: ex;
     height: 10px;
     width: 10px;
     border:1px solid var(--dark);

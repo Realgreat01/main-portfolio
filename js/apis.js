@@ -127,7 +127,7 @@ const education = async ()=>{
     Education.forEach(item =>{
         educationItem.innerHTML +=`
         <div>
-                       <div class="dots">
+                       <div class="dots education-dots">
                        </div>
                         <div class="education-item">
                             <h2>${item.name}</h2>
@@ -141,7 +141,7 @@ const education = async ()=>{
     Courses.forEach(item =>{
         educationItem.innerHTML +=`
         <div>
-                       <div class="dots">
+                       <div class="dots education-dots">
                        </div>
                         <div class="education-item">
                             <h2>${item.title}</h2>

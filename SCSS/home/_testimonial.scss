@@ -17,12 +17,17 @@
     transform: rotate(180deg)
 }
 .testifiers-container{
-    overflow: hidden;
+    overflow-x: scroll;
     position: relative;
     width: 100%;
     margin: 0 auto;
     display: flex;
     scroll-snap-type: x mandatory;
+    padding: 20px;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .testifier-card{
@@ -35,7 +40,7 @@
     margin-right: 50px; 
     color: var(--tertiary);
     box-shadow: 1px 1px 3px var(--box); 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     &:hover{
         background: var(--secondary);
         color: var(--primary);
@@ -142,10 +147,6 @@
         position: relative;
         margin: 0 auto;
         padding-left: 10px;
-        scrollbar-width: none;
-        scrollbar-shadow-color: yello;
-        scrollbar-gutter: yello;
-        scrollbar-track-color: yellow;
     }
     
     
