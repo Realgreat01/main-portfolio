@@ -5,7 +5,7 @@
             "Program" : "SDG Students Program",
             "Role" : "Pioneer Campus Coordinator",
             "Duration" : "2020 - Present",
-            "Certificate" : ""
+            "Website" : "https://www.sdgstudents.org"
         },
 
         {
@@ -13,7 +13,7 @@
             "Program" : "SDG4Youth Network",
             "Role" : "Network Member",
             "Duration" : "November 2021 - Present",
-            "Certificate" : ""
+            "Website" : "https://www.sdgstudents.org"
         },
 
         {
@@ -21,7 +21,7 @@
             "Program" : "365 Days NCDs Awareness Campaign",
             "Role" : "Campaign Participant",
             "Duration" : "January - December 2020",
-            "Certificate" : "/ncds.jpg"
+            "Website" : "https://www.stowelink.com"
         },
 
         {
@@ -29,7 +29,7 @@
             "Program" : "Volunteering",
             "Role" :"Asst. Leader Moderators Committee",
             "Duration" : "January - December 2020",
-            "Certificate" : "/gela.jpg"
+            "Website" : "https://www.gela.com.ng"
         }
     ],
 
@@ -45,7 +45,7 @@
             "Company" : "myStash Technologies",
             "Role" : "Student Ambassador",
             "Duration" : "August 2021 - Present",
-            "Certificate" : "/mystash.jpg"
+            "Certificate" : ""
         }
     ]
 }

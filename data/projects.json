@@ -1,37 +1,70 @@
 {
     "FrontEnd" : [
         {
+            "name" : "Verix Shop",
+            "website" : "https://verix-shop.vercel.app",
+            "github" : "https://github.com/Realgreat01/verix-shop",
+            "description" : "A e-commerce website made with dummy data from fakestoreapi.com but it's completely fucntional. ",
+            "date" : "August, 2022",
+            "src" : "verix-shop.jpg"
+        },
+        {
+            "name" : "Weather App",
+            "website" : "https://verix-weather.vercel.app/",
+            "github" : "https://github.com/Realgreat01/weather-app",
+            "description" : "A simple application for getting weather of any known city in the world at any given time.",
+            "date" : "July, 2022",
+            "src" : "weather-app.jpg"
+        },
+        {
+            "name" : "Movie App",
+            "website" : "https://verix-movie.vercel.app/",
+            "github" : "https://github.com/Realgreat01/movie-app",
+            "description" : "A simple app for checking available movies from IMDB website. It's my first Vue Application",
+            "date" : "June, 2022",
+            "src" : "movie-app.jpg"
+        },
+        {
             "name" : "Tip calculator",
-            "website" : "www.github.com/tip",
-            "github" : "www.reealgrest.com/github.io",
-            "description" : "Tip Calculator is a simple app used in Calculating Tips. Tips are shared equally among group of friends, Project was a challenge from Front-End Mentor",
+            "website" : "https://realgreat01.github.io/Tip-Calculator/",
+            "github" : "https://github.com/Realgreat01/Tip-Calculator",
+            "description" : "Tip Calculator is a simple app used in Calculating Tips. Tips are shared equally among group of friends, Project was a challenge from <a href='https://www.frontendmentor.io'>FrontEnd Mentor</a>",
             "date" : "May, 2022",
             "src" : "tip-calculator.png"
         },
 
         {
             "name" : "Fylo Landing Page",
-            "website" : "www.github.com/tip",
-            "github" : "www.reealgrest.com/github.io",
-            "description" : "A simple landing page website",
+            "website" : "https://realgreat01.github.io/fylo",
+            "github" : "https://github.com/Realgreat01/fylo",
+            "description" : "A simple landing page website. It's a challenge I completed from <a href='https://www.frontendmentor.io'>FrontEnd Mentor</a>",
             "date" : "May, 2021",
-            "src" : "fylo.gif"
+            "src" : "fylo.jpeg"
         },
 
         {
-            "name" : "E-Commmerce Website",
-            "website" : "www.github.com/tip",
-            "github" : "www.reealgrest.com/github.io",
+            "name" : "E-commmerce Product Page",
+            "website" : "https://realgreat01.github.io/ecommerce-product-page-main",
+            "github" : "https://github.com/Realgreat01/ecommerce-product-page-main",
+            "description" : "This is an e-commerce product page. A sample landing page for e-commerce website. A challenge by <a href='https://www.frontendmentor.io'>FrontEnd Mentor</a>",
+            "date" : "April, 2021",
+            "src" : "e-commerce.png"
+        },
+
+        {
+            "name" : "Personal Portfolio",
+            "website" : "https://realgreat.netlify.app",
+            "github" : "https://github.com/Realgreat01/main-portfolio",
             "description" : "This is a project I am so much interested in",
             "date" : "April, 2021",
             "src" : "e-commerce.png"
         },
 
         {
-            "name" : "Job Filter App",
-            "website" : "www.github.com/tip",
-            "github" : "www.reealgrest.com/github.io",
-            "description" : "Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by Front End Mentor",
+            "name" : "Job Listing App",
+            "website" : "https://static-job.vercel.app/",
+            "github" : "https://github.com/Realgreat01/static-job-listings-master",
+            "description" : "Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by <a href='https://www.frontendmentor.io'>FrontEnd Mentor</a>",
             "date" : "June, 2022",
             "src" : "job-filter.png"
         }

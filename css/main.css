@@ -56,7 +56,6 @@ section > h2 {
 
 h1, #name-span {
   font-size: 24px;
-  font-family: 'League Gothic';
   font-weight: 600;
 }
 
@@ -122,7 +121,7 @@ nav li a {
 
 .logo img {
   height: 30px;
-  width: 30px;
+  width: fit-content;
 }
 
 .menu-bar {
