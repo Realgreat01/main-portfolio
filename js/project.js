@@ -8,17 +8,24 @@ const project =async ()=>{
         projectItems.innerHTML += `
         <div class="project-items">
 
-                <div class="project-info">
-                    <a href="" id="left">Live Website<img src="./images/icon-arrow.svg" alt="link"></a>
-                    <a href="" id="right">Code On Github<img src="./images/icon-arrow.svg" alt="link"></a>
-                    <img src="./images/projects/${frontend.src}" alt="">
+                <div class="project-image">
+                    <img src="./images/projects/${frontend.src}" alt="${frontend.src}">
                 </div>
                 
                 <div class="project-data">
-                    <h3>${frontend.name}</h3>
-                    <h4>${frontend.date}</h4>
-                    <p>${frontend.description}</p>
-                </div>
+                    <div class="project-summary">
+                        <h4 id="project-name">${frontend.name}</h3>
+                        <h4 id="project-date">${frontend.date}</h4>
+                        <p  id="project-description">${frontend.description}</p>
+                    </div>
+                    <div class="project-info"> 
+                        <div id="preview-icons">
+                            <a href="${frontend.website}" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
+                            <a href="${frontend.github}" id="right"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
+                        </div>
+                        <img src="./images/skills/${frontend.tools}" alt="${frontend.tools}"
+                    </div>    
+                </div> 
         </div> `
     });
 
@@ -26,16 +33,24 @@ const project =async ()=>{
         projectItems.innerHTML += `
         <div class="project-items">
 
-            <div class="project-info">
-            <a href="" id="right">Instagram<img src="./images/icon-arrow.svg" alt="link"></a>
-            <img src="./images/projects/${design.src}" alt="">
-            </div>
-
-            <div class="project-data">
-                <h3>${design.name}</h3>
-                <h4>${design.date}</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque earum magnam!</p>
-            </div>
+                <div class="project-image">
+                    <img src="./images/projects/${design.src}" alt="${design.src}">
+                </div> 
+                
+                <div class="project-data">
+                    <div class="project-summary">
+                        <h4 id="project-name">${design.name}</h3>
+                        <h4 id="project-date">${design.date}</h4>
+                        <p  id="project-description">${design.description}</p>
+                    </div>
+                    <div class="project-info"> 
+                        <div id="preview-icons">
+                        <div></div>
+                            <a href="${design.website}" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
+                        </div>
+                        <img src="./images/skills/${design.tools}" alt="${design.tools}"
+                    </div>    
+                </div> 
         </div> `
     })
    
