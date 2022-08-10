@@ -274,6 +274,9 @@ nav li a {
 }
 
 #info-lead #large-info {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
   border-radius: 10px;
   width: 80%;
 }
@@ -288,7 +291,7 @@ nav li a {
   border: none;
   border-radius: 4px;
   color: #fff;
-  padding: 4px;
+  padding: 1px;
   margin: 0 3px;
   display: inline-block;
 }
@@ -506,8 +509,8 @@ section > h2 {
   background: var(--dark);
   border-radius: 0 0 10px 10px;
   display: grid;
-  grid-template-rows: 2fr 1fr;
-  height: 500px;
+  grid-template-rows: 3fr 1fr;
+  height: 400px;
   margin: 30px;
   justify-self: stretch;
   color: #fff;
@@ -518,6 +521,8 @@ section > h2 {
 
 .project-items .project-image {
   overflow: scroll;
+  height: 300px;
+  width: 100%;
 }
 
 .project-items .project-image::-webkit-scrollbar {
@@ -533,26 +538,33 @@ section > h2 {
 .project-items .project-data {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  height: fit-content;
+  margin-top: 0;
+  background: var(--nav);
 }
 
 .project-items .project-data .project-summary {
-  padding: 10px;
+  padding-left: 10px;
+  justify-content: center;
+  height: 100px;
 }
 
-.project-items .project-data .project-summary #project-title {
-  height: 20%;
+.project-items .project-data .project-summary h4 {
+  margin-top: 0;
+}
+
+.project-items .project-data .project-summary #project-name {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .project-items .project-data .project-summary #project-date {
   color: var(--secondary);
-  height: 20%;
 }
 
-.project-items .project-data .project-summary #project-decription {
-  max-width: 90%;
+.project-items .project-data .project-summary #project-description {
+  font-size: 10px;
   opacity: 0.5;
-  height: 60%;
+  text-transform: uppercase;
 }
 
 .project-items .project-data .project-info {
@@ -563,14 +575,10 @@ section > h2 {
 }
 
 .project-items .project-data .project-info #preview-icons {
+  margin-top: 5px;
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
-}
-
-.project-items .project-data .project-info #preview-icons a {
-  padding: 10px;
-  border-radius: 10px;
 }
 
 .project-items .project-data .project-info #preview-icons a img {
@@ -580,10 +588,9 @@ section > h2 {
 }
 
 .project-items .project-data .project-info > img {
-  height: 30px;
+  height: 40px;
+  padding: 10px;
   align-self: end;
-  background: #eeebebe0;
-  padding: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -601,12 +608,6 @@ section > h2 {
   }
   .services-box p {
     font-size: 0.9rem;
-  }
-  .project-items {
-    border-radius: 0 0 5px 5px;
-    width: 90%;
-    margin: 5px auto;
-    justify-self: stretch;
   }
 }
 

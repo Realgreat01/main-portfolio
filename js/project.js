@@ -16,8 +16,7 @@ const project =async ()=>{
                     <div class="project-summary">
                         <h4 id="project-name">${frontend.name}</h3>
                         <h4 id="project-date">${frontend.date}</h4>
-                        <p  id="project-description">${frontend.description}</p>
-                    </div>
+                        </div>
                     <div class="project-info"> 
                         <div id="preview-icons">
                             <a href="${frontend.website}" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
@@ -41,7 +40,6 @@ const project =async ()=>{
                     <div class="project-summary">
                         <h4 id="project-name">${design.name}</h3>
                         <h4 id="project-date">${design.date}</h4>
-                        <p  id="project-description">${design.description}</p>
                     </div>
                     <div class="project-info"> 
                         <div id="preview-icons">

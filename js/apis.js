@@ -61,7 +61,7 @@ const services = async ()=>{
     Services.forEach(service=>{
         serviceBox.innerHTML += `
         <div class="" id="">
-        <img src="./images/services/web.svg" alt=""></img>
+        <img src="./images/services/${service.icon}" alt=""></img>
         <h4>${service.title}</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
     </div>
@@ -71,7 +71,7 @@ const services = async ()=>{
 
 services()
 
-const project =async ()=>{
+const project =async ()=>{ 
     const response = await fetch("./data/projects.json");
     const data = await response.json();
     const {FrontEnd, Designs} = data;
@@ -89,7 +89,6 @@ const project =async ()=>{
                     <div class="project-summary">
                         <h4 id="project-name">${frontend.name}</h3>
                         <h4 id="project-date">${frontend.date}</h4>
-                        <p  id="project-description">${frontend.description}</p>
                     </div>
                     <div class="project-info"> 
                         <div id="preview-icons">
@@ -114,7 +113,6 @@ const project =async ()=>{
                     <div class="project-summary">
                         <h4 id="project-name">${design.name}</h3>
                         <h4 id="project-date">${design.date}</h4>
-                        <p  id="project-description">${design.description}</p>
                     </div>
                     <div class="project-info"> 
                         <div id="preview-icons">

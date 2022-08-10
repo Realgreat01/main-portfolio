@@ -126,18 +126,34 @@ let valueBtn = true;
 
 const updateBiography = () => {
     for(let i =0; i<briefInfo.length; i++){ 
-      briefInfo[i].textContent= "I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers" 
+      briefInfo[i].innerHTML= `
+      I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
+      <br> <br>
+      I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
+      <br><br>
+      I have been writing vanilla Js for like 6 months before going fully into using Vue JS.` 
       readMore[i].innerText = "Read More ↗";
       
       readMore[i].addEventListener("click", ()=>{
         if(valueBtn){
           valueBtn=false;
-          briefInfo[i].textContent= "I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place. I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers. I have been writing vanilla Js for like 6 months before going fully into using Vue JS. I hope to scale up my work to become a full stack developer in the near time building both backend and front end applications.In addition, I am an SDG advocate who uses his voice and skills in contributing to the attainment of a sustainable society.In all, I am looking forward to any industry or company that values my skills and is ready to saddle me with responsibility that aims to promote the company goals and also protect my own personal interests."
+          briefInfo[i].innerHTML= `
+          I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
+          <br><br>
+          I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
+          <br><br>
+          I have been writing vanilla Js for like 6 months before going fully into using Vue JS. I hope to scale up my work to become a full stack developer in the near time building both backend and front end applications.
+          <br><br> In addition, I am an SDG advocate who uses his voice and skills in contributing to the attainment of a sustainable society.In all, I am looking forward to any industry or company that values my skills and is ready to saddle me with responsibility that aims to promote the company goals and also protect my own personal interests.`
           readMore[i].innerText ="Show Less ↗";
           
         }else{
           valueBtn=true;
-          briefInfo[i].textContent= "I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers" 
+          briefInfo[i].innerHTML= `
+          I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
+          <br> <br>
+          I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
+          <br><br>
+          I have been writing vanilla Js for like 6 months before going fully into using Vue JS.`   
           readMore[i].innerText = "Read More ↗";
             }
       })

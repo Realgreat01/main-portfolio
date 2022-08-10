@@ -52,6 +52,9 @@
         margin-bottom: 0;
     }
     #large-info{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
         border-radius: 10px;
         width:80%;
     }
@@ -66,7 +69,7 @@
         border:none;
         border-radius: 4px;
         color: #fff;
-        padding: 4px;
+        padding: 1px;
         margin: 0 3px;
         display:inline-block;
     }
@@ -234,4 +237,10 @@
         margin: 0 auto;
     }
     
+}
+
+*{
+    $color: #eefaff;
+    $ckck: #99dbfa;
+    $SNSNS: #c7d0d6;
 }
