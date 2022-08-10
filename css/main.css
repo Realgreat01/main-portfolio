@@ -127,6 +127,12 @@ nav li a {
   width: fit-content;
 }
 
+@media (max-width: 600px) {
+  .logo img {
+    height: 10px;
+  }
+}
+
 .menu-bar {
   display: none;
   position: relative;
@@ -306,6 +312,7 @@ nav li a {
   height: 30px;
   width: 30px;
   padding: 2px;
+  border-radius: 50%;
 }
 
 .socials img:hover {
