@@ -51,10 +51,12 @@
         border-bottom: 2px solid var(--secondary);
         margin-bottom: 0;
     }
+    .brief-info{
+        font-weight: 400;
+        font-size: 13px;
+        opacity: 0.8;
+    }
     #large-info{
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: 300;
-        font-size: 14px;
         border-radius: 10px;
         width:80%;
     }
@@ -62,6 +64,7 @@
     #small-info{
         border-radius: 10px;
         width:98%;
+        // font-family: 'Cutive Mono', monospace;
     }
 
     .read-more{
@@ -69,7 +72,7 @@
         border:none;
         border-radius: 4px;
         color: #fff;
-        padding: 1px;
+        padding: 1px 4px;
         margin: 0 3px;
         display:inline-block;
     }
@@ -78,9 +81,9 @@
 
 
 // social icons
+
 .socials{
     img{
-        background: var(--primary);
         height: 30px;
         width: 30px;
         padding: 2px;

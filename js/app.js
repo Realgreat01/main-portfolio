@@ -11,6 +11,7 @@ let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
 let mobileNav = document.querySelector(".nav-mobile");
 let main = document.querySelector("#main")
+const socialIcons = document.querySelectorAll(".social-icons")
 
 
 // Universal declaration for for Loops
@@ -33,6 +34,7 @@ setInterval(projectAdd, 50);
 clearInterval(projectAdd, 3000)
 
 
+// Works for Light Theme
 const darkMode = ()=>{
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
@@ -41,7 +43,8 @@ const darkMode = ()=>{
     body.style.setProperty('--background', 'linear-gradient(140deg, #fff, #dcfbfc)');
     body.style.setProperty('--box', '#6bb5fa');
     body.style.setProperty('--nav', '#b9f4f5');
-
+    socialIcons.forEach(icons=> icons.style.filter = "none")
+    
     // light.style.visibility="visible";
     light.style.visibility="hidden";
     dark.style.visibility="visible";
@@ -53,8 +56,8 @@ const darkMode = ()=>{
     setInterval(projectAdd, 50);
   }
 
-  // function for LightMode
-  const lightMode = ()=>{;
+  // function for DarkMode
+  const lightMode = ()=>{
     body.style.setProperty('--primary', '#fff');
     body.style.setProperty('--secondary', '#fa2388');
     body.style.setProperty('--tertiary', '#7afa03');
@@ -62,6 +65,7 @@ const darkMode = ()=>{
     body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f)');
     body.style.setProperty('--box', '#52606d');
     body.style.setProperty('--nav', '#2b024d');
+    socialIcons.forEach(icons=> icons.style.filter = "brightness(0) invert(1)")
  
 
     dark.style.visibility="hidden";
@@ -125,7 +129,8 @@ const briefInfo = document.querySelectorAll(".brief-info");
 let valueBtn = true;
 
 const updateBiography = () => {
-    for(let i =0; i<briefInfo.length; i++){ 
+    for(let i =0; i<briefInfo.length; i++){
+      briefInfo[i].style.fontFamily ="'Raleway', sans-serif" 
       briefInfo[i].innerHTML= `
       I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
       <br> <br>

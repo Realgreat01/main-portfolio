@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 :root {
+  --boshshsx: #90fff6;
   --primary: #000 ;
   --secondary: #ff0077;
   --tertiary: #006eff;
   --dark: #fff;
+  --white:#fff;
   --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
   --box: #6bb5fa;
   --nav: #b9f4f5;
@@ -273,10 +276,13 @@ nav li a {
   margin-bottom: 0;
 }
 
+#info-lead .brief-info {
+  font-weight: 400;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
 #info-lead #large-info {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
   border-radius: 10px;
   width: 80%;
 }
@@ -291,17 +297,15 @@ nav li a {
   border: none;
   border-radius: 4px;
   color: #fff;
-  padding: 1px;
+  padding: 1px 4px;
   margin: 0 3px;
   display: inline-block;
 }
 
 .socials img {
-  background: var(--primary);
   height: 30px;
   width: 30px;
   padding: 2px;
-  border-radius: 50%;
 }
 
 .socials img:hover {
@@ -631,12 +635,12 @@ section > h2 {
 }
 
 * {
-  counter-reset: experiencecounter;
+  counter-reset: experience-counter;
+  counter-reset: educationCounter;
 }
 
 .dots::before {
-  content: "(experiencecounter)";
-  counter-increment: ex;
+  content: "";
   height: 10px;
   width: 10px;
   border: 1px solid var(--dark);
@@ -669,6 +673,23 @@ section > h2 {
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
   z-index: 2;
+}
+
+.education-item #certificate {
+  border: none;
+  outline: none;
+  display: block;
+  padding: 5px;
+  border-radius: 4px;
+  background: var(--secondary);
+}
+
+.education-item #certificate:hover {
+  background: var(--tertiary);
+}
+
+.education-item #certificate a {
+  color: var(--white);
 }
 
 .education h2 {
@@ -737,7 +758,6 @@ section > h2 {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  scroll-snap-type: x mandatory;
   padding: 20px;
 }
 
@@ -755,7 +775,6 @@ section > h2 {
   margin-right: 50px;
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
-  scroll-snap-align: start;
 }
 
 .testifier-card:hover {

@@ -4,21 +4,24 @@
     // --tertiary: #7afa03;
     // --dark: #1a0129;
     // --background: linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f);;
-    // --box: #52606d;
+    --boshshsx: #90fff6;
     --primary: #000 ;
     --secondary: #ff0077;
     --tertiary: #006eff;
     --dark: #fff;
+    --white:#fff;
     --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
     --box: #6bb5fa;
     --nav: #b9f4f5;
 }
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
 *{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'League Spartan', sans-serif;;
+    font-family: 'League Spartan', sans-serif;
 }
+
 //  Variables
 // 1.  for font-size
             $small : 12px;

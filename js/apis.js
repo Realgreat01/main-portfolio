@@ -159,6 +159,8 @@ const education = async ()=>{
                             <h2>${item.title}</h2>
                             <h4>${item.OfferedBy} ( ${item.Date} )</h4>
                             <p>${item.summary}</p>
+                            <button id="certificate"><a href="${item.Certificate}" target = "blank">Certificate</a></button>
+
                        </div>
                 </div>
         `
@@ -179,7 +181,7 @@ const experience = async () =>{
     VolunteeringExperience.forEach(item=>{
     expDom.innerHTML += `
         <div>
-            <div class="dots">
+            <div class="dots experience-dots">
             </div>
             <div class="education-item">
                 <h2>${item.Organization}</h2>
@@ -194,7 +196,7 @@ const experience = async () =>{
     WorkExperience.forEach(item=>{
     expDom.innerHTML += `
         <div>
-            <div class="dots">
+            <div class="dots experience-dots">
             </div>
             <div class="education-item">
                 <h2>${item.Company}</h2>
