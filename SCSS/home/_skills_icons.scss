@@ -72,7 +72,7 @@
 }
 
 .skill-rating-btn{
-    background: var(--nav);
+    background: none;
     color: var(--primary);
     outline: none;
     border: none;
@@ -87,7 +87,7 @@
     border-radius: 5px;
 }
 .large-click{
-    display:none;
+    display:block;
 }
 @media (max-width:600px){
     .large-click{
