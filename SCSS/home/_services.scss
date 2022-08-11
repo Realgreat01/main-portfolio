@@ -35,7 +35,34 @@ section>h2{
 }
 
 // Start of Project 
-// Main Project Container 
+// Main Project Container
+#all-projects{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    outline:none;
+    width: 200px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: var(--secondary);
+    &:hover{
+        background: var(--nav);
+    }
+    
+    a{
+        color:#fff;
+        margin: auto;
+        width: 100%;
+        padding: 15px;
+        height: 100%;
+        display: block;
+        &:hover {
+            color: var(--primary)
+        }
+    }
+}
 .project-details{
     display:grid;
     grid-template-columns: 1fr 1fr;
