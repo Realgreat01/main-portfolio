@@ -7,7 +7,7 @@
             "description" : "A e-commerce website made with dummy data from fakestoreapi.com but it's completely fucntional. ",
             "date" : "August, 2022",
             "tools" : "vue.svg",
-            "src" : "verix-shop.jpg"
+            "src" : "verix-shop.png"
         },
         {
             "name" : "Weather App",
@@ -16,7 +16,7 @@
             "description" : "A simple application for getting weather of any known city in the world at any given time.",
             "date" : "July, 2022",
             "tools" : "vue.svg",
-            "src" : "weather-app.jpg"
+            "src" : "weather-app.png"
         },
         {
             "name" : "Movie App",
@@ -25,7 +25,7 @@
             "description" : "A simple app for checking available movies from IMDB website. It's my first Vue Application",
             "date" : "June, 2022",
             "tools" : "vue.svg",
-            "src" : "movie-app.jpg"
+            "src" : "movie-app.png"
         },
         {
             "name" : "Tip calculator",
@@ -44,7 +44,7 @@
             "description" : "A simple landing page website. It's a challenge I completed from <a href='https://www.frontendmentor.io'>FrontEnd Mentor</a>",
             "date" : "May, 2021",
             "tools" : "css.svg",
-            "src" : "fylo.jpeg"
+            "src" : "fylo.png"
         },
 
         {

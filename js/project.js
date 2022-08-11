@@ -19,8 +19,8 @@ const project =async ()=>{
                         </div>
                     <div class="project-info"> 
                         <div id="preview-icons">
-                            <a href="${frontend.website}" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
-                            <a href="${frontend.github}" id="right"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
+                            <a href="${frontend.website}" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview"></a>
+                            <a href="${frontend.github}" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
                         </div>
                         <img src="./images/skills/${frontend.tools}" alt="${frontend.tools}"
                     </div>    
