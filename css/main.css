@@ -73,12 +73,6 @@ nav {
   margin-bottom: 50px;
 }
 
-@media (max-width: 600px) {
-  nav {
-    margin-bottom: 100px;
-  }
-}
-
 nav .nav-flex {
   display: flex;
   position: relative;
@@ -1152,7 +1146,7 @@ section > h2 {
     grid-template-columns: 1fr 1fr;
   }
   .summary-items {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .summary-items h3 {
     font-size: 20px;
@@ -1166,7 +1160,7 @@ section > h2 {
     width: 80%;
   }
   .summary-profile img {
-    height: 100%;
+    height: 80%;
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -1253,12 +1247,12 @@ section > h2 {
 }
 
 .skill-rating-btn {
-  background: var(--nav);
+  background: none;
   color: var(--primary);
   outline: none;
   border: none;
   min-width: 40%;
-  max-width: 60%;
+  max-width: 90%;
   padding: 10px;
   font-size: 0.8rem;
   display: block;
@@ -1266,10 +1260,11 @@ section > h2 {
   margin: 10px auto;
   margin-right: 40%;
   border-radius: 5px;
+  opacity: 0.8;
 }
 
 .large-click {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -1278,6 +1273,7 @@ section > h2 {
   }
   .small-click {
     display: block;
+    margin: 10px auto;
   }
 }
 
