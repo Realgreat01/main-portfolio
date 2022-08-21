@@ -33,8 +33,13 @@ section{
     max-height: fit-content;
     padding-bottom: $p-large;
     border-bottom: 1px solid #3a393927;
+    // left: 0;
     &>h2{
         margin-top: 50px;
+        position: sticky;
+        top: 50px;
+        z-index: 10;
+        width: 100%;
     }
     // @media only screen and(max-width: 600px) {
     //    width: 98%;

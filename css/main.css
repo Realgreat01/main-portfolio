@@ -55,6 +55,10 @@ section {
 
 section > h2 {
   margin-top: 50px;
+  position: sticky;
+  top: 50px;
+  z-index: 10;
+  width: 100%;
 }
 
 h1, #name-span {
@@ -245,8 +249,10 @@ nav li a {
 
 #summary {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr;
   justify-content: center;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .summary-items {
@@ -291,7 +297,7 @@ nav li a {
 
 #info-lead #large-info {
   border-radius: 10px;
-  width: 80%;
+  width: 50%;
 }
 
 #info-lead #small-info {
@@ -322,8 +328,9 @@ nav li a {
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -391,6 +398,7 @@ nav li a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -459,8 +467,9 @@ nav li a {
 }
 
 section > h2 {
-  width: 50%;
+  width: 80%;
   padding-bottom: 4px;
+  font-size: 1.2rem;
   border-bottom: 2px solid var(--secondary);
 }
 
@@ -1143,7 +1152,7 @@ section > h2 {
     display: none;
   }
   #summary {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .summary-items {
     margin-top: 100px;
@@ -1251,8 +1260,7 @@ section > h2 {
   color: var(--primary);
   outline: none;
   border: none;
-  min-width: 40%;
-  max-width: 90%;
+  display: block;
   padding: 10px;
   font-size: 0.8rem;
   display: block;
