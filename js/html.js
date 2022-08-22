@@ -4,10 +4,10 @@ mainNav.innerHTML = `
     <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
     <div class="nav-desktop">
         <ul class="nav-flex">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#education-experience">Education</a></li>
+            <li><a href="#major-projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     <button id="download-btn"><a href="https://drive.google.com/file/d/1HUyXDxHg3W66O-zqcml1y0C8kxvvMui9/view?usp=sharing" target ="_blank" download>Download CV</a></button>
