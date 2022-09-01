@@ -1,17 +1,17 @@
-
+@import "./variables";
 #summary{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 3fr;
     justify-content: center;
     width: 90%;
     margin: 10px auto;
+    // background: red;
 }
 
 // first column
 
 .summary-items{
     margin-top: 100px;
-
     h3{
         font-size:2.2rem;
         font-weight: 400;
@@ -45,13 +45,25 @@
 
 // Brief Info Section
 #info-lead{
-
+    margin-top: 200px;
+    margin-left: 40px;
+    // background: red;
+    @media (max-width:600px){
+        margin-top:50px;
+        margin-left:0;
+    }
     #info{
         font-size: 2rem;
         color:var(--primary);
-        width: 60%;
         border-bottom: 2px solid var(--secondary);
         margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        @media (max-width: 600px){
+            width: 60%;
+            text-align: left;
+
+        }
     }
     .brief-info{
         font-weight: 400;
@@ -104,7 +116,7 @@
     margin:0 auto;
     
 
-    @media #{$small-screen}{
+    @media (max-width: 600px){
         width: 90%;
         margin: 0 auto;
     }
@@ -129,7 +141,7 @@
         box-shadow: 1px 1px 3px var(--box);
        
 
-        @media #{$small-screen}{
+        @media (max-width: 600px){
             height: 250px;
         }
 
@@ -170,7 +182,7 @@
         width: 80%;
         margin: 0 auto;
 
-        @media #{$small-screen}{
+        @media (max-width: 600px){
             width: 90%;
             margin:0;
             margin: 0 auto;
@@ -207,30 +219,4 @@
                 weight: 300;
             }
         }
-}
-
-.summary-profile{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    .card{
-        background: var(--secondary);
-        position:absolute;
-        height: 50%;
-        width: 100%;
-        border-radius: 10px;
-        bottom: 0;
-        margin: 0 auto;
-    }
-    
-    img{
-        display:block;
-        height: 700px;
-        width: 100%;
-        position: absolute;
-        bottom:0;
-        margin: 0 auto;
-    }
-    
 }

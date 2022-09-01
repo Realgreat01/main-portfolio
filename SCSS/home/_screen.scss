@@ -11,7 +11,7 @@
         display: none;
     } 
 }
-@media #{$small-screen} {
+@media (max-width: 600px) {
     .large-skills, .bio-large{
         display:none;
     }
@@ -36,18 +36,4 @@
         }
 
         }
-
-   .summary-profile{
-    img{
-        height: 80%;
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-        left: 10%;
-    }
-
-    .card{
-        height: 65%;
-    }
-    }
 }
