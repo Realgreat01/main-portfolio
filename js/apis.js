@@ -1,18 +1,18 @@
 const skills = async()=>{
     const response = await fetch("./data/skills.json");
     const data = await response.json();
-    const {FrontEnd, Design, BackEnd} = data;
+    const {FrontEnd, Design, BackEnd, Management} = data;
 
     // Getting the classes
-    const frontend = document.querySelectorAll(".front-end");
-    const backend = document.querySelectorAll(".backend");
-    const design = document.querySelectorAll(".design");
+    const frontend = document.querySelector(".front-end");
+    const backend = document.querySelector(".backend");
+    const design = document.querySelector(".design");
+    const management = document.querySelector(".management");
    
     
 
     FrontEnd.forEach(item=>{
-        frontend.forEach(inner=>{
-            inner.innerHTML += `
+        frontend.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
             <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
@@ -20,12 +20,10 @@ const skills = async()=>{
             </div>
             </div>
             `
-        });
     })
 
     BackEnd.forEach(item=>{
-        backend.forEach(inner=>{
-            inner.innerHTML += `
+        backend.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
             <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
@@ -33,12 +31,10 @@ const skills = async()=>{
             </div>
             </div>
             `
-        })
     });
 
     Design.forEach(item=>{
-        design.forEach(inner=>{
-            inner.innerHTML += `
+        design.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
             <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
@@ -46,7 +42,16 @@ const skills = async()=>{
             </div>
             </div>
             `
-        })
+    });
+    Management.forEach(item=>{
+        management.innerHTML += `
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
+            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+                <span id="skill-title">${item.skill}</span>
+                <span id="skill-level">${item.level}%</span>
+            </div>
+            </div>
+            `
     })
 }
 skills()

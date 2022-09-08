@@ -136,7 +136,7 @@
 
 .skills{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     width: 60%;
     margin:0 auto;
     
@@ -150,7 +150,8 @@
         background: var(--dark); 
         margin-right: 5px;
         min-width: 110px;
-        height: 200px;
+        min-height: 220px;
+        max-height: 260px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -175,7 +176,7 @@
     }
     .skill-tools{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
         align-items: center;
         justify-content: center;
         max-width: 10px;

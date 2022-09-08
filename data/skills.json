@@ -29,6 +29,16 @@
             "skill": "Sass", 
             "level" : 80,
             "icon" : "sass.svg"
+        },
+        {
+            "skill": "Typescript", 
+            "level" : 58,
+            "icon" : "typescript.svg"
+        },
+        {
+            "skill": "Nuxt", 
+            "level" : 53,
+            "icon" : "nuxt.svg"
         }
 
     ],
@@ -48,21 +58,6 @@
             "skill": "Firebase", 
             "level" : 40,
             "icon" : "firebase.svg"
-        },
-        {
-            "skill": "Python", 
-            "level" : 5,
-            "icon" : "python.svg"
-        },
-        {
-            "skill": "PHP", 
-            "level" : 2,
-            "icon" : "php.svg"
-        },
-        {
-            "skill": "C #", 
-            "level" : 0,
-            "icon" : "c-sharp.svg"
         }
     ],
 
@@ -91,6 +86,28 @@
             "skill": "Adobe XD", 
             "level" : 62,
             "icon" : "adobe-xd.svg"
+        }
+    ],
+    "Management" : [
+        {
+            "skill": "Excel", 
+            "level" : 52,
+            "icon" : "excel.svg"
+        },
+        {
+            "skill": "Git", 
+            "level" : 69,
+            "icon" : "git.svg"
+        },
+        {
+            "skill": "Github", 
+            "level" : 75.5,
+            "icon" : "github.svg"
+        },
+        {
+            "skill": "VS code", 
+            "level" : 84,
+            "icon" : "vscode.svg"
         }
     ]
 }
