@@ -63,7 +63,7 @@ const services = async ()=>{
         <div class="" id="">
         <img src="./images/services/${service.icon}" alt=""></img>
         <h4>${service.title}</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur et porro laboriosam debitis laudantium nam illum. Facilis, asperiores quis?</p>
+        <p>${service.description}</p>
     </div>
         `
     })
@@ -145,7 +145,7 @@ const education = async ()=>{
                             <h2>${item.name}</h2>
                             <h4>${item.graduation}</h4>
                             <h4 style="margin-top: 10px;">${item.course}</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                            <p>${item.description}</p>
                        </div>
                 </div>
         `
@@ -188,7 +188,7 @@ const experience = async () =>{
                 <h4 style="margin-top: 2px">${item.Role}</h4>
                 <h4 style="margin-top: 2px">${item.Program}</h4>
                 <h4 style="margin-top: 2px">${item.Duration}</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                <p>${item.description}</p>
             </div>
         </div>
     `
@@ -202,7 +202,7 @@ const experience = async () =>{
                 <h2>${item.Company}</h2>
                 <h4 style="margin-top: 5px"> Role : ${item.Role}</h4>
                 <h4 style="margin-top: 5px"> Duration : ${item.Duration}</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
+                <p>${item.description}</p>
             </div>
         </div>
     `
@@ -237,13 +237,13 @@ const testimonials = async ()=>{
                 </div>
         </div>
 
-        <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta voluptates itaque quasi, harum odio aliquid inventore quis. Nesciunt, corporis.</p>
+        <p class="quote">${item.comment}</p>
 
         <div class="testifier-details">
             <img src="./images/man.svg" alt="">
             <div>
-                <h3>${item.name} -5</h4>
-                <h4>${item.position}.</h4>
+                <h3>${item.name}</h4>
+                <h4>${item.position}</h4>
             </div>
         </div>
     </div>

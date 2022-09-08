@@ -3,17 +3,11 @@
 #name-span{
     @extend h1;
 }
-
-//NAVIGATION BAR
-//  #nav{
-//     // position: fixed;
-//     // background: red;
-//  }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 30;
+    z-index: 20;
     height: 50px;
     top:0;
     width:100%;
@@ -147,7 +141,6 @@ nav{
 #mode{
     position: relative;
     display:flex;
-    z-index:20;
     height: 25px;
     background: none;
     width: 40px;

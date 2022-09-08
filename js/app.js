@@ -1,41 +1,38 @@
-
-let clients = document.querySelectorAll("#clients");
-let projects = document.querySelectorAll("#projects");
-let experiences = document.querySelectorAll("#experience");
-let dark = document.getElementById("dark");
-let light = document.getElementById("light");
 let body = document.querySelector("body");
-let images = document.querySelectorAll("img");
 let navbar = document.getElementById("nav");
 let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
-let mobileNav = document.querySelector(".nav-mobile");
-let main = document.querySelector("#main")
 const socialIcons = document.querySelectorAll(".social-icons")
 
 
-// Universal declaration for for Loops
-
-let projectNum = 650;
-let clientNum = 0;
-let expNum = 0;
+// GETTING ACHIEVEMENTS DATA
+let clients = document.querySelector("#clients");
+let projects = document.querySelector("#projects");
+let experiences = document.querySelector("#experience");
+let projectsCounter = 10;
+let clientsCounter = 0;
+let experienceCounter = 0;
 
 const projectAdd = ()=>{
-  if(projectNum<700){ projectNum++;};
- projects.forEach(project => project.textContent = projectNum+ "+");
+  if(projectsCounter<24){ projectsCounter++;};
+ projects.textContent = projectsCounter+ "+";
 
-  if(clientNum<58){ clientNum++;};
- clients.forEach(client=>client.textContent = clientNum+ "+");
+  if(clientsCounter<3){ clientsCounter++;};
+ clients.textContent = clientsCounter+ "+";
 
-  if(expNum<50){ expNum++;};
- experiences.forEach(experience=>experience.textContent = expNum+ "+");
+  if(experienceCounter< 6){ experienceCounter++;};
+ experiences.innerHTML = ` ${experienceCounter} <span style="font-size: 16px">months <span>`;
 }
 setInterval(projectAdd, 50);
 clearInterval(projectAdd, 3000)
 
 
-// Works for Light Theme
-const darkMode = ()=>{
+
+let dark = document.getElementById("dark");
+let light = document.getElementById("light");
+
+// FOR  LIGHT  THEME
+const lightMode = ()=>{
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
     body.style.setProperty('--tertiary', '#006eff');
@@ -48,16 +45,10 @@ const darkMode = ()=>{
     // light.style.visibility="visible";
     light.style.visibility="hidden";
     dark.style.visibility="visible";
-
-    projectNum = 650;
-    clientNum = 0;
-    expNum = 0;
-
-    setInterval(projectAdd, 50);
   }
 
-  // function for DarkMode
-  const lightMode = ()=>{
+  // function for Dark Mode
+  const darkMode = ()=>{
     body.style.setProperty('--primary', '#fff');
     body.style.setProperty('--secondary', '#fa2388');
     body.style.setProperty('--tertiary', '#7afa03');
@@ -67,125 +58,120 @@ const darkMode = ()=>{
     body.style.setProperty('--nav', '#2b024d');
     socialIcons.forEach(icons=> icons.style.filter = "brightness(0) invert(1)")
  
-
     dark.style.visibility="hidden";
     light.style.visibility="visible";
-
-      projectNum = 650;
-      clientNum = 0;
-      expNum = 0;
-
-    setInterval(projectAdd, 50);
   }
 
 
-  // animate on scroll event
-  let scrollval = 900;
+  // ANIMATE NAV BAR ON SCROLL
+  let SCROLL_VALUE = 900;
+  let TOP_SCROLL = 600;
+
+  let initialScrollValue = SCROLL_VALUE;
   window.addEventListener('scroll', () => {
-    if(scrollval >  window.scrollY) { 
+    let currentScrollPosition = window.scrollY;
+    if(initialScrollValue >  currentScrollPosition) { 
       navbar.style.position="static"; 
       navbar.style.background="none";
-      console.log("scroll up")
       
-    }else if(window.scrollY<=600){
-      console.log("scroll top")
+    }else if(currentScrollPosition<= TOP_SCROLL){
       navbar.style.background="none";
       
     } else {
-      console.log("scroll bottom")
           navbar.style.position="fixed";
           navbar.style.background="var(--nav)";
           navbar.style.transition="1s";
         }
-    scrollval=window.scrollY;
+    initialScrollValue=currentScrollPosition;
   });
   
+
+const nav = document.querySelector(".mobile-menu")
+const navItems = document.querySelectorAll(".nav-flex li")
+
   // Toggle Show Menu
   const showMenu =()=>{
-    if(mobileNav.style.height="0"){
-    mobileNav.style.height="100%";
+    nav.style.transform="translateX(0)"
+    menuIcon.style.visibility="hidden";
+    body.style.overflow ="hidden";
+    cancelIcon.style.visibility="visible";
   }
-  menuIcon.style.visibility="hidden";
-  cancelIcon.style.visibility="visible";
-  main.addEventListener("click", hideMenu);
-}
-
+  
 // Toggle Hide Menu
 const hideMenu =()=>{
-  mobileNav.style.height="0";
+  nav.style.transform="translateX(100%)"
+  body.style.overflow ="visible";
   menuIcon.style.visibility="visible";
   cancelIcon.style.visibility="hidden";
 }
 menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
+navItems.forEach(item => item.addEventListener("click", hideMenu))
+  
 
-mobileNav.addEventListener("mouseleave", hideMenu);
 
-
-
-// Updating Bio
-const readMore = document.querySelectorAll(".read-more");
-const briefInfo = document.querySelectorAll(".brief-info");
+// UPDATING BIOGRAHY
+const readMore = document.querySelector(".read-more");
+const briefInfo = document.querySelector(".brief-info");
 let valueBtn = true;
 
 const updateBiography = () => {
-    for(let i =0; i<briefInfo.length; i++){
-      briefInfo[i].style.fontFamily ="'Raleway', sans-serif" 
-      briefInfo[i].innerHTML= `
+      briefInfo.style.fontFamily ="'Raleway', sans-serif" 
+      briefInfo.innerHTML= `
       I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
       <br> <br>
       I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
       <br><br>
       I have been writing vanilla Js for like 6 months before going fully into using Vue JS.` 
-      readMore[i].innerText = "Read More ↗";
-      
-      readMore[i].addEventListener("click", ()=>{
+      readMore.innerText = "Read More ↗";
+       
+      readMore.addEventListener("click", ()=>{
         if(valueBtn){
-          valueBtn=false;
-          briefInfo[i].innerHTML= `
+          briefInfo.innerHTML= `
           I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
           <br><br>
           I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
           <br><br>
           I have been writing vanilla Js for like 6 months before going fully into using Vue JS. I hope to scale up my work to become a full stack developer in the near time building both backend and front end applications.
           <br><br> In addition, I am an SDG advocate who uses his voice and skills in contributing to the attainment of a sustainable society.In all, I am looking forward to any industry or company that values my skills and is ready to saddle me with responsibility that aims to promote the company goals and also protect my own personal interests.`
-          readMore[i].innerText ="Show Less ↗";
+          readMore.innerText ="Show Less ↗";
+          valueBtn=false;
           
         }else{
-          valueBtn=true;
-          briefInfo[i].innerHTML= `
+          briefInfo.innerHTML= `
           I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
           <br> <br>
           I'm skilled in both front end development using vue js and also design. My skill set is indicated below and with respective ratings. As a designer, I spent more time understanding how design and design patterns work than actually designing which makes me able to work perfectly well with professional ui designers.
           <br><br>
           I have been writing vanilla Js for like 6 months before going fully into using Vue JS.`   
-          readMore[i].innerText = "Read More ↗";
-            }
+          readMore.innerText = "Read More ↗";
+          valueBtn=true;
+        }
       })
     }
-}
 
-// Updating Theme from Local Storage
+// UPDATING THEME FROM LOCAL STORAGE
 window.addEventListener("DOMContentLoaded", ()=>{
       updateBiography()
         const currentTheme= localStorage.getItem("theme");
   
         if(currentTheme=="light"){
-            lightMode();
-        }else{
             darkMode();
-        }})
-        
+        }else{
+            lightMode();
+        }}
+    )
+
+// CHANGING MODES ON MODE ICON CLICKS
     const mode = document.getElementById("mode")
     mode.addEventListener("click",()=>{
-      const getItemFromLocalStorage = localStorage.getItem("theme");
-      let currentTheme = getItemFromLocalStorage;
-      console.log(getItemFromLocalStorage);
+      let currentTheme = localStorage.getItem("theme");
+      
       if(currentTheme=="dark"){
-          lightMode();
+          darkMode();
           localStorage.setItem("theme", "light");
       }else{
-          darkMode();
+          lightMode();
           localStorage.setItem("theme", "dark");
       }
     })

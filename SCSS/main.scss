@@ -1,9 +1,4 @@
 :root{
-    // --primary: #fff ;
-    // --secondary: #fa2388;
-    // --tertiary: #7afa03;
-    // --dark: #1a0129;
-    // --background: linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f);;
     --boshshsx: #90fff6;
     --primary: #000 ;
     --secondary: #ff0077;
@@ -59,7 +54,6 @@
 // Mixins
 
 
-
 // partials
 @import "./home/selectors";
 @import "./home/nav";
@@ -70,5 +64,10 @@
 @import "./home/contact";
 @import "./home/screen";
 @import "./home/skills_icons";
+@import "./home/mobile-nav";
 
 @import "./projects/projects";
+
+#nav{
+    z-index: 999;
+}

@@ -9,14 +9,14 @@
 }  
 
 body{
-    // background:repeating-linear-gradient(140deg, #fff, #dcfbfc);
     background: var(--background);
     color:var(--primary);
     padding: 0;
     margin:0;
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
+    height: fit-content;
 }
 
 main{

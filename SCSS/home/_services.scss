@@ -29,6 +29,7 @@ section>h2{
 }
 .services-box img{
     height: 50px;
+    -webkit-backdrop-filter: invert(1);
     backdrop-filter: invert(1);
     background: var(--secondary);
     padding: 5px;

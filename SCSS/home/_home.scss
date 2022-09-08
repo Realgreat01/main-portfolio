@@ -1,15 +1,45 @@
 @import "./variables";
 #summary{
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    align-items:flex-end;
     width: 90%;
     margin: 10px auto;
     // background: red;
 }
 
+.profile-image{
+    // background: red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .line{
+        width: 5px;
+        height: 70vh;
+        position: absolute;
+        justify-self: flex-end;
+        top:0;
+        // transform:rotateZ(45deg);
+        // background-color: blue;
+    }
+    img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        &::after{
+            content: "Hello";
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            background: #46f501; 
+        }
+    }
+}
 // first column
-
 .summary-items{
     margin-top: 100px;
     h3{
@@ -26,11 +56,6 @@
             family: serif;
             
         }
-      
-        // #name-span{
-        //     // display:block;
-        //     font-size: 3rem;
-        // }
     }
 
     #i-am{
@@ -102,9 +127,9 @@
         width: 30px;
         padding: 2px;
         border-radius: 50%;
+        cursor:pointer;
         &:hover{
             transform: scale(1.2);
-
         }
     }
 }
@@ -139,7 +164,6 @@
         justify-self: stretch;
         color: var(--tertiary);
         box-shadow: 1px 1px 3px var(--box);
-       
 
         @media (max-width: 600px){
             height: 250px;
@@ -171,11 +195,10 @@
             height:35px;
             width: 35px;
         }
-
     }
-
 }
 
+// PROJECTS , EXPERIENCE AND CLIENTS
 .summary-info{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

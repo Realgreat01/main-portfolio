@@ -7,7 +7,6 @@ let nextBtn = document.getElementById("next");
 
 // console.log(slider, cards, prevBtn, nextBtn);
 
-console.log(cards)
 let counter = 1;
 let size= cards[0].clientWidth;
 

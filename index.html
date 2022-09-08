@@ -6,14 +6,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta >
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Samson Ikuomenisan</title>
+    <title>Samson Ikuomenisan | Portfolio</title>
 </head>
 <body>
-    <div id="preloader" style="background-image: url('./images/loader.gif');"></div>
+    <div id="preloader" style="background-image: url('./images/loader.gif')"></div>
+    <div class="mobile-menu">
+        <ul class="nav-flex"> 
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education-experience">Education</a></li>
+          <li><a href="#major-projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+        <div class="image-container">
+          <img src="./images/profile.jpg" alt="" class="profile-image">
+        </div>
+      </div> 
+    </div>
     <main id="main-nav">
     </main>
 
@@ -23,7 +39,7 @@
                 <div class="bio-1">
                     <h3>Hello <span id="i-am"> I'm</span></h3>
                     <h1>Samson <span class="" id="name-span">Ikuomenisan</span></h1>
-                    <h3 id="role">FullStack Web Developer & Business Developer</h3>
+                    <h3 id="role">FullStack Web Developer & Designer</h3>
                 </div>
                 <div class="socials">
                     <img class="social-icons" src="./images/icons/twitter.svg" alt="twitter">
@@ -32,15 +48,23 @@
                     <img class="social-icons" src="./images/icons/github-2.svg" alt="github">
                 </div>
             </div>
-
-            <div id="info-lead" class="">
-                <h2 id="info">Brief Info</h2>
-                <p id=""><span class="brief-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam in, totam sunt, ipsa quia tempore voluptates culpa iure distinctio ipsam odit ullam nisi sed earum itaque, repudiandae saepe illum odio impedit provident libero. Molestiae praesentium explicabo, perspiciatis dignissimos nam modi nesciunt eligendi maiores, labore, laborum fugit quos facilis voluptas.</span><button class="read-more">Read More ↗</button> </p>
+            <div class="profile-image">
+                <p class="line"></p>
+                <img class="" src="./images/profile.png" alt="">
             </div>
         </section>    
         
+        <section class="">
+            <h2 id="info">Brief Info</h2>
+            <!-- <div id="info-lead" class=""> -->
+                <p id="">
+                    <span class="brief-info"></span>
+                    <button class="read-more" type="button">read-more</button>
+                </p>
+            <!-- </div> -->
+        </section>
         
-        <section class="" id="skill-section">
+        <section class="" id="skills skill-section">
                 <h2>Skills </h2>
                 <div class="skills">
                     <div>
@@ -54,14 +78,14 @@
                         <div class="skill-tools backend">
                         </div>
                     </div>
- 
+
                     <div>
                     <h4>Design Tools</h4>
                         <div class="skill-tools design">
                         </div>
                     </div>
+                    
                     <div>
-
                     <h4>General Tools</h4>
                         <div class="skill-tools general">
                         </div>
@@ -86,68 +110,13 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="" id="small-screen">
-            <h2 id="info-lead">Brief Info</h2>
-            <div id="info-lead">
-                <h2 id="info">Brief Info</h2>
-                <p id="small-info"><span class="brief-info" >Small Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam in, totam sunt, ipsa quia tempore voluptates culpa iure distinctio ipsam odit ullam nisi sed earum itaque, repudiandae saepe illum odio impedit provident libero. Molestiae praesentium explicabo, perspiciatis dignissimos nam modi nesciunt eligendi maiores, labore, laborum fugit quos facilis voluptas.</span><button class="read-more">Read More ↗</button> </p>
-            </div>
-
-             <section class="" id="skill-section small-screen">
-            <h2>Skills </h2>
-            <div class="skills"> 
-                <div>
-                    <h4>Front End Skills</h4>
-                    <div class="skill-tools front-end">
-                        
-                    </div>
-                </div>
-                
-                 <div>
-                     <h4>BackEnd Tools</h4>
-                     <div class="skill-tools backend">
-                    </div>
-                </div>
-                
-                <div>
-                    <h4>Design Tools</h4>
-                    <div class="skill-tools design">
-                    </div>
-                </div>
-
-                <div>
-                    <h4>General Tools</h4>
-                    <div class="skill-tools design">
-                    </div>
-                </div>
-            </div>
-            <button class="skill-rating-btn small-click"> click to an icon to see skill rating</button>
-
-  
-             <div class="summary-info">
-                 <div class="summary-details" id="">
-                     <h4>Projects</h4>
-                     <p id="projects">0</p>
-                 </div>
-                 <div class="summary-details" id="">
-                     <h4>Clients</h4>
-                     <p id="clients">0</p>
-                    </div>
-                 <div class="summary-details" id="">
-                     <h4>Experience</h4>
-                     <p id="experience">0</p>
-                 </div>
-        </section> -->
     </section>
 
 
         <section class="services" id="services">
             <h2>Services</h2>
                 <h3>What I do</h3>
-
                 <div class="services-box" id="service-box">
-
-                   
                 </div>
         </section> 
 
@@ -155,15 +124,16 @@
             <h2>Projects</h2>
             <h3>Recent Projects</h3>
             <div class="project-details" id="project-items">
-                
             </div>
-                <button id="all-projects"> <a href="./projects.html" target="_blank">All Projects</a></button>
+            <!-- <button id="all-projects">
+            </button> -->
+            <a href="./projects.html" target="_blank" id="all-projects">All Projects</a>
         </section>
         
 
         <section class="" id="education-experience">
             <h2>Education and Experience</h2>
-           <div class="education-box">
+            <div class="education-box">
 
             <div>
                 <h2>Education & Courses</h2>
@@ -174,23 +144,17 @@
             <div>
                 <h2>Experience</h2>
                 <div class="education" id="experience-item">
-                   </div>
+                </div>
             </div>
-           </div>
+            </div>
         </section>
 
         <section class="testimonial" id="testimonials">
             <h2>Testmonials</h2>
             <div class="client">
                 <h1>What my clients say</h1>
-                <div>
-                    <img src="./images/icons/next.svg" alt="" id="back">
-                    <img src="./images/icons/next.svg" alt="" id="next">
-                </div>
             </div>
-            
             <div class="testifiers-container" id="testifier-container">               
-               </div>
             </div>
         </section>
 
@@ -212,52 +176,49 @@
             </div>
         </section>
 
-        <section id="contact">
-            
+        <section id="contact">   
         <h2>Contact Me</h2>
         <div class="contact"> 
         <div class="contact-details">
-            <div><img src="./images/contacts/map.svg" alt="address"></div>
-            <div><img src="./images/contacts/email-main.svg" alt="email"></div>
-            <div><img src="./images/contacts/phone.svg" alt="phone"></div>
-            <div><img src="./images/contacts/checked.svg" alt="available"></div>
+            <div><span class="material-icons">mail</span> <span>samsonrealgreat@gmail.com</span></div>
+            <div><span class="material-icons">phone</span><span><a href="tel: +2347062215229">+2347062215229</a></span></div>
+            <div><span class="material-icons">map</span><span>Nigeria</span></div>
+            <div><span class="material-icons">task_alt</span><span>Freelance</span></div>
         </div>
-           <form action="https://formsubmit.co/861aef93a83ae42b59b7ccbcac4fd9c8" method="POST" class="contact-info" id="contact-form">
-    
-                <div><input type="text" name="" id="subject" placeholder="Enter Subject" required></div>
-    
+        
+        <form action="https://formsubmit.co/861aef93a83ae42b59b7ccbcac4fd9c8" method="POST" class="contact-info" id="contact-form">
+                <div><input type="text" name="Subject" id="subject" placeholder="Enter Subject" required></div>
                 <div id="inputs">
                     <input type="text" name="first-name" id="first-name" placeholder = "Your first name" required>
                     <input type="text" name="last-name" id="last-name" placeholder = "Your last name" required>
                     <input type="email" name="email-address" id="email-address" placeholder = "Enter your email" required>
                     <input type="tel" name="phone-number" id="phone-number" placeholder = "Enter your phone" required>
-                    
+                    <!--  HIDDEN ATTRIBUTES-->
                     <input type="hidden" name="_subject" id="text-message" value="">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_replyto" placeholder="Email Address"id="reply-to" value="">
                     <input type="hidden" name="_autoresponse" id="auto-reply" value="">
                     <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://realgreat.netlify.app/contact.html">
-                    
+                    <input type="hidden" name="_next" value="#">
                 </div>
+                <div>
+                    <textarea name="message" id="message" placeholder="Enter your message" value=""></textarea>
+                </div>
+                <!-- SEND MESSAGE BUTTON -->
+                <button id="send-button" type="submit">Send Message 
+                    <span class="icon social-icons"><img src="./images/contacts/send.svg" alt="Send Message">
+                    </span>
+                </button>
+        </form>
     
-                <div><textarea name="message" id="message" placeholder="Enter your message" value="nothing here"></textarea></div>
-                <button id="send-button">Send Message <span><img src="./images/contacts/send.svg" alt="Send Message"></span></button>
-           </form>
-    
-        </div>
-        </div>
-
-   
+        </div>   
         </section>
     </main>
     <script src="./js/html.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/sliders.js"></script>
     <script src="./js/partner.js"></script>
     <script src="./js/apis.js"></script>
     <script src="./js/contact.js"></script>
-    
-    
+    <!-- <script src="./js/preloader.js"></script> -->
 </body>
 </html>

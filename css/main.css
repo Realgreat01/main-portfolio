@@ -32,8 +32,9 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
+  height: fit-content;
 }
 
 main {
@@ -49,8 +50,6 @@ main {
 section {
   margin: 0 auto;
   min-height: 300px;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
   max-height: fit-content;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(58, 57, 57, 0.1529411765);
@@ -74,7 +73,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 30;
+  z-index: 20;
   height: 50px;
   top: 0;
   width: 100%;
@@ -91,8 +90,6 @@ nav li {
   text-transform: uppercase;
   width: 150px;
   background-color: none;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -129,8 +126,6 @@ nav li a {
 
 .logo img {
   height: 30px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 600px) {
@@ -196,7 +191,6 @@ nav li a {
 #mode {
   position: relative;
   display: flex;
-  z-index: 20;
   height: 25px;
   background: none;
   width: 40px;
@@ -244,10 +238,39 @@ nav li a {
 
 #summary {
   display: grid;
-  grid-template-columns: 3fr 3fr;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  align-items: flex-end;
   width: 90%;
   margin: 10px auto;
+}
+
+.profile-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.profile-image .line {
+  width: 5px;
+  height: 70vh;
+  position: absolute;
+  justify-self: flex-end;
+  top: 0;
+}
+.profile-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.profile-image img::after {
+  content: "Hello";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background: #46f501;
 }
 
 .summary-items {
@@ -324,6 +347,7 @@ nav li a {
   width: 30px;
   padding: 2px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .socials img:hover {
   transform: scale(1.2);
@@ -411,8 +435,6 @@ nav li a {
   background: var(--dark);
   margin-right: 5px;
   min-width: 110px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -470,7 +492,7 @@ section > h2 {
 .services-box img {
   height: 50px;
   -webkit-backdrop-filter: invert(1);
-          backdrop-filter: invert(1);
+  backdrop-filter: invert(1);
   background: var(--secondary);
   padding: 5px;
   border-radius: 5px;
@@ -544,8 +566,7 @@ section > h2 {
 .project-items .project-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: initial;
-     object-fit: initial;
+  object-fit: initial;
 }
 .project-items .project-data {
   display: grid;
@@ -588,8 +609,7 @@ section > h2 {
 .project-items .project-data .project-info #preview-icons a img {
   width: 20px;
   height: 40px;
-  -o-object-fit: initial;
-     object-fit: initial;
+  object-fit: initial;
 }
 .project-items .project-data .project-info > img {
   height: 40px;
@@ -910,8 +930,6 @@ section > h2 {
   display: flex;
   gap: 20px;
   margin: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   color: var(--tertiary);
   border-radius: 10px;
@@ -1037,16 +1055,6 @@ section > h2 {
   color: var(--dark);
 }
 
-.contact-info ::-moz-placeholder {
-  margin-left: 5px;
-  font-size: 1rem;
-}
-
-.contact-info :-ms-input-placeholder {
-  margin-left: 5px;
-  font-size: 1rem;
-}
-
 .contact-info ::placeholder {
   margin-left: 5px;
   font-size: 1rem;
@@ -1085,8 +1093,6 @@ section > h2 {
     justify-self: stretch;
     align-self: stretch;
     margin: 0;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -1221,6 +1227,84 @@ section > h2 {
     margin: 10px auto;
   }
 }
+body {
+  position: relative;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: var(--nav);
+  padding: 40% 10%;
+  overflow: hidden;
+  position: fixed;
+  transform: translateX(100%);
+  transition: 500ms;
+  z-index: 10;
+}
+.mobile-menu #mobile-cancel {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: red;
+}
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+.mobile-menu ul li {
+  list-style-position: outside;
+  margin: 3px 0;
+  text-transform: uppercase;
+  background: var(--secondary);
+  padding: 15px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--nav);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.mobile-menu ul li a {
+  color: inherit;
+}
+.mobile-menu ul li:hover {
+  background: var(--tertiary);
+}
+.mobile-menu .image-container {
+  background-color: var(--tertiary);
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+.mobile-menu .image-container img {
+  height: 200px;
+  width: 200px;
+  display: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  mix-blend-mode: none;
+}
+
 .project-data img {
   height: 100px;
+}
+
+#nav {
+  z-index: 999;
 }

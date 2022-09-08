@@ -1,19 +1,19 @@
 {
     "Services" : [
         {
-            "title" : "Web Development",
+            "title" : "Fullstack Web Development",
             "icon" : "web-development.svg",
-            "description" : "lorem 23"
+            "description" : "I build scalable and industry fullstack web applications and websites. "
         },
         {
             "title" : "UI/UX Design",
             "icon" : "user-interface.svg",
-            "description" : "lorem 23"
+            "description" : "I design user friendly interface and experience."
         },
         {
             "title" : "Graphics Design",
             "icon" : "graphics.svg",
-            "description" : "lorem 23"
+            "description" : "I design brand oriented simple graphics that communicates at first instance to the target audience"
         }
     ]
 }
