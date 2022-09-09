@@ -241,7 +241,7 @@ nav li a {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: flex-end;
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
 }
 
@@ -258,24 +258,10 @@ nav li a {
     display: none;
   }
 }
-.profile-image .line {
-  width: 5px;
-  height: 70vh;
-  position: absolute;
-  justify-self: flex-end;
-  top: 0;
-}
 .profile-image img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-.profile-image img::after {
-  content: "Hello";
-  width: 5px;
-  height: 100%;
-  position: absolute;
-  background: #46f501;
+  border-radius: 0 0 50% 50%;
+  width: 250px;
+  height: 250px;
 }
 
 .summary-items {
@@ -312,18 +298,18 @@ nav li a {
 }
 
 #info {
-  width: 100%;
+  width: 70%;
+}
+@media (max-width: 600px) {
+  #info {
+    width: 80%;
+  }
 }
 #info .brief-info {
   width: 65%;
   font-weight: 400;
   font-size: 13px;
   opacity: 0.8;
-}
-@media (max-width: 600px) {
-  #info .brief-info {
-    width: 80%;
-  }
 }
 #info .read-more {
   background: var(--secondary);
@@ -720,15 +706,14 @@ section > h2 {
     margin: 0 auto;
   }
   .education-item {
-    min-width: 180px;
-    max-width: 300px;
+    min-width: 280px;
+    max-width: 280px;
     padding: 20px;
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
   }
   .dots {
-    background: var(--secondary);
     min-width: 40px;
   }
 }
@@ -1225,18 +1210,12 @@ body {
   width: 100%;
   height: 100vh;
   background: var(--nav);
-  padding: 40% 10%;
+  padding: 50px 10%;
   overflow: hidden;
   position: fixed;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: 500ms;
   z-index: 10;
-}
-.mobile-menu #mobile-cancel {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: red;
 }
 .mobile-menu ul {
   display: flex;
@@ -1256,7 +1235,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
-  color: var(--nav);
+  color: #fff;
   border-radius: 5px;
   padding-left: 10px;
   font-size: 12px;
@@ -1268,31 +1247,24 @@ body {
   background: var(--tertiary);
 }
 .mobile-menu .image-container {
-  background-color: var(--tertiary);
+  background-color: var(--secondary);
   border-radius: 50%;
-  height: 220px;
-  width: 220px;
+  height: 180px;
+  width: 180px;
   display: flex;
   margin: 0 auto;
-  margin-top: 50px;
+  padding-top: 20px;
   align-items: center;
   justify-items: center;
   overflow: hidden;
 }
 .mobile-menu .image-container img {
-  height: 200px;
-  width: 200px;
-  display: none;
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   display: block;
-  mix-blend-mode: none;
 }
 
 .project-data img {
   height: 100px;
-}
-
-#nav {
-  z-index: 999;
 }

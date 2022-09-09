@@ -46,12 +46,18 @@
     "BackEnd" : [
         {
             "skill": "Node JS", 
-            "level" : 60,
+            "level" : 67.4,
             "icon" : "nodejs-3.svg"
         },
         {
+            "skill": "Express JS", 
+            "level" : 68.9,
+            "icon" : "express.svg",
+            "dark" : true
+        },
+        {
             "skill": "Mongo Db", 
-            "level" : 20,
+            "level" : 54.7,
             "icon" : "mongodb.svg"
         },
         {

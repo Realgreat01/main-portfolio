@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items:flex-end;
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     // background: red;
 }
@@ -20,26 +20,11 @@
     @media (max-width: 800px){
         display:none;
     }
-    .line{
-        width: 5px;
-        height: 70vh;
-        position: absolute;
-        justify-self: flex-end;
-        top:0;
-        // transform:rotateZ(45deg);
-        // background-color: blue;
-    }
+    
     img{
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        &::after{
-            content: "Hello";
-            width: 5px;
-            height: 100%;
-            position: absolute;
-            background: #46f501; 
-        }
+        border-radius: 0 0 50% 50%;
+        width: 250px;
+        height: 250px;
     }
 }
 // first column
@@ -85,16 +70,16 @@
 
 // Brief Info Section
 #info{
-    width: 100%;
-    // background: red;
+    width: 70%;
+    // // background: red;
+    @media (max-width: 600px){
+        width: 80%;
+    }
 .brief-info{
     width: 65%;
     font-weight: 400;
     font-size: 13px;
     opacity: 0.8;
-        @media (max-width: 600px){
-            width: 80%;
-        }
     }
 
     .read-more{
