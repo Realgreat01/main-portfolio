@@ -32,10 +32,6 @@
     display: flex;
     align-items: center;
 }
-*{
-    counter-reset: experience-counter;
-    counter-reset: educationCounter;
-}
 .dots::before{
     content: "";
     height: 10px;

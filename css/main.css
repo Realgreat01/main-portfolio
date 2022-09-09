@@ -433,6 +433,7 @@ nav li a {
   .summary-info {
     gap: 1px;
     margin: 0 auto;
+    width: 90%;
   }
 }
 .summary-info h4 {
@@ -443,6 +444,7 @@ nav li a {
   margin-right: 5px;
   background: var(--dark);
   margin-right: 5px;
+  min-width: 90px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -653,11 +655,6 @@ nav li a {
 .education > div {
   display: flex;
   align-items: center;
-}
-
-* {
-  counter-reset: experience-counter;
-  counter-reset: educationCounter;
 }
 
 .dots::before {

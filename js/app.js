@@ -21,7 +21,7 @@ const projectAdd = ()=>{
  clients.textContent = clientsCounter+ "+";
 
   if(experienceCounter< 17){ experienceCounter++;};
- experiences.innerHTML = ` ${experienceCounter} <span style="font-size: 16px">months <span>`;
+ experiences.innerHTML = `${experienceCounter} <span style="font-size: 16px">months<span>`;
 }
 setInterval(projectAdd, 50);
 clearInterval(projectAdd, 3000)
