@@ -200,7 +200,7 @@
         @media (max-width: 900px){
             gap: 1px;
             margin: 0 auto;
-            width: 90%;
+            width: 100%;
         }
         
         h4{
@@ -212,7 +212,8 @@
             margin-right: 5px;
             background: var(--dark);
             margin-right: 5px;
-            min-width: 90px;
+            min-width: 70px;
+            width: -moz-fit-content;
             height: fit-content;
             display: flex;
             flex-direction: column;
