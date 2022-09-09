@@ -445,7 +445,7 @@ nav li a {
   background: var(--dark);
   margin-right: 5px;
   min-width: 70px;
-  width: -moz-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -1250,14 +1250,14 @@ nav li a {
   list-style-position: outside;
   margin: 3px 0;
   text-transform: uppercase;
-  background: var(--tertiary);
+  background: var(--background);
   padding: 15px;
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
-  color: #fff;
+  color: var(--secondary);
   border-radius: 5px;
   padding-left: 10px;
   font-size: 12px;
@@ -1267,6 +1267,7 @@ nav li a {
 }
 .mobile-menu ul li:hover {
   background: var(--secondary);
+  color: #FFF;
 }
 .mobile-menu .image-container {
   background-color: var(--secondary);
