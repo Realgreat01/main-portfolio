@@ -77,13 +77,12 @@
     color: var(--primary);
     outline: none;
     border: none;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 10px;
     font-size: 0.8rem;
-    display: block;
     text-align: center;
     margin: 10px auto;
-    margin-right: 40%;
     border-radius: 5px;
     opacity: 0.8;
 }
