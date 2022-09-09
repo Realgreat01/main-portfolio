@@ -15,8 +15,8 @@
 }
 
 .eduEx-heading{
-        // font-size: 1.2rem;
-        // font-weight: 700;
+        font-size: $small;
+        font-weight: 700;
     
     @media (max-width: 900px){
         margin-top: 50px;
@@ -70,6 +70,9 @@
     color: var(--tertiary);
     box-shadow: 1px 1px 3px var(--box);
     z-index:2;
+    &>h2{
+        font-size: $medium;
+    }
     #certificate{
         border: none;
         outline: none;

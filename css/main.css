@@ -343,7 +343,7 @@ nav li a {
 #info .brief-info {
   width: 100%;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
   opacity: 0.8;
 }
 #info .read-more {
@@ -636,6 +636,10 @@ nav li a {
   margin: 0 auto;
 }
 
+.eduEx-heading {
+  font-size: 12px;
+  font-weight: 700;
+}
 @media (max-width: 900px) {
   .eduEx-heading {
     margin-top: 50px;
@@ -691,6 +695,9 @@ nav li a {
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
   z-index: 2;
+}
+.education-item > h2 {
+  font-size: 16px;
 }
 .education-item #certificate {
   border: none;
