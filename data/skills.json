@@ -47,23 +47,26 @@
         {
             "skill": "Node JS", 
             "level" : 67.4,
-            "icon" : "nodejs-3.svg"
+            "icon" : "nodejs-3.svg",
+            "class": "normal"
         },
         {
             "skill": "Express JS", 
             "level" : 68.9,
             "icon" : "express.svg",
-            "dark" : true
+            "class" : "dark-icons" 
         },
         {
             "skill": "Mongo Db", 
             "level" : 54.7,
-            "icon" : "mongodb.svg"
+            "icon" : "mongodb.svg",
+            "class": "normal"
         },
         {
             "skill": "Firebase", 
             "level" : 40,
-            "icon" : "firebase.svg"
+            "icon" : "firebase.svg",
+            "class": "normal"
         }
     ],
 
@@ -98,22 +101,26 @@
         {
             "skill": "Excel", 
             "level" : 52,
-            "icon" : "excel.svg"
+            "icon" : "excel.svg",
+            "class": "normal"
         },
         {
             "skill": "Git", 
             "level" : 69,
-            "icon" : "git.svg"
+            "icon" : "git.svg",
+            "class": "normal"
         },
         {
             "skill": "Github", 
             "level" : 75.5,
-            "icon" : "github.svg"
+            "icon" : "github.svg",
+            "class": "dark-icons"
         },
         {
             "skill": "VS code", 
             "level" : 84,
-            "icon" : "vscode.svg"
+            "icon" : "vscode.svg",
+            "class": "normal"
         }
     ]
 }

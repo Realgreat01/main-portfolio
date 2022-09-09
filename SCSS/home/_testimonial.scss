@@ -10,7 +10,7 @@
     background: none;
     display:none;
 
-    @media (max-width: 600px){
+    @media (max-width: 900px){
         display:none;
     }
 }
@@ -141,7 +141,7 @@
     background: var(--secondary);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .testifiers-container{
         position: relative;
         margin: 0 auto;

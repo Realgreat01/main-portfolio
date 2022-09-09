@@ -14,9 +14,9 @@ const project =async ()=>{
                 
                 <div class="project-data">
                     <div class="project-summary">
-                        <h4 id="project-name">${frontend.name}</h3>
+                        <h4 id="project-name">${frontend.name}</h4>
                         <h4 id="project-date">${frontend.date}</h4>
-                        </div>
+                    </div>
                     <div class="project-info"> 
                         <div id="preview-icons">
                             <a href="${frontend.website}" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview"></a>
@@ -38,7 +38,7 @@ const project =async ()=>{
                 
                 <div class="project-data">
                     <div class="project-summary">
-                        <h4 id="project-name">${design.name}</h3>
+                        <h4 id="project-name">${design.name}</h4>
                         <h4 id="project-date">${design.date}</h4>
                     </div>
                     <div class="project-info"> 
@@ -49,7 +49,8 @@ const project =async ()=>{
                         <img src="./images/skills/${design.tools}" alt="${design.tools}"
                     </div>    
                 </div> 
-        </div> `
+        </div> 
+        `
     })
    
 }

@@ -11,8 +11,8 @@ nav{
     height: 50px;
     top:0;
     width:100%;
-    margin-bottom: 50px;
-    // @media (max-width: 600px) {
+    margin-bottom: 20px;
+    // @media (max-width: 900px) {
     //     margin-bottom: 50px;
     // }
     .nav-flex{
@@ -74,7 +74,7 @@ nav{
 .logo img{
     height: 30px;
     width: fit-content;
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         height: 10px;
     }
 }
@@ -83,7 +83,6 @@ nav{
     position: relative;
     height:30px;
     width: 30px;
-    background: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -144,6 +143,7 @@ nav{
     height: 25px;
     background: none;
     width: 40px;
+    margin-right: -50px;
     img{
     position:absolute;
     height: 100%;

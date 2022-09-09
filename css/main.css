@@ -32,6 +32,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  position: relative;
   overflow: hidden;
   scroll-behavior: smooth;
   height: fit-content;
@@ -54,7 +55,6 @@ section {
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(58, 57, 57, 0.1529411765);
   position: relative;
-  top: 50px;
   transition: 2s;
 }
 section > h2 {
@@ -77,7 +77,7 @@ nav {
   height: 50px;
   top: 0;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 nav .nav-flex {
   display: flex;
@@ -128,7 +128,7 @@ nav li a {
   height: 30px;
   width: fit-content;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .logo img {
     height: 10px;
   }
@@ -139,7 +139,6 @@ nav li a {
   position: relative;
   height: 30px;
   width: 30px;
-  background: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -194,6 +193,7 @@ nav li a {
   height: 25px;
   background: none;
   width: 40px;
+  margin-right: -50px;
 }
 #mode img {
   position: absolute;
@@ -243,6 +243,7 @@ nav li a {
   align-items: flex-end;
   width: 100%;
   margin: 10px auto;
+  background: rgba(255, 255, 255, 0);
 }
 
 .profile-image {
@@ -265,7 +266,7 @@ nav li a {
 }
 
 .summary-items {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .summary-items h3 {
   font-size: 2.2rem;
@@ -300,15 +301,15 @@ nav li a {
 #info {
   width: 70%;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #info {
-    width: 80%;
+    width: 90%;
   }
 }
 #info .brief-info {
-  width: 65%;
+  width: 100%;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 1rem;
   opacity: 0.8;
 }
 #info .read-more {
@@ -325,7 +326,6 @@ nav li a {
   height: 30px;
   width: 30px;
   padding: 2px;
-  border-radius: 50%;
   cursor: pointer;
 }
 .socials img:hover {
@@ -334,12 +334,13 @@ nav li a {
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 60%;
   margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .skills {
+    grid-template-columns: 1fr;
     width: 90%;
     margin: 0 auto;
   }
@@ -362,9 +363,10 @@ nav li a {
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .skills > div {
-    height: 250px;
+    min-height: 100px;
+    max-height: 200px;
   }
 }
 .skills > div h4 {
@@ -379,9 +381,9 @@ nav li a {
   max-width: 10px;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .skills .skill-tools {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .skills .skill-tools #npm, .skills .skill-tools #node {
@@ -403,7 +405,7 @@ nav li a {
   width: 80%;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .summary-info {
     width: 90%;
     margin: 0;
@@ -507,7 +509,7 @@ section > h2 {
   margin: 0 auto;
   max-width: 60%;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .project-details {
     display: flex;
     flex-direction: column;
@@ -591,7 +593,7 @@ section > h2 {
   align-self: end;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .services-box {
     grid-template-columns: 1fr;
   }
@@ -698,7 +700,7 @@ section > h2 {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .education-box {
     display: grid;
     grid-template-columns: 1fr;
@@ -729,7 +731,7 @@ section > h2 {
   background: none;
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .client img {
     display: none;
   }
@@ -864,7 +866,7 @@ section > h2 {
   background: var(--secondary);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .testifiers-container {
     position: relative;
     margin: 0 auto;
@@ -939,7 +941,7 @@ section > h2 {
 .contact-info {
   background: var(--dark);
   min-width: 500px;
-  max-width: 600px;
+  max-width: 900px;
   padding: 10px;
 }
 
@@ -960,7 +962,7 @@ section > h2 {
 .contact-info textarea {
   color: var(--primary);
   width: 100%;
-  height: 100px;
+  height: 150px;
   outline: none;
   border: none;
   border-radius: 4px;
@@ -1039,7 +1041,7 @@ section > h2 {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .contact {
     flex-direction: column-reverse;
     gap: 10px;
@@ -1081,7 +1083,7 @@ section > h2 {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .large-skills, .bio-large {
     display: none;
   }
@@ -1110,7 +1112,7 @@ section > h2 {
   width: 25px;
   margin: 10px 15px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #progress-container {
     height: 20px;
     width: 20px;
@@ -1191,7 +1193,7 @@ section > h2 {
   display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .large-click {
     display: none;
   }
@@ -1200,10 +1202,6 @@ section > h2 {
     margin: 10px auto;
   }
 }
-body {
-  position: relative;
-}
-
 .mobile-menu {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,8 @@ let body = document.querySelector("body");
 let navbar = document.getElementById("nav");
 let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
-const socialIcons = document.querySelectorAll(".social-icons")
+const socialIcons = document.querySelectorAll(".social-icons");
+
 
 
 // GETTING ACHIEVEMENTS DATA
@@ -20,7 +21,7 @@ const projectAdd = ()=>{
   if(clientsCounter<3){ clientsCounter++;};
  clients.textContent = clientsCounter+ "+";
 
-  if(experienceCounter< 6){ experienceCounter++;};
+  if(experienceCounter< 17){ experienceCounter++;};
  experiences.innerHTML = ` ${experienceCounter} <span style="font-size: 16px">months <span>`;
 }
 setInterval(projectAdd, 50);
@@ -41,7 +42,11 @@ const lightMode = ()=>{
     body.style.setProperty('--box', '#6bb5fa');
     body.style.setProperty('--nav', '#b9f4f5');
     socialIcons.forEach(icons=> icons.style.filter = "none")
-    
+    setTimeout(()=>{
+      const skillTools = document.querySelectorAll(".dark-icons");
+      skillTools.forEach(icons => icons.style.filter = "none")
+      console.log(skillTools);
+    }, 100)
     // light.style.visibility="visible";
     light.style.visibility="hidden";
     dark.style.visibility="visible";
@@ -56,8 +61,14 @@ const lightMode = ()=>{
     body.style.setProperty('--background', 'linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f)');
     body.style.setProperty('--box', '#52606d');
     body.style.setProperty('--nav', '#2b024d');
-    socialIcons.forEach(icons=> icons.style.filter = "brightness(0) invert(1)")
- 
+    socialIcons.forEach(icons=> { 
+      icons.style.filter = "brightness(0) invert(1)";
+
+    })
+    setTimeout(()=>{
+      const skillTools = document.querySelectorAll(".dark-icons");
+      skillTools.forEach(icons => icons.style.filter = "brightness(0) invert(1)")
+    }, 100)
     dark.style.visibility="hidden";
     light.style.visibility="visible";
   }
@@ -149,9 +160,10 @@ const updateBiography = () => {
       })
     }
 
-// UPDATING THEME FROM LOCAL STORAGE
-window.addEventListener("DOMContentLoaded", ()=>{
+    // UPDATING THEME FROM LOCAL STORAGE
+    window.addEventListener("DOMContentLoaded", ()=>{
       updateBiography()
+      
         const currentTheme= localStorage.getItem("theme");
   
         if(currentTheme=="light"){

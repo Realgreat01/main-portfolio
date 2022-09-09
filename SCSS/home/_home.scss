@@ -6,7 +6,7 @@
     align-items:flex-end;
     width: 100%;
     margin: 10px auto;
-    // background: red;
+    background: #ffffff00;
 }
 
 .profile-image{
@@ -29,7 +29,7 @@
 }
 // first column
 .summary-items{
-    margin-top: 100px;
+    margin-top: 50px;
     h3{
         font-size:2.2rem;
         font-weight: 400;
@@ -72,13 +72,13 @@
 #info{
     width: 70%;
     // // background: red;
-    @media (max-width: 600px){
-        width: 80%;
+    @media (max-width: 900px){
+        width: 90%;
     }
 .brief-info{
-    width: 65%;
+    width: 100%;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1rem;
     opacity: 0.8;
     }
 
@@ -100,7 +100,6 @@
         height: 30px;
         width: 30px;
         padding: 2px;
-        border-radius: 50%;
         cursor:pointer;
         &:hover{
             transform: scale(1.2);
@@ -110,12 +109,13 @@
 
 .skills{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
     width: 60%;
     margin:0 auto;
+    grid-template-columns: 1fr 1fr ;
     
-
-    @media (max-width: 600px){
+    
+    @media (max-width: 900px){
+        grid-template-columns: 1fr ;
         width: 90%;
         margin: 0 auto;
     }
@@ -140,8 +140,10 @@
         color: var(--tertiary);
         box-shadow: 1px 1px 3px var(--box);
 
-        @media (max-width: 600px){
-            height: 250px;
+        @media (max-width: 900px){
+            min-height: 100px;
+            max-height: 200px;
+            // background: red;
         }
 
         h4{
@@ -156,8 +158,8 @@
         justify-content: center;
         max-width: 10px;
         margin: 0 auto;
-        @media (max-width: 600px){
-            grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 900px){
+            grid-template-columns: repeat(4, 1fr);
         }
         #npm{
             height:40px;
@@ -183,7 +185,7 @@
         width: 80%;
         margin: 0 auto;
 
-        @media (max-width: 600px){
+        @media (max-width: 900px){
             width: 90%;
             margin:0;
             margin: 0 auto;

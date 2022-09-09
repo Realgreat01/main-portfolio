@@ -13,11 +13,11 @@ mainNav.innerHTML = `
     <button id="download-btn" style="z-index: 800"><a href="https://drive.google.com/file/d/1HUyXDxHg3W66O-zqcml1y0C8kxvvMui9/view?usp=sharing" target ="_blank" download>Download CV</a></button>
    <div id="mode" style="z-index: 800">
         <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
-        <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">
+        <img src="./images/icons/light.svg" alt="light" id="light"  onclick="darkMode()">
    </div>
    <div class="menu-bar" style="z-index: 800">
-       <img src="./images/icons/cancel.svg" alt="" id="cancel-icon">
-       <img src="./images/icons/menu-2.svg" alt="" id="menu-icon">
+       <img src="./images/icons/cancel.svg" alt="" id="cancel-icon" class="dark-icons">
+       <img src="./images/icons/menu-2.svg" alt="" id="menu-icon" class="dark-icons">
    </div>
 </nav>
 </div>`

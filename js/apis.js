@@ -24,7 +24,7 @@ const skills = async()=>{
 
     BackEnd.forEach(item=>{
         backend.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
             <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
@@ -45,7 +45,7 @@ const skills = async()=>{
     });
     Management.forEach(item=>{
         management.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
+            <div id="progress-container" class="${item.class}" style="background: url('./images/skills/${item.icon}')">
             <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
