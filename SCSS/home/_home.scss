@@ -30,6 +30,43 @@
 // first column
 .summary-items{
     margin-top: 50px;
+    
+    .social-hire{
+        @media (max-width: 900px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #hire-me{
+            background: var(--secondary);
+            border:none;
+            outline:none;
+            margin-top: 30px;
+            padding: 7px 15px;
+            border-radius: 5px;
+            display: block;
+            @media (max-width:900px) {
+                margin-top: 0;
+            }
+            a{
+                color: #fff;
+            }
+        }
+        // social icons
+    .socials{
+        display:flex;
+        img{
+            height: 30px;
+            width: 30px;
+            display: block;
+            padding: 2px;
+            cursor:pointer;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
     h3{
         font-size:2.2rem;
         font-weight: 400;
@@ -53,27 +90,15 @@
         color:var(--secondary);
         font-size: 1.2rem;
     }
-
-    #hire-me{
-        background: var(--secondary);
-        border:none;
-        outline:none;
-        margin-top: 30px;
-        padding: 10px;
-        border-radius: 4px;
-        a{
-            color: #fff;
-        }
-    }
 }
 
 
 // Brief Info Section
 #info{
-    width: 70%;
+    width: 80%;
     // // background: red;
     @media (max-width: 900px){
-        width: 90%;
+        width: 95%;
     }
 .brief-info{
     width: 100%;
@@ -93,26 +118,13 @@
     }
 }
 
-// social icons
 
-.socials{
-    img{
-        height: 30px;
-        width: 30px;
-        padding: 2px;
-        cursor:pointer;
-        &:hover{
-            transform: scale(1.2);
-        }
-    }
-}
 
 .skills{
     display: grid;
     width: 60%;
     margin:0 auto;
     grid-template-columns: 1fr 1fr ;
-    
     
     @media (max-width: 900px){
         grid-template-columns: 1fr ;
@@ -186,8 +198,7 @@
         margin: 0 auto;
 
         @media (max-width: 900px){
-            width: 90%;
-            margin:0;
+            gap: 1px;
             margin: 0 auto;
         }
         

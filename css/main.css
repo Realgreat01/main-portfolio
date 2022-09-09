@@ -51,7 +51,9 @@ main {
 section {
   margin: 0 auto;
   min-height: 300px;
+  max-height: -moz-fit-content;
   max-height: fit-content;
+  margin-top: 100px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(58, 57, 57, 0.1529411765);
   position: relative;
@@ -59,9 +61,14 @@ section {
 }
 section > h2 {
   margin-top: 50px;
-  margin-top: 50px;
   z-index: 10;
-  width: 100%;
+  width: 60%;
+  padding-bottom: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px;
+  border-left: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
 }
 
 h1, #name-span {
@@ -126,6 +133,7 @@ nav li a {
 
 .logo img {
   height: 30px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 900px) {
@@ -193,7 +201,7 @@ nav li a {
   height: 25px;
   background: none;
   width: 40px;
-  margin-right: -50px;
+  margin-right: -20px;
 }
 #mode img {
   position: absolute;
@@ -268,6 +276,43 @@ nav li a {
 .summary-items {
   margin-top: 50px;
 }
+@media (max-width: 900px) {
+  .summary-items .social-hire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.summary-items .social-hire #hire-me {
+  background: var(--secondary);
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  display: block;
+}
+@media (max-width: 900px) {
+  .summary-items .social-hire #hire-me {
+    margin-top: 0;
+  }
+}
+.summary-items .social-hire #hire-me a {
+  color: #fff;
+}
+.summary-items .social-hire .socials {
+  display: flex;
+}
+.summary-items .social-hire .socials img {
+  height: 30px;
+  width: 30px;
+  display: block;
+  padding: 2px;
+  cursor: pointer;
+}
+.summary-items .social-hire .socials img:hover {
+  transform: scale(1.2);
+}
 .summary-items h3 {
   font-size: 2.2rem;
   font-weight: 400;
@@ -286,24 +331,13 @@ nav li a {
   color: var(--secondary);
   font-size: 1.2rem;
 }
-.summary-items #hire-me {
-  background: var(--secondary);
-  border: none;
-  outline: none;
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 4px;
-}
-.summary-items #hire-me a {
-  color: #fff;
-}
 
 #info {
-  width: 70%;
+  width: 80%;
 }
 @media (max-width: 900px) {
   #info {
-    width: 90%;
+    width: 95%;
   }
 }
 #info .brief-info {
@@ -320,16 +354,6 @@ nav li a {
   padding: 1px 4px;
   margin: 0 3px;
   display: inline-block;
-}
-
-.socials img {
-  height: 30px;
-  width: 30px;
-  padding: 2px;
-  cursor: pointer;
-}
-.socials img:hover {
-  transform: scale(1.2);
 }
 
 .skills {
@@ -407,8 +431,7 @@ nav li a {
 }
 @media (max-width: 900px) {
   .summary-info {
-    width: 90%;
-    margin: 0;
+    gap: 1px;
     margin: 0 auto;
   }
 }
@@ -439,17 +462,6 @@ nav li a {
   margin-top: 0;
   font-size: 32px;
   font-weight: 300;
-}
-
-section > h2 {
-  width: 80%;
-  padding-bottom: 4px;
-  font-size: 1.2rem;
-  border-bottom: 2px solid var(--secondary);
-}
-
-.services h3 {
-  font-size: 2rem;
 }
 
 .services-box {
@@ -624,6 +636,17 @@ section > h2 {
   margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+  .eduEx-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    border: 1px solid var(--secondary);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
 .education > div {
   display: flex;
   align-items: center;
@@ -682,11 +705,6 @@ section > h2 {
 }
 .education-item #certificate a {
   color: var(--white);
-}
-
-.education h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .education h4 {
@@ -1137,6 +1155,7 @@ section > h2 {
   margin-right: 5px;
   display: none;
   z-index: 2;
+  filter: none;
 }
 #progress-container #progress::after {
   content: " ";
@@ -1205,6 +1224,8 @@ section > h2 {
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background: var(--nav);
@@ -1226,7 +1247,7 @@ section > h2 {
   list-style-position: outside;
   margin: 3px 0;
   text-transform: uppercase;
-  background: var(--secondary);
+  background: var(--tertiary);
   padding: 15px;
   font-size: 10px;
   display: flex;
@@ -1242,7 +1263,7 @@ section > h2 {
   color: inherit;
 }
 .mobile-menu ul li:hover {
-  background: var(--tertiary);
+  background: var(--secondary);
 }
 .mobile-menu .image-container {
   background-color: var(--secondary);

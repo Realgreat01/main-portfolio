@@ -32,7 +32,9 @@ main{
 section{
     margin: 0 auto;
     min-height: 300px;
+    max-height: -moz-fit-content;
     max-height: fit-content;
+    margin-top: 100px;
     padding-bottom: $p-large;
     border-bottom: 1px solid #3a393927;
     position: relative;
@@ -40,9 +42,14 @@ section{
     // left: 0;
     &>h2{
         margin-top: 50px;
-        margin-top: 50px;
         z-index: 10;
-        width: 100%;
+        width: 60%;
+        padding-bottom: 4px;
+        font-size: $medium;
+        text-transform: uppercase;
+        padding: 5px;
+        border-left: 2px solid var(--secondary);
+        border-bottom: 2px solid var(--secondary);
     }
     // @media only screen and(max-width: 900px) {
     //    width: 98%;

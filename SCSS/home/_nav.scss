@@ -73,6 +73,7 @@ nav{
 
 .logo img{
     height: 30px;
+    width: -moz-fit-content;
     width: fit-content;
     @media (max-width: 900px) {
         height: 10px;
@@ -143,7 +144,7 @@ nav{
     height: 25px;
     background: none;
     width: 40px;
-    margin-right: -50px;
+    margin-right: -20px;
     img{
     position:absolute;
     height: 100%;

@@ -2,6 +2,8 @@
 .mobile-menu{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background: var(--nav);
@@ -21,7 +23,7 @@
       list-style-position:outside;
       margin: 3px 0;
       text-transform: uppercase;
-      background: var(--secondary);
+      background: var(--tertiary);
       padding: 15px;
       font-size: 10px;
       display: flex;
@@ -37,7 +39,7 @@
         color: inherit;
       }
       &:hover{
-        background: var(--tertiary);
+        background: var(--secondary);
       }
     }
   }

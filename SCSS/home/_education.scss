@@ -14,6 +14,20 @@
 
 }
 
+.eduEx-heading{
+        // font-size: 1.2rem;
+        // font-weight: 700;
+    
+    @media (max-width: 900px){
+        margin-top: 50px;
+        text-transform: uppercase;
+        border: 1px solid var(--secondary);
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 5px;
+
+    }
+}
 .education>div{
     display: flex;
     align-items: center;
@@ -71,11 +85,6 @@
         }
     }
 }
-.education h2{
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
 
 .education h4{
     color: var(--secondary);

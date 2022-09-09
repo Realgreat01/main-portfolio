@@ -29,6 +29,7 @@
         margin-right: 5px;
         display:none;
         z-index: 2;
+        filter: none;
         // transition: 1s all;
         &::after{
             content: " ";

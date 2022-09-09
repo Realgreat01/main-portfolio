@@ -2,7 +2,6 @@ let body = document.querySelector("body");
 let navbar = document.getElementById("nav");
 let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
-const socialIcons = document.querySelectorAll(".social-icons");
 
 
 
@@ -34,6 +33,8 @@ let light = document.getElementById("light");
 
 // FOR  LIGHT  THEME
 const lightMode = ()=>{
+    const socialIcons = document.querySelectorAll(".social-icons");
+
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
     body.style.setProperty('--tertiary', '#006eff');
@@ -54,6 +55,8 @@ const lightMode = ()=>{
 
   // function for Dark Mode
   const darkMode = ()=>{
+    const socialIcons = document.querySelectorAll(".social-icons");
+
     body.style.setProperty('--primary', '#fff');
     body.style.setProperty('--secondary', '#fa2388');
     body.style.setProperty('--tertiary', '#7afa03');
@@ -114,6 +117,7 @@ const hideMenu =()=>{
   body.style.overflow ="visible";
   menuIcon.style.visibility="visible";
   cancelIcon.style.visibility="hidden";
+  navbar.style.position="static";
 }
 menuIcon.addEventListener("click", showMenu)
 cancelIcon.addEventListener("click", hideMenu)
