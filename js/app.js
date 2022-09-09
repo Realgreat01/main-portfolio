@@ -124,7 +124,6 @@ const updateBiography = () => {
       <br><br>
       I have been writing vanilla Js for like 6 months before going fully into using Vue JS.` 
       readMore.innerText = "Read More ↗";
-       
       readMore.addEventListener("click", ()=>{
         if(valueBtn){
           briefInfo.innerHTML= `

@@ -253,6 +253,11 @@ nav li a {
   justify-content: center;
   height: 100%;
 }
+@media (max-width: 800px) {
+  .profile-image {
+    display: none;
+  }
+}
 .profile-image .line {
   width: 5px;
   height: 70vh;
@@ -294,45 +299,33 @@ nav li a {
   color: var(--secondary);
   font-size: 1.2rem;
 }
+.summary-items #hire-me {
+  background: var(--secondary);
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.summary-items #hire-me a {
+  color: #fff;
+}
 
-#info-lead {
-  margin-top: 200px;
-  margin-left: 40px;
-}
-@media (max-width: 600px) {
-  #info-lead {
-    margin-top: 50px;
-    margin-left: 0;
-  }
-}
-#info-lead #info {
-  font-size: 2rem;
-  color: var(--primary);
-  border-bottom: 2px solid var(--secondary);
-  margin-bottom: 0;
+#info {
   width: 100%;
-  text-align: right;
 }
-@media (max-width: 600px) {
-  #info-lead #info {
-    width: 60%;
-    text-align: left;
-  }
-}
-#info-lead .brief-info {
+#info .brief-info {
+  width: 65%;
   font-weight: 400;
   font-size: 13px;
   opacity: 0.8;
 }
-#info-lead #large-info {
-  border-radius: 10px;
-  width: 50%;
+@media (max-width: 600px) {
+  #info .brief-info {
+    width: 80%;
+  }
 }
-#info-lead #small-info {
-  border-radius: 10px;
-  width: 98%;
-}
-#info-lead .read-more {
+#info .read-more {
   background: var(--secondary);
   border: none;
   border-radius: 4px;
@@ -368,7 +361,7 @@ nav li a {
 .skills > div {
   background: var(--dark);
   margin-right: 5px;
-  min-width: 110px;
+  min-width: 150px;
   min-height: 220px;
   max-height: 260px;
   display: flex;
@@ -376,8 +369,6 @@ nav li a {
   justify-content: start;
   align-items: center;
   padding: 10px;
-  min-height: 210px;
-  /* max-width: 200px; */
   border-radius: 5px;
   margin-top: 50px;
   align-self: stretch;
@@ -392,6 +383,7 @@ nav li a {
 }
 .skills > div h4 {
   color: var(--secondary);
+  font-size: 12px;
 }
 .skills .skill-tools {
   display: grid;
@@ -400,6 +392,11 @@ nav li a {
   justify-content: center;
   max-width: 10px;
   margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .skills .skill-tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .skills .skill-tools #npm, .skills .skill-tools #node {
   height: 40px;
@@ -509,21 +506,12 @@ section > h2 {
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: var(--secondary);
+  color: #fff;
 }
 #all-projects:hover {
   background: var(--nav);
-}
-#all-projects a {
-  color: #fff;
-  margin: auto;
-  width: 100%;
-  padding: 15px;
-  height: 100%;
-  display: block;
-}
-#all-projects a:hover {
-  color: var(--primary);
 }
 
 .project-details {
@@ -557,7 +545,7 @@ section > h2 {
   overflow: hidden;
 }
 .project-items .project-image {
-  overflow: scroll;
+  overflow: hidden;
   height: 200px;
   width: 100%;
 }
@@ -567,7 +555,6 @@ section > h2 {
 .project-items .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: initial;
 }
 .project-items .project-data {
   display: grid;

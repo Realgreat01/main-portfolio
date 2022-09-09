@@ -48,21 +48,11 @@ section>h2{
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: var(--secondary);
+    color:#fff;
     &:hover{
         background: var(--nav);
-    }
-    
-    a{
-        color:#fff;
-        margin: auto;
-        width: 100%;
-        padding: 15px;
-        height: 100%;
-        display: block;
-        &:hover {
-            color: var(--primary)
-        }
     }
 }
 .project-details{
@@ -97,7 +87,7 @@ section>h2{
 
     // Project Image
     .project-image{
-        overflow: scroll;
+        overflow: hidden;
         height: 200px;
         width: 100%;
         &::-webkit-scrollbar{
@@ -106,7 +96,7 @@ section>h2{
         img{
             width: 100%;
             height: 100%;
-            object-fit:initial;
+            // object-fit:initial;
             // object-position: center;
         }
     }
