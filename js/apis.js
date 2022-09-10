@@ -14,7 +14,7 @@ const skills = async()=>{
     FrontEnd.forEach(item=>{
         frontend.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+            <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
             </div>
@@ -24,8 +24,8 @@ const skills = async()=>{
 
     BackEnd.forEach(item=>{
         backend.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
+            <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
             </div>
@@ -35,8 +35,8 @@ const skills = async()=>{
 
     Design.forEach(item=>{
         design.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" >
+            <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
             </div>
@@ -45,8 +45,9 @@ const skills = async()=>{
     });
     Management.forEach(item=>{
         management.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
-            <div id="progress"> <p id="skill-name" style="width:${item.level}%"></p>
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
+            <div id="progress">
+                <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
             </div>

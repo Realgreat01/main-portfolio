@@ -15,10 +15,11 @@
 }
 
 .eduEx-heading{
-        font-size: $small;
-        font-weight: 700;
+    font-weight: 700;
+    font-size: $large;
     
     @media (max-width: 900px){
+        font-size: $small;
         margin-top: 50px;
         text-transform: uppercase;
         border: 1px solid var(--secondary);
@@ -62,10 +63,15 @@
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
-    color:#fff;
     color: var(--tertiary);
     box-shadow: 1px 1px 3px var(--box);
     z-index:2;
+    p{
+        opacity: 0.6;
+        line-height: 1.1rem;
+        font-size: 0.85rem;
+        font-family: 'Titillium Web', sans-serif;
+    }
     &>h2{
         font-size: $medium;
     }
@@ -90,10 +96,6 @@
     margin: -10px 0 0 ;
     font-size: 0.8rem;
     font-weight: 400;
-}
-
-.education p{
-    opacity: 0.5;
 }
 
 

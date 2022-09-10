@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 :root {
-  --boshshsx: #90fff6;
+  --boshshsx: #1100ff;
   --primary: #000 ;
   --secondary: #ff0077;
   --tertiary: #006eff;
@@ -9,6 +9,7 @@
   --white:#fff;
   --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
   --box: #6bb5fa;
+  --text: #13099e81;
   --nav: #b9f4f5;
 }
 
@@ -16,7 +17,15 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "League Spartan", sans-serif;
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 * {
@@ -35,6 +44,7 @@ body {
   position: relative;
   overflow: hidden;
   scroll-behavior: smooth;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -50,7 +60,7 @@ main {
 
 section {
   margin: 0 auto;
-  min-height: 300px;
+  min-height: 200px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   margin-top: 100px;
@@ -58,6 +68,7 @@ section {
   border-bottom: 1px solid rgba(58, 57, 57, 0.1529411765);
   position: relative;
   transition: 2s;
+  scroll-snap-type: Y proximity;
 }
 section > h2 {
   margin-top: 50px;
@@ -251,7 +262,12 @@ nav li a {
   align-items: flex-end;
   width: 100%;
   margin: 10px auto;
-  background: rgba(255, 255, 255, 0);
+  margin-top: 200px;
+}
+@media (max-width: 900px) {
+  #summary {
+    margin-top: 0;
+  }
 }
 
 .profile-image {
@@ -262,7 +278,7 @@ nav li a {
   justify-content: center;
   height: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .profile-image {
     display: none;
   }
@@ -274,7 +290,19 @@ nav li a {
 }
 
 .summary-items {
-  margin-top: 50px;
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .summary-items {
+    margin-top: 50px;
+  }
+}
+.summary-items .social-hire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-top: 30px;
 }
 @media (max-width: 900px) {
   .summary-items .social-hire {
@@ -287,15 +315,10 @@ nav li a {
   background: var(--secondary);
   border: none;
   outline: none;
-  margin-top: 30px;
-  padding: 7px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   display: block;
-}
-@media (max-width: 900px) {
-  .summary-items .social-hire #hire-me {
-    margin-top: 0;
-  }
+  margin-top: 0;
 }
 .summary-items .social-hire #hire-me a {
   color: #fff;
@@ -308,10 +331,16 @@ nav li a {
   width: 30px;
   display: block;
   padding: 2px;
+  margin-right: 15px;
   cursor: pointer;
 }
 .summary-items .social-hire .socials img:hover {
   transform: scale(1.2);
+}
+@media (max-width: 900px) {
+  .summary-items .social-hire .socials img {
+    margin-right: 5px;
+  }
 }
 .summary-items h3 {
   font-size: 2.2rem;
@@ -333,18 +362,36 @@ nav li a {
 }
 
 #info {
-  width: 80%;
+  width: 50%;
+  margin-left: 20px;
+}
+#info::first-letter {
+  font-size: 3rem;
+  margin: 0 6px;
+  float: left;
+  text-transform: uppercase;
 }
 @media (max-width: 900px) {
   #info {
     width: 95%;
+    margin-left: 0;
+  }
+  #info::first-letter {
+    font-size: 40px;
   }
 }
 #info .brief-info {
+  font-family: "Titillium Web", sans-serif;
   width: 100%;
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   opacity: 0.8;
+  font-weight: 300;
+}
+@media (max-width: 900px) {
+  #info .brief-info {
+    font-size: 0.8rem;
+  }
 }
 #info .read-more {
   background: var(--secondary);
@@ -639,11 +686,12 @@ nav li a {
 }
 
 .eduEx-heading {
-  font-size: 12px;
   font-weight: 700;
+  font-size: 20px;
 }
 @media (max-width: 900px) {
   .eduEx-heading {
+    font-size: 12px;
     margin-top: 50px;
     text-transform: uppercase;
     border: 1px solid var(--secondary);
@@ -688,10 +736,15 @@ nav li a {
   margin: 10px;
   margin-left: -10px;
   border-radius: 10px;
-  color: #fff;
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
   z-index: 2;
+}
+.education-item p {
+  opacity: 0.6;
+  line-height: 1.1rem;
+  font-size: 0.85rem;
+  font-family: "Titillium Web", sans-serif;
 }
 .education-item > h2 {
   font-size: 16px;
@@ -716,10 +769,6 @@ nav li a {
   margin: -10px 0 0;
   font-size: 0.8rem;
   font-weight: 400;
-}
-
-.education p {
-  opacity: 0.5;
 }
 
 @media only screen and (max-width: 900px) {
@@ -927,12 +976,14 @@ nav li a {
   display: flex;
   gap: 20px;
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
   color: var(--tertiary);
   border-radius: 10px;
   overflow: hidden;
   background: var(--dark);
   box-shadow: 1px 1px 3px var(--box);
+  margin-bottom: 50px;
 }
 
 .contact-details {

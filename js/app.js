@@ -37,7 +37,7 @@ const lightMode = ()=>{
 
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
-    body.style.setProperty('--tertiary', '#006eff');
+    body.style.setProperty('--tertiary', '#1100ff');
     body.style.setProperty('--dark', '#fff');
     body.style.setProperty('--background', 'linear-gradient(140deg, #fff, #dcfbfc)');
     body.style.setProperty('--box', '#6bb5fa');
@@ -72,6 +72,11 @@ const lightMode = ()=>{
       const skillTools = document.querySelectorAll(".dark-icons");
       skillTools.forEach(icons => icons.style.filter = "brightness(0) invert(1)")
     }, 100)
+    setTimeout(()=>{
+      const skillProgress = document.querySelectorAll("#skill-name");
+      skillProgress.forEach(icon=>  icon.style.filter = "brightness(1) invert(0)")
+      console.log(skillProgress)
+    }, 1000)
     dark.style.visibility="hidden";
     light.style.visibility="visible";
   }
@@ -131,7 +136,7 @@ const briefInfo = document.querySelector(".brief-info");
 let valueBtn = true;
 
 const updateBiography = () => {
-      briefInfo.style.fontFamily ="'Raleway', sans-serif" 
+      // briefInfo.style.fontFamily ="'Raleway', sans-serif" 
       briefInfo.innerHTML= `
       I am a front end developer with a key interest in building industry scalable, reusable and simple products.I have experience working on projects that aims to promote diversity and uniformity among the populace and also working earnestly in making the world a better place.
       <br> <br>

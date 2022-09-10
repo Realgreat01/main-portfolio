@@ -6,24 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="./images/profile.png"/>
+    <meta property="og:image" content="./favicon-big.png"/>
 
-  
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./favicon-big.png">
     <title>Samson Ikuomenisan | Portfolio</title>
 </head>
-<body>
+<body> 
     <div id="preloader" style="background-image: url('./images/loader.gif')"></div>
     <div class="mobile-menu">
         <ul class="nav-flex"> 
           <li><a href="#">Home</a></li>
           <li><a href="#skill-section">Skills</a></li>
-          <li><a href="#educationExperience">Education</a></li> 
+          <li><a href="#myeducation">Education</a></li> 
           <li><a href="#major-projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
       </ul>
@@ -63,7 +66,7 @@
     
         <!-- BRIEF INFO SECTION -->
         <section class="">
-            <h2>Brief Info</h2>
+            <h2>About Me</h2>
                 <p id="info">
                     <span class="brief-info"></span>
                     <button class="read-more" type="button">read-more</button>
@@ -136,7 +139,7 @@
         </section>
         
 
-        <section class="" id="educationExperience">
+        <section id="myeducation">
             <h2>Education and Experience</h2>
             <div class="education-box">
 
@@ -218,12 +221,20 @@
     
         </div>   
         </section>
-        <script src="./js/html.js"></script>
-        <script src="./js/app.js"></script>
-        <script src="./js/partner.js"></script>
-        <script src="./js/apis.js"></script>
-        <script src="./js/contact.js"></script>
     </main>
+    <p id="copyright"></p>    
+    <script src="./js/html.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/partner.js"></script>
+    <script src="./js/apis.js"></script>
+    <script src="./js/contact.js"></script>
+
+    <script>
+        const copy = document.getElementById("copyright");
+        const date = new Date()
+        const year = date.getFullYear();
+        copy.innerHTML =`&copy; ${year}`
+    </script>
     <!-- <script src="./js/preloader.js"></script> -->
 </body>
 </html>
