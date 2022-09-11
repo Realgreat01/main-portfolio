@@ -7,7 +7,7 @@ mainNav.innerHTML = `
         <img src="./images/icons/dark.svg" alt="dark" id="dark" onclick="lightMode()">
         <img src="./images/icons/light.svg" alt="light" id="light" onclick="darkMode()">
     </div>
-    <p><a href="/">Home</a></p>
+    <a href="/" id="home"><img src="../images/icons/home.svg" class="social-icons" id="project-home"></a>
 </nav>
 </div>`
 

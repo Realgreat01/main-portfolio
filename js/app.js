@@ -15,16 +15,16 @@ let experienceCounter = 0;
 
 const projectAdd = ()=>{
   if(projectsCounter<24){ projectsCounter++;};
- projects.textContent = projectsCounter+ "+";
+    projects.textContent = projectsCounter+ "+";
 
   if(clientsCounter<3){ clientsCounter++;};
- clients.textContent = clientsCounter+ "+";
+    clients.textContent = clientsCounter+ "+";
 
   if(experienceCounter< 17){ experienceCounter++;};
- experiences.innerHTML = `${experienceCounter} <span style="font-size: 16px">months<span>`;
+    experiences.innerHTML = `${experienceCounter} <span style="font-size: 16px">months<span>`;
 }
-setInterval(projectAdd, 50);
-clearInterval(projectAdd, 3000)
+let countTime = setInterval(projectAdd, 50); 
+setTimeout(() => { projectsCounter = 0; return clearInterval(countTime)}, 3000);
 
 
 
@@ -34,7 +34,6 @@ let light = document.getElementById("light");
 // FOR  LIGHT  THEME
 const lightMode = ()=>{
     const socialIcons = document.querySelectorAll(".social-icons");
-
     body.style.setProperty('--primary', '#050000');
     body.style.setProperty('--secondary', '#ff0077');
     body.style.setProperty('--tertiary', '#1100ff');
@@ -77,7 +76,7 @@ const lightMode = ()=>{
       skillProgress.forEach(icon=>  icon.style.filter = "brightness(1) invert(0)")
       console.log(skillProgress)
     }, 1000)
-    dark.style.visibility="hidden";
+    dark.style.visibility="hidden"; 
     light.style.visibility="visible";
   }
 
@@ -95,18 +94,27 @@ const lightMode = ()=>{
       
     }else if(currentScrollPosition<= TOP_SCROLL){
       navbar.style.background="none";
+      projectsCounter = 10;
+      clientsCounter = 0;
+      experienceCounter = 0;
+
+      console.log("scrolled")
+
+      let scrollTime = setInterval(projectAdd, 500); 
+      setTimeout(() => clearInterval(scrollTime), 10000);
+
       
     } else {
           navbar.style.position="fixed";
           navbar.style.background="var(--nav)";
           navbar.style.transition="1s";
         }
-    initialScrollValue=currentScrollPosition;
+    initialScrollValue=currentScrollPosition; 
   });
   
 
 const nav = document.querySelector(".mobile-menu")
-const navItems = document.querySelectorAll(".nav-flex li")
+const navItems = document.querySelectorAll(".nav-flex a")
 
   // Toggle Show Menu
   const showMenu =()=>{

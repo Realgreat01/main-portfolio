@@ -18,6 +18,13 @@ nav{
     .nav-flex{
     display:flex;
     position: relative;
+    #project-home{
+        background: red;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+
+    }
  }
 
 //  NAV BAR LIST ITEMS
@@ -79,7 +86,7 @@ nav{
         height: 10px;
     }
 }
- .menu-bar{
+.menu-bar{
     display:none;
     position: relative;
     height:30px;
@@ -191,4 +198,13 @@ nav{
     position: fixed;
     z-index:999;
     opacity:1;
+}
+#nav{
+    // background: red;
+    // width: 50%;
+    #home{
+        // background: green;
+        height: 30px;
+        width: 30px;
+    }
 }

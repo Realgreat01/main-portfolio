@@ -101,6 +101,12 @@ nav .nav-flex {
   display: flex;
   position: relative;
 }
+nav .nav-flex #project-home {
+  background: red;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+}
 nav li {
   list-style-type: none;
   margin: 0 10px;
@@ -253,6 +259,11 @@ nav li a {
   position: fixed;
   z-index: 999;
   opacity: 1;
+}
+
+#nav #home {
+  height: 30px;
+  width: 30px;
 }
 
 #summary {
@@ -1290,14 +1301,14 @@ nav li a {
   transition: 500ms;
   z-index: 10;
 }
-.mobile-menu ul {
+.mobile-menu .nav-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px auto;
   width: 100%;
 }
-.mobile-menu ul li {
+.mobile-menu .nav-flex a {
   list-style-position: outside;
   margin: 3px 0;
   text-transform: uppercase;
@@ -1313,10 +1324,7 @@ nav li a {
   padding-left: 10px;
   font-size: 12px;
 }
-.mobile-menu ul li a {
-  color: inherit;
-}
-.mobile-menu ul li:hover {
+.mobile-menu .nav-flex a:hover {
   background: var(--secondary);
   color: #FFF;
 }

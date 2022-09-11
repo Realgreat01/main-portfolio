@@ -1,3 +1,11 @@
+const animate = `
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        `;
+
 const skills = async()=>{
     const response = await fetch("./data/skills.json");
     const data = await response.json();
@@ -13,7 +21,7 @@ const skills = async()=>{
 
     FrontEnd.forEach(item=>{
         frontend.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')">
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" ${animate}>
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
@@ -57,13 +65,6 @@ const skills = async()=>{
 }
 skills()
 
-const animate = `
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-        `
 
 const services = async ()=>{
     const response = await fetch("./data/services.json");

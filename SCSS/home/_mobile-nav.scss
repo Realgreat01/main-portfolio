@@ -13,13 +13,13 @@
   transform: translateX(150%);
   transition: 500ms;
   z-index: 10;
-  ul{
+  .nav-flex{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px auto;
     width: 100%;
-    li{
+    a{
       list-style-position:outside;
       margin: 3px 0;
       text-transform: uppercase;
@@ -34,10 +34,6 @@
       border-radius: 5px;
       padding-left: 10px;
       font-size: $small;
-
-      a{
-        color: inherit;
-      }
       &:hover{
         background: var(--secondary);
         color: #FFF;
