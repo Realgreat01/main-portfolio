@@ -57,6 +57,13 @@ const skills = async()=>{
 }
 skills()
 
+const animate = `
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        `
 
 const services = async ()=>{
     const response = await fetch("./data/services.json");
@@ -66,7 +73,7 @@ const services = async ()=>{
     const serviceBox = document.getElementById("service-box")
     Services.forEach(service=>{
         serviceBox.innerHTML += `
-        <div class="" id="">
+        <div class="" id="" ${animate}>
         <img src="./images/services/${service.icon}" alt=""></img>
         <h4>${service.title}</h4>
         <p>${service.description}</p>
@@ -85,7 +92,9 @@ const project =async ()=>{
     const projectItems = document.getElementById("project-items")
     FrontEnd.forEach(frontend=>{
         projectItems.innerHTML += `
-        <div class="project-items">
+        <div class="project-items" 
+            ${animate}
+        >
 
                 <div class="project-image">
                     <img src="./images/projects/${frontend.src}" alt="${frontend.src}">
@@ -109,7 +118,9 @@ const project =async ()=>{
 
     Designs.forEach(design=>{
         projectItems.innerHTML += `
-        <div class="project-items">
+        <div class="project-items"
+            ${animate}
+        >
 
                 <div class="project-image">
                     <img src="./images/projects/${design.src}" alt="${design.src}">
@@ -144,7 +155,9 @@ const education = async ()=>{
 
     Education.forEach(item =>{
         educationItem.innerHTML +=`
-        <div>
+        <div
+            ${animate}
+        >
                        <div class="dots education-dots">
                        </div>
                         <div class="education-item">
@@ -158,7 +171,9 @@ const education = async ()=>{
     });
     Courses.forEach(item =>{
         educationItem.innerHTML +=`
-        <div>
+         <div
+            ${animate}
+        >
                        <div class="dots education-dots">
                        </div>
                         <div class="education-item">
@@ -186,7 +201,9 @@ const experience = async () =>{
     
     VolunteeringExperience.forEach(item=>{
     expDom.innerHTML += `
-        <div>
+         <div
+            ${animate}
+        >
             <div class="dots experience-dots">
             </div>
             <div class="education-item">
@@ -195,13 +212,15 @@ const experience = async () =>{
                 <h4 style="margin-top: 2px">${item.Program}</h4>
                 <h4 style="margin-top: 2px">${item.Duration}</h4>
                 <p>${item.description}</p>
-            </div>
+            </div> 
         </div>
     `
     });
     WorkExperience.forEach(item=>{
     expDom.innerHTML += `
-        <div>
+         <div
+            ${animate}
+        >
             <div class="dots experience-dots">
             </div>
             <div class="education-item">
