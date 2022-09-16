@@ -104,9 +104,12 @@ const project = async () => {
         >
 
                 <div class="project-image">
-                    <img src="./images/projects/${frontend.src}" alt="${
-            frontend.src
-        }">
+                       <p class="project-description"> ${
+                           frontend.description
+                       }</p>
+                    <img class="project-main-image"src="./images/projects/${
+                        frontend.src
+                    }" alt="${frontend.src}">
                 </div>
                 
                 <div class="project-data">
@@ -137,10 +140,12 @@ const project = async () => {
             ${animate}
         >
 
-                <div class="project-image">
-                    <img src="./images/projects/${design.src}" alt="${
-            design.src
-        }">
+                <div class="project-image">   <p class="project-description"> ${
+                    design.description
+                }</p>
+                    <img class="project-main-image"src="./images/projects/${
+                        design.src
+                    }" alt="${design.src}">
                 </div> 
                 
                 <div class="project-data">
