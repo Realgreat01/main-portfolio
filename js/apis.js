@@ -6,20 +6,18 @@ const animate = `
             data-aos-easing="ease-in-out"
         `;
 
-const skills = async()=>{
-    const response = await fetch("./data/skills.json");
+const skills = async () => {
+    const response = await fetch('./data/skills.json');
     const data = await response.json();
-    const {FrontEnd, Design, BackEnd, Management} = data;
+    const { FrontEnd, Design, BackEnd, Management } = data;
 
     // Getting the classes
-    const frontend = document.querySelector(".front-end");
-    const backend = document.querySelector(".backend");
-    const design = document.querySelector(".design");
-    const management = document.querySelector(".management");
-   
-    
+    const frontend = document.querySelector('.front-end');
+    const backend = document.querySelector('.backend');
+    const design = document.querySelector('.design');
+    const management = document.querySelector('.management');
 
-    FrontEnd.forEach(item=>{
+    FrontEnd.forEach((item) => {
         frontend.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')" ${animate}>
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
@@ -27,10 +25,10 @@ const skills = async()=>{
                 <span id="skill-level">${item.level}%</span>
             </div>
             </div>
-            `
-    })
+            `;
+    });
 
-    BackEnd.forEach(item=>{
+    BackEnd.forEach((item) => {
         backend.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
@@ -38,10 +36,10 @@ const skills = async()=>{
                 <span id="skill-level">${item.level}%</span>
             </div>
             </div>
-            `
+            `;
     });
 
-    Design.forEach(item=>{
+    Design.forEach((item) => {
         design.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')" >
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
@@ -49,9 +47,9 @@ const skills = async()=>{
                 <span id="skill-level">${item.level}%</span>
             </div>
             </div>
-            `
+            `;
     });
-    Management.forEach(item=>{
+    Management.forEach((item) => {
         management.innerHTML += `
             <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
             <div id="progress">
@@ -60,45 +58,55 @@ const skills = async()=>{
                 <span id="skill-level">${item.level}%</span>
             </div>
             </div>
-            `
-    })
-}
-skills()
+            `;
+    });
+};
+skills();
 
-
-const services = async ()=>{
-    const response = await fetch("./data/services.json");
+const services = async () => {
+    const response = await fetch('./data/services.json');
     const data = await response.json();
-    const {Services} = data;
-    
-    const serviceBox = document.getElementById("service-box")
-    Services.forEach(service=>{
+    const { Services } = data;
+
+    const serviceBox = document.getElementById('service-box');
+    Services.forEach((service) => {
         serviceBox.innerHTML += `
         <div class="" id="" ${animate}>
         <img src="./images/services/${service.icon}" alt=""></img>
         <h4>${service.title}</h4>
         <p>${service.description}</p>
     </div>
-        `
-    })
-}
+        `;
+    });
+};
 
-services()
+services();
 
-const project =async ()=>{ 
-    const response = await fetch("./data/projects.json");
+const project = async () => {
+    const updateIcons = (arr) => {
+        const div = document.createElement('div');
+        arr.map(
+            (item) =>
+                (div.innerHTML += `<img src="./images/skills/${item}" alt="${item}" class="project-tools-images">`)
+        );
+        return div.innerHTML;
+    };
+
+    const response = await fetch('./data/projects.json');
     const data = await response.json();
-    const {FrontEnd, Designs} = data;
-    
-    const projectItems = document.getElementById("project-items")
-    FrontEnd.forEach(frontend=>{
+    const { FrontEnd, Designs } = data;
+
+    const projectItems = document.getElementById('project-items');
+    FrontEnd.forEach((frontend) => {
         projectItems.innerHTML += `
         <div class="project-items" 
             ${animate}
         >
 
                 <div class="project-image">
-                    <img src="./images/projects/${frontend.src}" alt="${frontend.src}">
+                    <img src="./images/projects/${frontend.src}" alt="${
+            frontend.src
+        }">
                 </div>
                 
                 <div class="project-data">
@@ -108,23 +116,31 @@ const project =async ()=>{
                     </div>
                     <div class="project-info"> 
                         <div id="preview-icons">
-                            <a href="${frontend.website}" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview"></a>
-                            <a href="${frontend.github}" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
+                            <a href="${
+                                frontend.website
+                            }" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview"></a>
+                            <a href="${
+                                frontend.github
+                            }" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
                         </div>
-                        <img src="./images/skills/${frontend.tools}" alt="${frontend.tools}"
+                       <div class="project-tools-div">${updateIcons(
+                           frontend.tools
+                       )}</div>
                     </div>    
                 </div> 
-        </div> `
+        </div> `;
     });
 
-    Designs.forEach(design=>{
+    Designs.forEach((design) => {
         projectItems.innerHTML += `
         <div class="project-items"
             ${animate}
         >
 
                 <div class="project-image">
-                    <img src="./images/projects/${design.src}" alt="${design.src}">
+                    <img src="./images/projects/${design.src}" alt="${
+            design.src
+        }">
                 </div> 
                 
                 <div class="project-data">
@@ -135,27 +151,30 @@ const project =async ()=>{
                     <div class="project-info"> 
                         <div id="preview-icons">
                         <div></div>
-                            <a href="${design.website}" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
+                            <a href="${
+                                design.website
+                            }" id="left"><img src="../images/icons/view.svg" alt="preview"></a>
                         </div>
-                        <img src="./images/skills/${design.tools}" alt="${design.tools}"
+                       <div class="project-tools-div">${updateIcons(
+                           design.tools
+                       )}</div>
                     </div>    
                 </div> 
-        </div> `
-    })
-   
-}
+        </div> `;
+    });
+};
 
 project();
 
-const education = async ()=>{
-    const response = await fetch("./data/education.json");
+const education = async () => {
+    const response = await fetch('./data/education.json');
     const data = await response.json();
-    const {Education, Courses} = data;
+    const { Education, Courses } = data;
 
-    const educationItem = document.getElementById("education");
+    const educationItem = document.getElementById('education');
 
-    Education.forEach(item =>{
-        educationItem.innerHTML +=`
+    Education.forEach((item) => {
+        educationItem.innerHTML += `
         <div
             ${animate}
         >
@@ -168,10 +187,10 @@ const education = async ()=>{
                             <p>${item.description}</p>
                        </div>
                 </div>
-        `
+        `;
     });
-    Courses.forEach(item =>{
-        educationItem.innerHTML +=`
+    Courses.forEach((item) => {
+        educationItem.innerHTML += `
          <div
             ${animate}
         >
@@ -185,23 +204,20 @@ const education = async ()=>{
 
                        </div>
                 </div>
-        `
+        `;
     });
+};
+education();
 
-
-
-}
-education()
-
-const experience = async () =>{
-    const response = await fetch("./data/experience.json");
+const experience = async () => {
+    const response = await fetch('./data/experience.json');
     const data = await response.json();
-    const {VolunteeringExperience, WorkExperience} = data;
+    const { VolunteeringExperience, WorkExperience } = data;
 
-    const expDom = document.getElementById("experience-item"); 
-    
-    VolunteeringExperience.forEach(item=>{
-    expDom.innerHTML += `
+    const expDom = document.getElementById('experience-item');
+
+    VolunteeringExperience.forEach((item) => {
+        expDom.innerHTML += `
          <div
             ${animate}
         >
@@ -215,10 +231,10 @@ const experience = async () =>{
                 <p>${item.description}</p>
             </div> 
         </div>
-    `
+    `;
     });
-    WorkExperience.forEach(item=>{
-    expDom.innerHTML += `
+    WorkExperience.forEach((item) => {
+        expDom.innerHTML += `
          <div
             ${animate}
         >
@@ -231,26 +247,26 @@ const experience = async () =>{
                 <p>${item.description}</p>
             </div>
         </div>
-    `
-    })
-}
-experience()
+    `;
+    });
+};
+experience();
 
-const testimonials = async ()=>{
-    const getStars=(arr)=>{
-        for (let i in arr){
-           return `<img src="./images/star.svg" alt="">` 
+const testimonials = async () => {
+    const getStars = (arr) => {
+        for (let i in arr) {
+            return `<img src="./images/star.svg" alt="">`;
         }
-    }
+    };
 
-    const  response = await fetch("./data/testimonial.json");
+    const response = await fetch('./data/testimonial.json');
     const data = await response.json();
-    const {Testimonials} = data;
+    const { Testimonials } = data;
 
-    const testifiersContainer = document.getElementById("testifier-container");
-    
-    Testimonials.forEach(item=>{
-        testifiersContainer.innerHTML +=`
+    const testifiersContainer = document.getElementById('testifier-container');
+
+    Testimonials.forEach((item) => {
+        testifiersContainer.innerHTML += `
     <div class="testifier-card">
         <div class="testifier-head">
                 <img src="./images/icon-quotes.svg" alt="" class="quote-icon">
@@ -273,10 +289,8 @@ const testimonials = async ()=>{
             </div>
         </div>
     </div>
-    `
-    })
-    
-}
+    `;
+    });
+};
 
 testimonials();
-

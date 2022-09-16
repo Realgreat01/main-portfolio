@@ -1,0 +1,26 @@
+[
+  {
+    "skill": "Node JS",
+    "level": 67.4,
+    "icon": "nodejs-3.svg",
+    "class": "normal"
+  },
+  {
+    "skill": "Express JS",
+    "level": 68.9,
+    "icon": "express.svg",
+    "class": "dark-icons"
+  },
+  {
+    "skill": "Mongo Db",
+    "level": 54.7,
+    "icon": "mongodb.svg",
+    "class": "normal"
+  },
+  {
+    "skill": "Firebase",
+    "level": 40,
+    "icon": "firebase.svg",
+    "class": "normal"
+  }
+]

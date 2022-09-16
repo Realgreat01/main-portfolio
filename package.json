@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.html",
+  "repository": "https://github.com/Realgreat01/New-Portfolio.git",
+  "author": "Realgreat01 <samsonrealgreat@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
