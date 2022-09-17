@@ -1,9 +1,12 @@
-const animate = `
-            data-aos="fade-up"
+const dataAos = `
             data-aos-offset="200"
-            data-aos-delay="100"
+            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
+`;
+const animate = `
+            data-aos="fade-up"
+            ${dataAos}
         `;
 
 const skills = async () => {
@@ -16,10 +19,11 @@ const skills = async () => {
     const backend = document.querySelector('.backend');
     const design = document.querySelector('.design');
     const management = document.querySelector('.management');
+    const group = `data-aos="zoom-in-up" ${dataAos}`;
 
-    FrontEnd.forEach((item) => {
+  FrontEnd.forEach((item) => {
         frontend.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" ${animate}>
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" ${group}>
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
@@ -30,7 +34,7 @@ const skills = async () => {
 
     BackEnd.forEach((item) => {
         backend.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}" ${group}>
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
@@ -41,7 +45,7 @@ const skills = async () => {
 
     Design.forEach((item) => {
         design.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" >
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" ${group}>
             <div id="progress"> <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>
                 <span id="skill-level">${item.level}%</span>
@@ -51,7 +55,7 @@ const skills = async () => {
     });
     Management.forEach((item) => {
         management.innerHTML += `
-            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}">
+            <div id="progress-container" style="background: url('./images/skills/${item.icon}')" class="${item.class}" ${group}>
             <div id="progress">
                 <p id="skill-name" class="skill-name" style="width:${item.level}%"></p>
                 <span id="skill-title">${item.skill}</span>

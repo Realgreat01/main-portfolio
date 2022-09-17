@@ -1,19 +1,19 @@
 {
-    "Services" : [
-        {
-            "title" : "Frontend Development",
-            "icon" : "web-development.svg",
-            "description" : "I build <mark> modern accessible</mark> and <mark>user friendly </mark> websites from basic pages to <mark>complex interactive mobile web applications</mark> using modern tools and industry recommended practices. Ensuring <mark>scalability, maintainability</mark> and utmost <mark> user experience</mark>."
-        },
-        {
-            "title" : "UI/UX Design",
-            "icon" : "user-interface.svg",
-            "description" : "I design <mark>beautiful user friendly interfaces </mark>. that enhance <mark> smart user experience </mark> with modern design tools and practices that gives utmost <mark>satisfaction, navigation and accessibility </mark> to clients."
-        },
-        {
-            "title" : "Graphics Design",
-            "icon" : "graphics.svg",
-            "description" : "I create on demand brand minified graphics that <mark> communicates at first instance</mark> to the target audience following <mark> best design practices and principles using modern tools</mark> and approach both <mark> adapting to a dynamic society</mark> and adjusting to <mark>modern design</mark> styles."
-        }
-    ]
+  "Services": [
+    {
+      "title": "Frontend Development",
+      "icon": "web-development.svg",
+      "description": "I build <mark> modern accessible</mark> and <mark>user friendly </mark> websites from basic pages to <mark>complex interactive mobile web applications</mark> using modern tools and industry recommended practices. Ensuring <mark>scalability, maintainability</mark> and utmost <mark> user experience</mark>."
+    },
+    {
+      "title": "UI/UX Design",
+      "icon": "user-interface.svg",
+      "description": "I design <mark>beautiful user friendly interfaces </mark>. that enhance <mark> smart user experience </mark> with modern design tools and practices that gives utmost <mark>satisfaction, navigation and accessibility </mark> to clients."
+    },
+    {
+      "title": "Graphics Design",
+      "icon": "graphics.svg",
+      "description": "I create on demand brand minified graphics that <mark> communicates at first instance</mark> to the target audience following <mark> best design practices and principles using modern tools</mark> and approach both <mark> adapting to a dynamic society</mark> and adjusting to <mark>modern design</mark> styles."
+    }
+  ]
 }

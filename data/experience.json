@@ -1,49 +1,48 @@
 {
-    "VolunteeringExperience" : [
-        {
-            "Organization" : "United Nations Sustainable Development Solutions Network - Youth",
-            "Program" : "SDG Students Program",
-            "Role" : "Pioneer Campus Coordinator",
-            "Duration" : "2020 - Present",
-            "Website" : "https://www.sdgstudents.org",
-            "description": "SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  "
-        },
+  "VolunteeringExperience": [
+    {
+      "Organization": "United Nations Sustainable Development Solutions Network - Youth",
+      "Program": "SDG Students Program",
+      "Role": "Pioneer Campus Coordinator",
+      "Duration": "2020 - Present",
+      "Website": "https://www.sdgstudents.org",
+      "description": "SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  "
+    },
 
-        {
-            "Organization" : "United Nations Education and Cultural Organization",
-            "Program" : "SDG4Youth Network",
-            "Role" : "Network Member",
-            "Duration" : "November 2021 - Present",
-            "Website" : "https://www.sdgstudents.org",
-            "description": "The SDG4Youth Network is the global youth division of UNESCO focused on harnessing youth voices in  Education. As a member, I contributed towards sustainable education"
-        },
+    {
+      "Organization": "United Nations Education and Cultural Organization",
+      "Program": "SDG4Youth Network",
+      "Role": "Network Member",
+      "Duration": "November 2021 - Present",
+      "Website": "https://www.sdgstudents.org",
+      "description": "The SDG4Youth Network is the global youth division of UNESCO focused on harnessing youth voices in  Education. As a member, I contributed towards sustainable education"
+    },
 
+    {
+      "Organization": "Global Entreprenuers and Leaders Academy",
+      "Program": "Volunteering",
+      "Role": "Asst. Leader Moderators Committee",
+      "Duration": "January - December 2020",
+      "Website": "https://www.gela.com.ng",
+      "description": "GELA is a youth-led organization focused on youth empowerment and development."
+    }
+  ],
 
-        {
-            "Organization" : "Global Entreprenuers and Leaders Academy",
-            "Program" : "Volunteering",
-            "Role" :"Asst. Leader Moderators Committee",
-            "Duration" : "January - December 2020",
-            "Website" : "https://www.gela.com.ng",
-        "description": "GELA is a youth-led organization focused on youth empowerment and development."
-        }
-    ],
+  "WorkExperience": [
+    {
+      "Company": "FlutterWave",
+      "Role": "Barter Student Ambassador",
+      "Duration": "January 2021 - June 2021",
+      "Certificate": "barter.jpg",
+      "description": "As an ambassador of Africa Largest Tech Company, I assist in bringing new customers and also connect with like minded individuals "
+    },
 
-    "WorkExperience" : [
-        {
-            "Company" : "FlutterWave",
-            "Role" : "Barter Student Ambassador",
-            "Duration" : "January 2021 - June 2021",
-            "Certificate" : "barter.jpg",
-            "description": "As an ambassador of Africa Largest Tech Company, I assist in bringing new customers and also connect with like minded individuals "
-        },
-
-        {
-            "Company" : "myStash Technologies",
-            "Role" : "Student Ambassador",
-            "Duration" : "August 2021 - Present",
-            "Certificate" : "",
-            "description": "One of the fastest growing Fin. Tech. brands in Nigria. I joined as the ambassador at the early stage. I held several product feedbacks and development calls with the company's product team, I also help to register about 50 new customers."
-        }
-    ]
+    {
+      "Company": "myStash Technologies",
+      "Role": "Student Ambassador",
+      "Duration": "August 2021 - Present",
+      "Certificate": "",
+      "description": "One of the fastest growing Fin. Tech. brands in Nigria. I joined as the ambassador at the early stage. I held several product feedbacks and development calls with the company's product team, I also help to register about 50 new customers."
+    }
+  ]
 }

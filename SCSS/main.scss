@@ -1,66 +1,69 @@
-:root{
-    --boshshsx: #1100ff;
-    --primary: #000 ;
-    --secondary: #ff0077;
-    --tertiary: #006eff;
-    --dark: #fff;
-    --white:#fff;
-    --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
-    --box: #6bb5fa;
-    --text: #13099e81;
-    --nav: #b9f4f5;
+:root {
+  --boshshsx: #1100ff;
+  --primary: #000;
+  --secondary: #ff0077;
+  --tertiary: #006eff;
+  --dark: #fff;
+  --white: #fff;
+  --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
+  --box: #6bb5fa;
+  --text: #13099e81;
+  --nav: #b9f4f5;
 }
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
-*{
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    // font-family: 'League Spartan', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  // font-family: 'League Spartan', sans-serif;
 }
 
 //  Variables
 // 1.  for font-size
-            $small : 12px;
-            $medium : 16px;
-            $large : 20px;
-            $x-large : 24px;
+$small: 12px;
+$medium: 16px;
+$large: 20px;
+$x-large: 24px;
 
 // 2. for font-weight
-            $thin: 300;
-            $normal: 400;
-            $semi-bold: 600;
-            $bold: 800;
-
+$thin: 300;
+$normal: 400;
+$semi-bold: 600;
+$bold: 800;
 
 // 3. for widths
-            $full: 100%;
-            $half: 50%;
-            $third : 33.33%;
-            $qtr : 25%;
-            $tenth: 10%;
+$full: 100%;
+$half: 50%;
+$third: 33.33%;
+$qtr: 25%;
+$tenth: 10%;
 
 // 4. for margin and padding
-            $center: 0 auto;
-            $p-small: 4px;
-            $p-medium: 8px;
-            $p-large: 12px;
+$center: 0 auto;
+$p-small: 4px;
+$p-medium: 8px;
+$p-large: 12px;
 
-
-//  5. for screens 
-            $small-screen :(max-width: 900px);
-            $medium-screen : (max-width: 900px);
-            $large-screen :(min-width: 1200px);
-
+//  5. for screens
+$small-screen: (
+  max-width: 900px,
+);
+$medium-screen: (
+  max-width: 900px,
+);
+$large-screen: (
+  min-width: 1200px,
+);
 
 // Mixins
-#copyright{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    font-size: $small;
-    opacity:0.5;
-    // width: 200px;
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: $small;
+  opacity: 0.5;
+  // width: 200px;
 }
 
 // partials

@@ -9,33 +9,32 @@ mainNav.innerHTML = `
     </div>
     <a href="/" id="home"><img src="../images/icons/home.svg" class="social-icons" id="project-home"></a>
 </nav>
-</div>`
+</div>`;
 
 const mainTag = document.querySelectorAll("main");
 const preloader = document.getElementById("preloader");
 const getLoadersData = sessionStorage.getItem("loaders");
-console.log(getLoadersData)
-    if(getLoadersData=="loaded"){
-        preloader.style.display="none";
-        preloader.style.visibility="hidden";
-        mainTag.forEach(items=>{
-            items.style.opacity="1";
-        });
-        sessionStorage.setItem("loaders", "loaded")
-    };
+console.log(getLoadersData);
+if (getLoadersData == "loaded") {
+  preloader.style.display = "none";
+  preloader.style.visibility = "hidden";
+  mainTag.forEach((items) => {
+    items.style.opacity = "1";
+  });
+  sessionStorage.setItem("loaders", "loaded");
+}
 
+setTimeout(() => {
+  preloader.style.visibility = "hidden";
+  preloader.style.transition = "2s";
+  preloader.style.opacity = "0";
+  sessionStorage.setItem("loaders", "loaded");
+  mainTag.forEach((items) => {
+    items.style.opacity = "1";
+  });
+  // sessionStorage.setItem("loaders", "loaded")
+}, 2000);
 
-setTimeout(()=>{
-    preloader.style.visibility="hidden";
-    preloader.style.transition="2s";
-    preloader.style.opacity="0"; 
-    sessionStorage.setItem("loaders", "loaded")
-        mainTag.forEach(items=>{
-            items.style.opacity="1";
-        });
-        // sessionStorage.setItem("loaders", "loaded")
-    }, 2000)
-
-  setTimeout(()=>{
-    document.body.style.overflow="visible"
-  },2000 )
+setTimeout(() => {
+  document.body.style.overflow = "visible";
+}, 2000);

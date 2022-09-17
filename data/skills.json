@@ -1,126 +1,125 @@
 {
-    "FrontEnd" : [
-        {
-            "skill": "HTML", 
-            "level" : 98,
-            "icon" : "html.svg"
-        },
-        {
-            "skill": "CSS", 
-            "level" : 88,
-            "icon" : "css.svg"
-        },
-        {
-            "skill": "Javascript", 
-            "level" : 86,
-            "icon" : "javascript.svg"
-        },
-        {
-            "skill": "TailWind", 
-            "level" : 70,
-            "icon" : "tailwindcss.svg"
-        },
-        {
-            "skill": "Vue", 
-            "level" : 60,
-            "icon" : "vue.svg"
-        },
-        {
-            "skill": "Sass", 
-            "level" : 80,
-            "icon" : "sass.svg"
-        },
-        {
-            "skill": "Typescript", 
-            "level" : 58,
-            "icon" : "typescript.svg"
-        },
-        {
-            "skill": "Nuxt", 
-            "level" : 53,
-            "icon" : "nuxt.svg"
-        }
+  "FrontEnd": [
+    {
+      "skill": "HTML",
+      "level": 98,
+      "icon": "html.svg"
+    },
+    {
+      "skill": "CSS",
+      "level": 88,
+      "icon": "css.svg"
+    },
+    {
+      "skill": "Javascript",
+      "level": 86,
+      "icon": "javascript.svg"
+    },
+    {
+      "skill": "TailWind",
+      "level": 70,
+      "icon": "tailwindcss.svg"
+    },
+    {
+      "skill": "Vue",
+      "level": 60,
+      "icon": "vue.svg"
+    },
+    {
+      "skill": "Sass",
+      "level": 80,
+      "icon": "sass.svg"
+    },
+    {
+      "skill": "Typescript",
+      "level": 58,
+      "icon": "typescript.svg"
+    },
+    {
+      "skill": "Nuxt",
+      "level": 53,
+      "icon": "nuxt.svg"
+    }
+  ],
 
-    ],
+  "BackEnd": [
+    {
+      "skill": "Node JS",
+      "level": 67.4,
+      "icon": "nodejs-3.svg",
+      "class": "normal"
+    },
+    {
+      "skill": "Express JS",
+      "level": 68.9,
+      "icon": "express.svg",
+      "class": "dark-icons"
+    },
+    {
+      "skill": "Mongo Db",
+      "level": 54.7,
+      "icon": "mongodb.svg",
+      "class": "normal"
+    },
+    {
+      "skill": "Firebase",
+      "level": 40,
+      "icon": "firebase.svg",
+      "class": "normal"
+    }
+  ],
 
-    "BackEnd" : [
-        {
-            "skill": "Node JS", 
-            "level" : 67.4,
-            "icon" : "nodejs-3.svg",
-            "class": "normal"
-        },
-        {
-            "skill": "Express JS", 
-            "level" : 68.9,
-            "icon" : "express.svg",
-            "class" : "dark-icons" 
-        },
-        {
-            "skill": "Mongo Db", 
-            "level" : 54.7,
-            "icon" : "mongodb.svg",
-            "class": "normal"
-        },
-        {
-            "skill": "Firebase", 
-            "level" : 40,
-            "icon" : "firebase.svg",
-            "class": "normal"
-        }
-    ],
-
-    "Design" : [
-        {
-            "skill": "Figma", 
-            "level" : 52,
-            "icon" : "figma.svg"
-        },
-        {
-            "skill": "Illustrator", 
-            "level" : 44,
-            "icon" : "illustrator.svg"
-        },
-        {
-            "skill": "Word Press", 
-            "level" : 51,
-            "icon" : "wordpress.svg"
-        },
-        {
-            "skill": "Indesign", 
-            "level" : 64,
-            "icon" : "indesign.svg"
-        },
-        {
-            "skill": "Adobe XD", 
-            "level" : 62,
-            "icon" : "adobe-xd.svg"
-        }
-    ],
-    "Management" : [
-        {
-            "skill": "Excel", 
-            "level" : 52,
-            "icon" : "excel.svg",
-            "class": "normal"
-        },
-        {
-            "skill": "Git", 
-            "level" : 69,
-            "icon" : "git.svg",
-            "class": "normal"
-        },
-        {
-            "skill": "Github", 
-            "level" : 75.5,
-            "icon" : "github.svg",
-            "class": "dark-icons"
-        },
-        {
-            "skill": "VS code", 
-            "level" : 84,
-            "icon" : "vscode.svg",
-            "class": "normal"
-        }
-    ]
+  "Design": [
+    {
+      "skill": "Figma",
+      "level": 52,
+      "icon": "figma.svg"
+    },
+    {
+      "skill": "Illustrator",
+      "level": 44,
+      "icon": "illustrator.svg"
+    },
+    {
+      "skill": "Word Press",
+      "level": 51,
+      "icon": "wordpress.svg"
+    },
+    {
+      "skill": "Indesign",
+      "level": 64,
+      "icon": "indesign.svg"
+    },
+    {
+      "skill": "Adobe XD",
+      "level": 62,
+      "icon": "adobe-xd.svg"
+    }
+  ],
+  "Management": [
+    {
+      "skill": "Excel",
+      "level": 52,
+      "icon": "excel.svg",
+      "class": "normal"
+    },
+    {
+      "skill": "Git",
+      "level": 69,
+      "icon": "git.svg",
+      "class": "normal"
+    },
+    {
+      "skill": "Github",
+      "level": 75.5,
+      "icon": "github.svg",
+      "class": "dark-icons"
+    },
+    {
+      "skill": "VS code",
+      "level": 84,
+      "icon": "vscode.svg",
+      "class": "normal"
+    }
+  ]
 }

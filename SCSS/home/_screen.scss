@@ -1,39 +1,39 @@
-#small-screen{
-    display: none;
+#small-screen {
+  display: none;
 }
 
-@media only screen and (max-width: 700px){
-    #small-screen{
-        display:block;
-    }
+@media only screen and (max-width: 700px) {
+  #small-screen {
+    display: block;
+  }
 
-    #large-info{
-        display: none;
-    } 
+  #large-info {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
-    .large-skills, .bio-large{
-        display:none;
-    }
-    #summary{
-        grid-template-columns: 1fr;
+  .large-skills,
+  .bio-large {
+    display: none;
+  }
+  #summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-items {
+    margin-top: 100px;
+
+    h3 {
+      font-size: 20px;
     }
 
-    .summary-items{
-        margin-top: 100px;
-    
-        h3{
-            font-size:20px;
-        }
-    
-        h1{
-            font-size: 24px;
-        }
-        #role{
-            font-size: 11px;
-            margin-bottom: 40px;
-            width: 80%;
-        }
-
-        }
+    h1 {
+      font-size: 24px;
+    }
+    #role {
+      font-size: 11px;
+      margin-bottom: 40px;
+      width: 80%;
+    }
+  }
 }

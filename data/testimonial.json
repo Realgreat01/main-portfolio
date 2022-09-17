@@ -1,39 +1,39 @@
 {
-    "Testimonials" : [
-        {
-            "name" : "Bill Gates",
-            "position" : "CEO, Microsoft Inc.",
-            "photo" : "./anita.png",
-            "rating" : 5,
-            "comment" : "Lorem 10"
-        },
-        {
-            "name" : "Bill Gates",
-            "position" : "CEO, Microsoft Inc.",
-            "photo" : "./anita.png",
-            "rating" : 5,
-            "comment" : "Lorem 10"
-        },
-        {
-            "name" : "Bill Gates",
-            "position" : "CEO, Microsoft Inc.",
-            "photo" : "./anita.png",
-            "rating" : 5,
-            "comment" : "Lorem 10"
-        },
-        {
-            "name" : "Bill Gates",
-            "position" : "CEO, Microsoft Inc.",
-            "photo" : "./anita.png",
-            "rating" : 5,
-            "comment" : "Lorem 10"
-        },
-        {
-            "name" : "Bill Gates",
-            "position" : "CEO, Microsoft Inc.",
-            "photo" : "./anita.png",
-            "rating" : 5,
-            "comment" : "Lorem 10"
-        }
-    ]
+  "Testimonials": [
+    {
+      "name": "Bill Gates",
+      "position": "CEO, Microsoft Inc.",
+      "photo": "./anita.png",
+      "rating": 5,
+      "comment": "Lorem 10"
+    },
+    {
+      "name": "Bill Gates",
+      "position": "CEO, Microsoft Inc.",
+      "photo": "./anita.png",
+      "rating": 5,
+      "comment": "Lorem 10"
+    },
+    {
+      "name": "Bill Gates",
+      "position": "CEO, Microsoft Inc.",
+      "photo": "./anita.png",
+      "rating": 5,
+      "comment": "Lorem 10"
+    },
+    {
+      "name": "Bill Gates",
+      "position": "CEO, Microsoft Inc.",
+      "photo": "./anita.png",
+      "rating": 5,
+      "comment": "Lorem 10"
+    },
+    {
+      "name": "Bill Gates",
+      "position": "CEO, Microsoft Inc.",
+      "photo": "./anita.png",
+      "rating": 5,
+      "comment": "Lorem 10"
+    }
+  ]
 }

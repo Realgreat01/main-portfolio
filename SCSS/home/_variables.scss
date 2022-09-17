@@ -1,9 +1,9 @@
 //  Variables
 // 1.  for font-size
-$small : 12px;
-$medium : 16px;
-$large : 20px;
-$x-large : 24px;
+$small: 12px;
+$medium: 16px;
+$large: 20px;
+$x-large: 24px;
 $giant: 3rem;
 
 // 2. for font-weight
@@ -12,12 +12,11 @@ $normal: 400;
 $semi-bold: 600;
 $bold: 800;
 
-
 // 3. for widths
 $full: 100%;
 $half: 50%;
-$third : 33.33%;
-$qtr : 25%;
+$third: 33.33%;
+$qtr: 25%;
 $tenth: 10%;
 
 // 4. for margin and padding
@@ -26,12 +25,18 @@ $p-small: 4px;
 $p-medium: 8px;
 $p-large: 12px;
 
-
-//  5. for screens 
-$small-screen :only screen and (max-width: 900px);
-$medium-screen :only screen and (max-width: 900px);
-$large-screen :only screen and (min-width: 1200px);
-
+//  5. for screens
+$small-screen: only screen and
+  (
+    max-width: 900px,
+  );
+$medium-screen: only screen and
+  (
+    max-width: 900px,
+  );
+$large-screen: only screen and
+  (
+    min-width: 1200px,
+  );
 
 // Mixins
-

@@ -6,5 +6,8 @@
   "repository": "https://github.com/Realgreat01/New-Portfolio.git",
   "author": "Realgreat01 <samsonrealgreat@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
 }

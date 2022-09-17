@@ -1,12 +1,12 @@
-const education = async ()=>{
-    const response = await fetch("./data/education.json");
-    const data = await response.json();
-    const {Education, Courses} = data;
+const education = async () => {
+  const response = await fetch("./data/education.json");
+  const data = await response.json();
+  const { Education, Courses } = data;
 
-    const educationItem = document.getElementById("education");
+  const educationItem = document.getElementById("education");
 
-    Education.forEach(item =>{
-        educationItem.innerHTML +=`
+  Education.forEach((item) => {
+    educationItem.innerHTML += `
         <div>
                        <div class="dots">
                        </div>
@@ -17,10 +17,10 @@ const education = async ()=>{
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
                        </div>
                 </div>
-        `
-    });
-    Courses.forEach(item =>{
-        educationItem.innerHTML +=`
+        `;
+  });
+  Courses.forEach((item) => {
+    educationItem.innerHTML += `
         <div>
                        <div class="dots">
                        </div>
@@ -30,23 +30,19 @@ const education = async ()=>{
                             <p>${item.summary}</p>
                        </div>
                 </div>
-        `
-    });
+        `;
+  });
+};
+education();
 
+const experience = async () => {
+  const response = await fetch("./data/experience.json");
+  const data = await response.json();
+  const { VolunteeringExperience, WorkExperience } = data;
 
+  const expDom = document.getElementById("experience-item");
 
-}
-education()
-
-
-const experience = async () =>{
-    const response = await fetch("./data/experience.json");
-    const data = await response.json();
-    const {VolunteeringExperience, WorkExperience} = data;
-
-    const expDom = document.getElementById("experience-item"); 
-    
-    VolunteeringExperience.forEach(item=>{
+  VolunteeringExperience.forEach((item) => {
     expDom.innerHTML += `
         <div>
             <div class="dots">
@@ -59,9 +55,9 @@ const experience = async () =>{
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
             </div>
         </div>
-    `
-    });
-    WorkExperience.forEach(item=>{
+    `;
+  });
+  WorkExperience.forEach((item) => {
     expDom.innerHTML += `
         <div>
             <div class="dots">
@@ -73,7 +69,7 @@ const experience = async () =>{
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus pariatur laudantium.</p>
             </div>
         </div>
-    `
-    })
-}
-experience()
+    `;
+  });
+};
+experience();

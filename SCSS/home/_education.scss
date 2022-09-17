@@ -1,121 +1,118 @@
-.education{
-    border-left: 3px solid var(--secondary);
-    max-width: 90%;
-    
-    margin: 0 auto;
-    /* position: relative; */
+.education {
+  border-left: 3px solid var(--secondary);
+  max-width: 90%;
+
+  margin: 0 auto;
+  /* position: relative; */
 }
 
-.education-box{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60%;
-    margin: 0 auto;
-
+.education-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.eduEx-heading{
-    font-weight: 700;
-    font-size: $large;
-    
-    @media (max-width: 900px){
-        font-size: $small;
-        margin-top: 50px;
-        text-transform: uppercase;
-        border: 1px solid var(--secondary);
-        width: -moz-fit-content;
-        width: fit-content;
-        padding: 5px;
+.eduEx-heading {
+  font-weight: 700;
+  font-size: $large;
 
-    }
+  @media (max-width: 900px) {
+    font-size: $small;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border: 1px solid var(--secondary);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px;
+  }
 }
-.education>div{
-    display: flex;
-    align-items: center;
+.education > div {
+  display: flex;
+  align-items: center;
 }
-.dots::before{
-    content: "";
-    height: 10px;
-    width: 10px;
-    border:1px solid var(--dark);
-    background: var(--tertiary);
+.dots::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border: 1px solid var(--dark);
+  background: var(--tertiary);
+  display: block;
+  border-radius: 50%;
+  margin-top: -10%;
+  position: absolute;
+}
+
+.dots {
+  background: var(--secondary);
+  min-width: 50px;
+  height: 3px;
+  display: flex;
+  position: relative;
+  right: 7.5px;
+  z-index: 0;
+}
+
+.education-item {
+  background: var(--dark);
+  min-width: 300px;
+  max-width: 320px;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: -10px;
+  border-radius: 10px;
+  color: var(--tertiary);
+  box-shadow: 1px 1px 3px var(--box);
+  z-index: 2;
+  p {
+    opacity: 0.6;
+    line-height: 1.1rem;
+    font-size: 0.85rem;
+    font-family: "Titillium Web", sans-serif;
+  }
+  & > h2 {
+    font-size: $medium;
+  }
+  #certificate {
+    border: none;
+    outline: none;
     display: block;
-    border-radius: 50%;
-    margin-top:-10%;
-    position: absolute;
-}
-
-.dots{
+    padding: 5px;
+    border-radius: 4px;
     background: var(--secondary);
-    min-width: 50px; 
-    height: 3px;
-    display:flex;
-    position: relative;
-    right: 7.5px;
-    z-index: 0;
+    &:hover {
+      background: var(--tertiary);
+    }
+    a {
+      color: var(--white);
+    }
+  }
 }
 
-.education-item{
-    background: var(--dark);
-    min-width: 300px;
-    max-width: 320px;
-    padding: 10px 20px;
+.education h4 {
+  color: var(--secondary);
+  margin: -10px 0 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+  .education-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .education-item {
+    min-width: 280px;
+    max-width: 280px;
+    padding: 20px;
     margin: 10px;
     margin-left: -10px;
     border-radius: 10px;
-    color: var(--tertiary);
-    box-shadow: 1px 1px 3px var(--box);
-    z-index:2;
-    p{
-        opacity: 0.6;
-        line-height: 1.1rem;
-        font-size: 0.85rem;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    &>h2{
-        font-size: $medium;
-    }
-    #certificate{
-        border: none;
-        outline: none;
-        display: block;
-        padding: 5px;
-        border-radius: 4px;
-        background: var(--secondary);
-        &:hover{
-            background: var(--tertiary)
-        }
-        a{
-            color: var(--white);
-        }
-    }
-}
-
-.education h4{
-    color: var(--secondary);
-    margin: -10px 0 0 ;
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-
-@media only screen  and (max-width:900px) {
-    .education-box{
-        display:grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        margin:0 auto;
-    }
-
-    .education-item{
-        min-width: 280px;
-        max-width: 280px;
-        padding: 20px;
-        margin: 10px;
-        margin-left: -10px;
-        border-radius: 10px;
-    }
-    .dots{
-        min-width: 40px;
-    }
+  }
+  .dots {
+    min-width: 40px;
+  }
 }

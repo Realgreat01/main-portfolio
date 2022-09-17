@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 :root {
   --boshshsx: #1100ff;
-  --primary: #000 ;
+  --primary: #000;
   --secondary: #ff0077;
   --tertiary: #006eff;
   --dark: #fff;
-  --white:#fff;
+  --white: #fff;
   --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
   --box: #6bb5fa;
   --text: #13099e81;
@@ -42,8 +42,8 @@ body {
   margin: 0;
   width: 100%;
   position: relative;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-behavior: smooth !important;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1206,7 +1206,8 @@ nav li a {
   }
 }
 @media (max-width: 900px) {
-  .large-skills, .bio-large {
+  .large-skills,
+.bio-large {
     display: none;
   }
   #summary {
@@ -1364,7 +1365,7 @@ nav li a {
 }
 .mobile-menu .nav-flex a:hover {
   background: var(--secondary);
-  color: #FFF;
+  color: #fff;
 }
 .mobile-menu .image-container {
   background-color: var(--secondary);

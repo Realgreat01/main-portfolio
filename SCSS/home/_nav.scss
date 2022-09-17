@@ -1,210 +1,205 @@
 @import "./variables";
 
-#name-span{
-    @extend h1;
+#name-span {
+  @extend h1;
 }
-nav{
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 20;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  // @media (max-width: 900px) {
+  //     margin-bottom: 50px;
+  // }
+  .nav-flex {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 20;
-    height: 50px;
-    top:0;
-    width:100%;
-    margin-bottom: 20px;
-    // @media (max-width: 900px) {
-    //     margin-bottom: 50px;
-    // }
-    .nav-flex{
-    display:flex;
     position: relative;
-    #project-home{
-        background: red;
-        width: 300px;
-        height: 300px;
-        position: fixed;
-
+    #project-home {
+      background: red;
+      width: 300px;
+      height: 300px;
+      position: fixed;
     }
- }
+  }
 
-//  NAV BAR LIST ITEMS
-    li{
-        list-style-type: none;
-        margin: 0 10px;
-        color: var(--primary);
-        text-transform: uppercase;
-        width: 150px;
-        background-color: none;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px 5px;
-        text-align: center;
-        border-radius: 5px;
-        transition: "background"0.5s;
-        font-size: 18px;
-        &:hover{
-            color: #fff;
-            background: var(--secondary);
-            a{
-                color: #fff
-            }
-        }
-
-       a{
-            color: var(--primary);
-        }
-
-    }
-    // END OF LIST ITEMS
-
-    // NAV BAR BUTTON (Download CV)
-
-
-}
-
-#download-btn{
-    background: var(--secondary);
-    padding: 8px 10px;
-    border: none;
-    border-radius: 1rem;
-    font-weight: 700;
-    color: white;
-    font-size: 12px;
-
-    a{
-        color: #fff;
-    }
-}
-
-.logo img{
-    height: 30px;
-    width: -moz-fit-content;
-    width: fit-content;
-    @media (max-width: 900px) {
-        height: 10px;
-    }
-}
-.menu-bar{
-    display:none;
-    position: relative;
-    height:30px;
-    width: 30px;
+  //  NAV BAR LIST ITEMS
+  li {
+    list-style-type: none;
+    margin: 0 10px;
+    color: var(--primary);
+    text-transform: uppercase;
+    width: 150px;
+    background-color: none;
+    height: fit-content;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    border-radius: 3px;
-
-    img{
-        position: absolute;
-        height:18px;
-        width: 18px;
-    }
-};
-
-.mobile{
-    position: absolute;
-    justify-content: left;
-}
-.nav-mobile{
-    flex-direction: column;
-    height: 0px;
-    position: fixed;
-    right: 2px;
-    margin: 0 auto;
-    z-index: 10;
-    top: 25px;
-    color:#fff;
-    overflow-y: hidden;
-    transition: 1s;
-
-// &:{
-//     height:0px;
-// }
-    li{
-        background: var(--secondary);
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 5px;
+    transition: "background" 0.5s;
+    font-size: 18px;
+    &:hover {
+      color: #fff;
+      background: var(--secondary);
+      a {
         color: #fff;
-        width: 200px;
-        margin: 10px;
-        text-align: right;
-        padding: 10px;
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        border-radius: 4px;
-
-        &:hover{
-            background: #000;
-        }
-        a{
-            color:#fff;
-            width: 50%;
-        }
+      }
     }
+
+    a {
+      color: var(--primary);
+    }
+  }
+  // END OF LIST ITEMS
+
+  // NAV BAR BUTTON (Download CV)
 }
 
-// DARK AND LIGHT MODES
-#mode{
-    position: relative;
-    display:flex;
-    height: 25px;
-    background: none;
-    width: 40px;
-    margin-right: -20px;
-    img{
-    position:absolute;
-    height: 100%;
-    display:block;
-    cursor: pointer;
-    top:0;
+#download-btn {
+  background: var(--secondary);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+
+  a {
+    color: #fff;
   }
 }
 
-#light{
-    visibility:hidden;
+.logo img {
+  height: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  @media (max-width: 900px) {
+    height: 10px;
+  }
 }
-#dark{
-    visibility:visible;
+.menu-bar {
+  display: none;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 3px;
+
+  img {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+  }
 }
 
-#cancel-icon{
-    visibility: hidden;
+.mobile {
+  position: absolute;
+  justify-content: left;
 }
+.nav-mobile {
+  flex-direction: column;
+  height: 0px;
+  position: fixed;
+  right: 2px;
+  margin: 0 auto;
+  z-index: 10;
+  top: 25px;
+  color: #fff;
+  overflow-y: hidden;
+  transition: 1s;
 
-@media only screen and (max-width: 900px){
-   
-    .nav-desktop{
-        display: none;
+  // &:{
+  //     height:0px;
+  // }
+  li {
+    background: var(--secondary);
+    color: #fff;
+    width: 200px;
+    margin: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+
+    &:hover {
+      background: #000;
     }
-    .menu-bar{
-        display:flex;
-    };
-    .nav-mobile{
-        display:flex;
+    a {
+      color: #fff;
+      width: 50%;
     }
-
-    // #download-btn{
-    //     // padding:10px;
-    //     // border-radius: 10px;
-    // }
+  }
 }
 
-#preloader{
-    background: black no-repeat center;
-    background-size: 50%;
-    height: 100vh;
-    width:100%;
-    position: fixed;
-    z-index:999;
-    opacity:1;
+// DARK AND LIGHT MODES
+#mode {
+  position: relative;
+  display: flex;
+  height: 25px;
+  background: none;
+  width: 40px;
+  margin-right: -20px;
+  img {
+    position: absolute;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    top: 0;
+  }
 }
-#nav{
-    // background: red;
-    // width: 50%;
-    #home{
-        // background: green;
-        height: 30px;
-        width: 30px;
-    }
+
+#light {
+  visibility: hidden;
+}
+#dark {
+  visibility: visible;
+}
+
+#cancel-icon {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+  .menu-bar {
+    display: flex;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+
+  // #download-btn{
+  //     // padding:10px;
+  //     // border-radius: 10px;
+  // }
+}
+
+#preloader {
+  background: black no-repeat center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 1;
+}
+#nav {
+  // background: red;
+  // width: 50%;
+  #home {
+    // background: green;
+    height: 30px;
+    width: 30px;
+  }
 }

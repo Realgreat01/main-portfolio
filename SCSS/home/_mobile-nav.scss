@@ -1,5 +1,4 @@
-
-.mobile-menu{
+.mobile-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,14 +12,14 @@
   transform: translateX(150%);
   transition: 500ms;
   z-index: 10;
-  .nav-flex{
+  .nav-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px auto;
     width: 100%;
-    a{
-      list-style-position:outside;
+    a {
+      list-style-position: outside;
       margin: 3px 0;
       text-transform: uppercase;
       background: var(--background);
@@ -34,14 +33,14 @@
       border-radius: 5px;
       padding-left: 10px;
       font-size: $small;
-      &:hover{
+      &:hover {
         background: var(--secondary);
-        color: #FFF;
+        color: #fff;
       }
     }
   }
 
-  .image-container{
+  .image-container {
     background-color: var(--secondary);
     border-radius: 50%;
     height: 180px;
@@ -52,7 +51,7 @@
     align-items: center;
     justify-items: center;
     overflow: hidden;
-    img{
+    img {
       height: 100%;
       width: 100%;
       margin: 0 auto;

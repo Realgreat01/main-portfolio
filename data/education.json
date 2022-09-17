@@ -1,48 +1,48 @@
 {
-    "Education" : [
-        {
-            "name" : "University of Benin",
-            "course" : "Dentistry and Dental Surgery",
-            "graduation" : "Expected 2025",
-            "description": "Bachelor of Dental Surgery"
-        },
-        {
-            "name" : "Unity Secondary School, Ode-Aye",
-            "course" : "SSCE",
-            "graduation" : "July 2017",
-            "description": "Secondary School"
-        }
-    ],
+  "Education": [
+    {
+      "name": "University of Benin",
+      "course": "Dentistry and Dental Surgery",
+      "graduation": "Expected 2025",
+      "description": "Bachelor of Dental Surgery"
+    },
+    {
+      "name": "Unity Secondary School, Ode-Aye",
+      "course": "SSCE",
+      "graduation": "July 2017",
+      "description": "Secondary School"
+    }
+  ],
 
-    "Courses" : [
-        {
-            "OfferedBy" : "Udemy",
-            "Date" : "October 2020",
-            "title" : "Complete Web Development Certificate Course",
-            "Certificate" :"https://www.udemy.com/certificate/UC-f1aba4f9-ad18-421d-b95b-2ffea917f208/",
-            "summary": "This is an introductory course that teaches the basics of Web Development. I had my first hand experience with web development following this course in 2020"
-        },
-        {
-            "OfferedBy" : "LinkedIn Learning",
-            "Date" : "December 2020",
-            "title" : "Become A Software Developer",
-            "Certificate" :"https://drive.google.com/file/d/1rpaLeU-kZFrCsoVpFS49Ry8m-l4ypNTt/view?usp=sharing",
-            "summary": "I have an hands-on introduction to various aspects of software Development. I learnt the fundamentals of web development"
-        },
-        {
-            "OfferedBy" : "Google",
-            "Date" : "May 2022",
-            "title" : "Google Africa Developers Scholarship Program",
-            "Certificate" :"https://adscerts.com/scholar/A55F2A88B58592A",
-            "confirmation" : "wwww.nsnsnsnsnsn.cmcmc",
-            "summary": "An indepth learning experience with professionals from Google and Andela. A training which lasted for six months "
-        },
-        {
-            "OfferedBy" : "FreeCodeCamp",
-            "Date" : "Expected",
-            "title" : "Javascript Data Structures and Algorithms",
-            "Certificate" :"/freecodecamp.jpg",
-            "summary": "The most reputable and trusted Javascript Data Stuctures and Algorithms Course offered through self-paced learning and practice by FreeCodeCamp. "
-        }
-    ]
+  "Courses": [
+    {
+      "OfferedBy": "Udemy",
+      "Date": "October 2020",
+      "title": "Complete Web Development Certificate Course",
+      "Certificate": "https://www.udemy.com/certificate/UC-f1aba4f9-ad18-421d-b95b-2ffea917f208/",
+      "summary": "This is an introductory course that teaches the basics of Web Development. I had my first hand experience with web development following this course in 2020"
+    },
+    {
+      "OfferedBy": "LinkedIn Learning",
+      "Date": "December 2020",
+      "title": "Become A Software Developer",
+      "Certificate": "https://drive.google.com/file/d/1rpaLeU-kZFrCsoVpFS49Ry8m-l4ypNTt/view?usp=sharing",
+      "summary": "I have an hands-on introduction to various aspects of software Development. I learnt the fundamentals of web development"
+    },
+    {
+      "OfferedBy": "Google",
+      "Date": "May 2022",
+      "title": "Google Africa Developers Scholarship Program",
+      "Certificate": "https://adscerts.com/scholar/A55F2A88B58592A",
+      "confirmation": "wwww.nsnsnsnsnsn.cmcmc",
+      "summary": "An indepth learning experience with professionals from Google and Andela. A training which lasted for six months "
+    },
+    {
+      "OfferedBy": "FreeCodeCamp",
+      "Date": "Expected",
+      "title": "Javascript Data Structures and Algorithms",
+      "Certificate": "/freecodecamp.jpg",
+      "summary": "The most reputable and trusted Javascript Data Stuctures and Algorithms Course offered through self-paced learning and practice by FreeCodeCamp. "
+    }
+  ]
 }
