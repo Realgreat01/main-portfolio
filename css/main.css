@@ -532,7 +532,11 @@ nav li a {
 }
 
 .services p {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+.services p mark {
+  color: var(--secondary);
+  background: none;
 }
 
 .services-box > div {

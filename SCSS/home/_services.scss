@@ -5,7 +5,11 @@
     align-items: center;
 }
 .services p{
-    opacity: 0.5
+    opacity: 0.7;
+    mark{
+        color: var(--secondary);
+        background: none;
+    }
 }
 .services-box>div{
     background: var(--dark);
