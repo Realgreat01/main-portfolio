@@ -45,6 +45,45 @@
             "tools": ["vue.svg", "sass.svg"],
             "src": "movie-app.png"
         },
+        {
+            "name": "Tip calculator",
+            "website": "https://realgreat01.github.io/Tip-Calculator/",
+            "github": "https://github.com/Realgreat01/Tip-Calculator",
+            "description": "Tip Calculator is a simple app used in Calculating Tips. Tips are shared equally among group of friends, Project was a challenge from Frontend Mentor",
+            "date": "May, 2022",
+            "tools": ["css.svg", "javascript.svg"],
+            "src": "tip-calculator.png"
+        },
+
+        {
+            "name": "Fylo Landing Page",
+            "website": "https://realgreat01.github.io/fylo",
+            "github": "https://github.com/Realgreat01/fylo",
+            "description": "A simple landing page website. It's a challenge I completed from Frontend Mentor",
+            "date": "May, 2021",
+            "tools": ["css.svg"],
+            "src": "fylo.png"
+        },
+
+        {
+            "name": "E-commmerce Product Page",
+            "website": "https://realgreat01.github.io/ecommerce-product-page-main",
+            "github": "https://github.com/Realgreat01/ecommerce-product-page-main",
+            "description": "This is an e-commerce product page. A sample landing page for e-commerce website. A challenge by Frontend Mentor",
+            "date": "April, 2021",
+            "tools": ["css.svg", "javascript.svg"],
+            "src": "e-commerce.png"
+        },
+
+        {
+            "name": "Personal Portfolio",
+            "website": "https://realgreat.netlify.app",
+            "github": "https://github.com/Realgreat01/main-portfolio",
+            "description": "This is a project I am so much interested in",
+            "date": "April, 2021",
+            "tools": ["javascript.svg", "sass.svg"],
+            "src": "e-commerce.png"
+        },
 
         {
             "name": "Job Listing App",

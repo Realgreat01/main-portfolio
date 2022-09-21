@@ -42,8 +42,7 @@ body {
   margin: 0;
   width: 100%;
   position: relative;
-  overflow-y: scroll;
-  scroll-behavior: smooth !important;
+  overflow-y: hidden;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -54,6 +53,7 @@ main {
 }
 
 #main {
+  scroll-behavior: smooth !important;
   width: 90%;
   margin: 0 auto;
 }
@@ -376,19 +376,18 @@ nav li a {
   width: 50%;
   margin-left: 20px;
 }
-#info::first-letter {
-  font-size: 3rem;
-  margin: 0 6px;
-  float: left;
-  text-transform: uppercase;
+#info mark {
+  background: none;
+  color: var(--secondary);
+}
+#info .capitals {
+  font-weight: 700;
+  color: var(--secondary);
 }
 @media (max-width: 900px) {
   #info {
     width: 95%;
     margin-left: 0;
-  }
-  #info::first-letter {
-    font-size: 40px;
   }
 }
 #info .brief-info {

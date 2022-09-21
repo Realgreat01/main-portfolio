@@ -50,7 +50,7 @@ const animateSlide = `
         ${aosConfig}
 `;
 const project = async () => {
-  const response = await fetch("./data/projects.json");
+  const response = await fetch("./data/all_projects.json");
   const data = await response.json();
   const { FrontEnd, Designs } = data;
 
