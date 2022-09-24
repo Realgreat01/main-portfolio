@@ -79,12 +79,14 @@
     display: block;
     padding: 5px;
     border-radius: 4px;
-    background: var(--secondary);
+    background:var(--certificate);
     &:hover {
-      background: var(--tertiary);
+      // background-color: ;
+      background: var(--secondary);
     }
     a {
-      color: var(--white);
+      color: var(--text);
+
     }
   }
 }

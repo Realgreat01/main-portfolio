@@ -7,16 +7,24 @@
   --tertiary: #006eff;
   --dark: #fff;
   --white: #fff;
-  --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
+  --background: linear-gradient(105deg, hsl(0, 0%, 6%) , brown)
   --box: #6bb5fa;
-  --text: #13099e81;
-  --nav: #b9f4f5;
+  --text: #bebebe;
+  --certificate: #4d4b4b;
+  --nav: #ff0077;
 }
 
 * {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+kdk {
+  color: #111111;
+  col: rgba(41, 40, 41, 0.9333333333);
+  last: #7b05aa;
+  pink: hsl(0deg, 0%, 23%);
 }
 
 #copyright {
@@ -136,7 +144,7 @@ nav li a {
 }
 
 #download-btn {
-  background: var(--secondary);
+  background: var(--certificate);
   padding: 8px 10px;
   border: none;
   border-radius: 1rem;
@@ -317,13 +325,14 @@ nav li a {
 }
 @media (max-width: 900px) {
   .summary-items .social-hire {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 .summary-items .social-hire #hire-me {
-  background: var(--secondary);
+  background: var(--certificate);
   border: none;
   outline: none;
   padding: 10px 15px;
@@ -332,7 +341,7 @@ nav li a {
   margin-top: 0;
 }
 .summary-items .social-hire #hire-me a {
-  color: #fff;
+  color: white;
 }
 .summary-items .social-hire .socials {
   display: flex;
@@ -391,24 +400,25 @@ nav li a {
   }
 }
 #info .brief-info {
-  font-family: "Titillium Web", sans-serif;
   width: 100%;
   font-weight: 400;
   font-size: 1.1rem;
   opacity: 0.8;
   font-weight: 300;
+  line-height: 1.2rem;
 }
 @media (max-width: 900px) {
   #info .brief-info {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
   }
 }
 #info .read-more {
-  background: var(--secondary);
+  background: var(--certificate);
   border: none;
   border-radius: 4px;
   color: #fff;
-  padding: 1px 4px;
+  padding: 2px 5px;
+  opacity: 0.2;
   margin: 0 3px;
   display: inline-block;
 }
@@ -554,7 +564,7 @@ nav li a {
   height: 50px;
   -webkit-backdrop-filter: invert(1);
   backdrop-filter: invert(1);
-  background: var(--secondary);
+  background: var(--certificate);
   padding: 5px;
   border-radius: 5px;
 }
@@ -570,7 +580,7 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--secondary);
+  background: var(--certificate);
   color: #fff;
 }
 #all-projects:hover {
@@ -599,7 +609,7 @@ nav li a {
   border-radius: 0 0 10px 10px;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  height: 300px;
+  height: 400px;
   margin: 30px;
   justify-self: stretch;
   color: #fff;
@@ -609,8 +619,9 @@ nav li a {
 }
 .project-items .project-image {
   overflow: hidden;
-  height: 200px;
-  width: 100%;
+  min-height: 300px;
+  max-width: 100%;
+  display: none;
   position: relative;
   display: flex;
   justify-content: center;
@@ -693,7 +704,7 @@ nav li a {
 .project-items .project-data .project-info .project-tools-div {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: end;
 }
 .project-items .project-data .project-info .project-tools-div .project-tools-images {
   height: 30px;
@@ -803,13 +814,13 @@ nav li a {
   display: block;
   padding: 5px;
   border-radius: 4px;
-  background: var(--secondary);
+  background: var(--certificate);
 }
 .education-item #certificate:hover {
-  background: var(--tertiary);
+  background: var(--secondary);
 }
 .education-item #certificate a {
-  color: var(--white);
+  color: var(--text);
 }
 
 .education h4 {

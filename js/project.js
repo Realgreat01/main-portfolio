@@ -24,10 +24,10 @@ const template = (frontend) => `
                         <div id="preview-icons">
                             <a href="${
                               frontend.website
-                            }" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview"></a>
+                            }" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview" class="social-icons"></a>
                             <a href="${
                               frontend.github
-                            }" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty"></a>
+                            }" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty" class="social-icons"></a>
                         </div>
                         <div class="project-tools-div">${updateIcons(
                           frontend.tools

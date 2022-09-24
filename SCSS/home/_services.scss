@@ -26,7 +26,7 @@
   height: 50px;
   -webkit-backdrop-filter: invert(1);
   backdrop-filter: invert(1);
-  background: var(--secondary);
+  background: var(--certificate);
   padding: 5px;
   border-radius: 5px;
 }
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--secondary);
+  background: var(--certificate);
   color: #fff;
   &:hover {
     background: var(--nav);
@@ -71,7 +71,7 @@
   border-radius: 0 0 10px 10px;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  height: 300px;
+  height: 400px;
   margin: 30px;
   justify-self: stretch;
   color: #fff;
@@ -82,8 +82,9 @@
   // Project Image
   .project-image {
     overflow: hidden;
-    height: 200px;
-    width: 100%;
+    min-height: 300px;
+    max-width: 100%;
+    display:none;
     position: relative;
     display: flex;
     justify-content: center;
@@ -180,7 +181,7 @@
         // background: red;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: end;
         .project-tools-images {
           // display:none;
           height: 30px;

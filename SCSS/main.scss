@@ -5,10 +5,12 @@
   --tertiary: #006eff;
   --dark: #fff;
   --white: #fff;
-  --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
+  // --background: linear-gradient(140deg, rgba(237, 255, 253, 0.479)), no-repeat;
+  --background: linear-gradient(105deg, hsl(0, 0%, 6%)  , brown)
   --box: #6bb5fa;
-  --text: #13099e81;
-  --nav: #b9f4f5;
+  --text: #bebebe;
+  --certificate: #4d4b4b;
+  --nav: #ff0077;
 }
 @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
 * {
@@ -16,6 +18,14 @@
   list-style: none;
   text-decoration: none;
   // font-family: 'League Spartan', sans-serif;
+}
+
+kdk{
+  color: #111111;
+  col: #292829ee;
+  last: #7b05aa;
+  pink: hsl(0, 0%, 23%)
+// 'linear-gradient(105deg, #240127ee ,#0d0122 50%, #07010f)'
 }
 
 //  Variables
