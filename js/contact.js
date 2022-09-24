@@ -11,14 +11,14 @@ const lastName = document.getElementById("last-name");
 
 const sendButton = document.getElementById("send-button");
 
-sendButton.addEventListener("mouseover", (e) => {
-  e.preventDefault();
-  textMessage.value = subject.value;
-  replyTo.value = email.value;
-  autoReply.value = `
-        Hello  ${firstName.value} ${lastName.value},
-        Thanks for your message
-        `;
+// sendButton.addEventListener("mouseover", (e) => {
+//   e.preventDefault();
+//   textMessage.value = subject.value;
+//   replyTo.value = email.value;
+//   autoReply.value = `
+//         Hello  ${firstName.value} ${lastName.value},
+//         Thanks for your message
+//         `;
 
-  console.log(contactForm.innerHTML);
-});
+//   console.log(contactForm.innerHTML);
+// });

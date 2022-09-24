@@ -30,6 +30,7 @@
 .education > div {
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 .dots::before {
   content: "";
@@ -55,8 +56,8 @@
 
 .education-item {
   background: var(--dark);
-  min-width: 300px;
-  max-width: 320px;
+  min-width: 350px;
+  max-width: 360px;
   padding: 10px 20px;
   margin: 10px;
   margin-left: -10px;
@@ -107,8 +108,8 @@
   }
 
   .education-item {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 90%;
+    max-width: 90%;
     padding: 20px;
     margin: 10px;
     margin-left: -10px;

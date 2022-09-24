@@ -592,7 +592,7 @@ nav li a {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 70%;
 }
 @media (max-width: 900px) {
   .project-details {
@@ -610,12 +610,20 @@ nav li a {
   display: grid;
   grid-template-rows: 3fr 1fr;
   height: 400px;
+  width: 400px;
   margin: 30px;
   justify-self: stretch;
   color: #fff;
   color: var(--tertiary);
   box-shadow: 1px 1px 3px var(--box);
   overflow: hidden;
+}
+@media (max-width: 900px) {
+  .project-items {
+    margin: 30px auto;
+    height: 300px;
+    width: 250px;
+  }
 }
 .project-items .project-image {
   overflow: hidden;
@@ -625,6 +633,12 @@ nav li a {
   position: relative;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 900px) {
+  .project-items .project-image {
+    min-height: 200px;
+    max-width: 100%;
+  }
 }
 .project-items .project-image::-webkit-scrollbar {
   display: none;
@@ -639,6 +653,7 @@ nav li a {
   transform: translateY(110%);
   color: var(--primary);
   font-weight: 300;
+  font-size: 0.85rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -763,6 +778,7 @@ nav li a {
 .education > div {
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 
 .dots::before {
@@ -789,8 +805,8 @@ nav li a {
 
 .education-item {
   background: var(--dark);
-  min-width: 300px;
-  max-width: 320px;
+  min-width: 350px;
+  max-width: 360px;
   padding: 10px 20px;
   margin: 10px;
   margin-left: -10px;
@@ -838,8 +854,8 @@ nav li a {
     margin: 0 auto;
   }
   .education-item {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 90%;
+    max-width: 90%;
     padding: 20px;
     margin: 10px;
     margin-left: -10px;
@@ -1361,21 +1377,21 @@ nav li a {
   list-style-position: outside;
   margin: 3px 0;
   text-transform: uppercase;
-  background: var(--background);
   padding: 15px;
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
-  color: var(--secondary);
+  color: var(--certificate);
   border-radius: 5px;
   padding-left: 10px;
   font-size: 12px;
+  background: var(--background);
 }
 .mobile-menu .nav-flex a:hover {
-  background: var(--secondary);
-  color: #fff;
+  background: var(--certificate);
+  color: var(--nav);
 }
 .mobile-menu .image-container {
   background-color: var(--secondary);

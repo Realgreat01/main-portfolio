@@ -22,20 +22,20 @@
       list-style-position: outside;
       margin: 3px 0;
       text-transform: uppercase;
-      background: var(--background);
       padding: 15px;
       font-size: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-weight: 700;
-      color: var(--secondary);
+      color: var(--certificate);
       border-radius: 5px;
       padding-left: 10px;
       font-size: $small;
+      background: var(--background);
       &:hover {
-        background: var(--secondary);
-        color: #fff;
+        background: var(--certificate);
+        color: var(--nav);
       }
     }
   }

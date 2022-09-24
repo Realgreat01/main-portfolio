@@ -90,7 +90,7 @@ const darkMode = () => {
 		skillProgress.forEach(
 			icon => (icon.style.filter = 'brightness(1) invert(0)')
 		)
-		console.log(skillProgress)
+		
 	}, 1000)
 	dark.style.visibility = 'hidden'
 	light.style.visibility = 'visible'
@@ -112,7 +112,6 @@ window.addEventListener('scroll', () => {
 		clientsCounter = 0
 		experienceCounter = 0
 
-		console.log('scrolled')
 
 		let scrollTime = setInterval(projectAdd, 500)
 		setTimeout(() => clearInterval(scrollTime), 10000)
