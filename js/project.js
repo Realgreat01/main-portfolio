@@ -7,12 +7,12 @@ const updateIcons = (arr) => {
   return div.innerHTML;
 };
 
-const template = (frontend) => `
+const template = frontend => `
                 <div class="project-image">
                     <p class="project-description"> ${frontend.description}</p>
                     <img class="project-main-image"src="./images/projects/${
-                      frontend.src
-                    }" alt="${frontend.src}">
+						frontend.src
+					}" alt="${frontend.src}">
                 </div>
                 
                 <div class="project-data">
@@ -23,18 +23,18 @@ const template = (frontend) => `
                     <div class="project-info"> 
                         <div id="preview-icons">
                             <a href="${
-                              frontend.website
-                            }" id="left" target="blank"><img src="../images/icons/view.svg" alt="preview" class="social-icons"></a>
+								frontend.website
+							}" id="left" target="blank"  class="social-icons"></><img src="../images/icons/view.svg" alt="preview"a>
                             <a href="${
-                              frontend.github
-                            }" id="right" target="blank"><img src="../images/icons/github-icon.svg" alt="github repositoty" class="social-icons"></a>
+								frontend.github
+							}" id="right" target="blank"  class="social-icons"></><img src="../images/icons/github-icon.svg" alt="github repositoty" class="social-icons"></a>
                         </div>
                         <div class="project-tools-div">${updateIcons(
-                          frontend.tools
-                        )}</div>
+							frontend.tools
+						)}</div>
                     </div>    
                 </div>
-            `;
+            `
 const aosConfig = `
                 data-aos-offset="200"
                 data-aos-delay="100"
