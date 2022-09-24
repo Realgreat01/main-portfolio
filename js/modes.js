@@ -57,12 +57,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		lightMode()
 	} else {
 		darkMode()
-		setTimeout(() => {
-			const socialIcons = document.querySelectorAll('.social-icons')
-			socialIcons.forEach(icons => {
-				icons.style.filter = 'brightness(0) invert(1)'
-			})
-		}, 100)
 	}
 })
 

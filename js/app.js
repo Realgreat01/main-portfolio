@@ -67,7 +67,6 @@ const darkMode = () => {
 	body.style.setProperty('--primary', '#fff')
 	body.style.setProperty('--secondary', '#83f4fc')
 	body.style.setProperty('--tertiary', '#fff')
-	body.style.setProperty('--white', 'blue')
 	body.style.setProperty('--dark', 'hsl(0, 0%, 6%)')
 	body.style.setProperty('--certificate', '#ff0077')
     body.style.setProperty('--box', 'hsl(0, 2%, 23%)')
